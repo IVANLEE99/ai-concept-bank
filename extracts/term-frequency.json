@@ -1,0 +1,1210 @@
+{
+  "generated_at": "2026-07-12",
+  "sources": {
+    "scripts": 48,
+    "daily_reports": 50,
+    "weekly": 4,
+    "monthly": 1
+  },
+  "dictionary_size": 50,
+  "terms": [
+    {
+      "term": "Rate Limit / 配额",
+      "normalized_id": "rate_limit",
+      "category": "推理部署",
+      "difficulty": "入门",
+      "count_scripts": 38,
+      "count_reports": 348,
+      "count_daily": 325,
+      "count_weekly": 14,
+      "count_monthly": 9,
+      "count_total": 386,
+      "files_scripts": 19,
+      "files_reports": 53,
+      "file_coverage": 72,
+      "sample_contexts": [
+        "ic也跟着炸了，不过人家先恢复。 恢复之后居然出现短暂的无限畅饮状态， 有人狂刷额度，这波操作属实是黑色星期三。 --- ## 场景 4: DeepSeek启动",
+        "用户补了一个月的订阅。 但问题来了，Codex那边也出事了，疑似把所有订阅账户的额度分配搞乱了。 信任一旦受损，一个月免费能补回来吗？ --- ## 场景3：A",
+        "# 今日羊报 AI · 2026-06-12 **标题：GPT额度集体刷新、DeepSeek招兵买马、Fable-5评测炸锅** --- ##"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-06-04/scripts/scripts.md",
+        "news-pipeline/2026-06-06/scripts/script-2026-06-06.md",
+        "news-pipeline/2026-06-12/scripts/script-2026-06-12.md",
+        "data/monthly/2026-06.md",
+        "data/reports/2026-05-26.md"
+      ],
+      "suggested_label": "candidate"
+    },
+    {
+      "term": "Agent（智能体）",
+      "normalized_id": "agent",
+      "category": "模型应用",
+      "difficulty": "入门",
+      "count_scripts": 37,
+      "count_reports": 189,
+      "count_daily": 179,
+      "count_weekly": 6,
+      "count_monthly": 4,
+      "count_total": 226,
+      "files_scripts": 12,
+      "files_reports": 46,
+      "file_coverage": 58,
+      "sample_contexts": [
+        "项目，100 多个接口，bug 越改越多，代码量肉眼看不过来。有人自研了 AI agent 工作流，纠结要不要告诉领导——告诉了怕被优化，不告诉怕被发现。 --- #",
+        "写的项目，100 多个接口，bug 越改越多，代码量肉眼看不过来。有人自研了 AI agent 工作流，纠结要不要告诉领导——告诉了怕被优化，不告诉怕被发现。 --- #",
+        "线OpenRouter，免费就能用。 更猛的是同时发布的Vera CPU——专为AI Agent设计。 能效翻倍，速度提升50%。 英伟达的野心很明确：不只卖芯片，还要定义AI"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-05-28/scripts/script.md",
+        "news-pipeline/2026-06-05/scripts/script-2026-06-05.md",
+        "news-pipeline/2026-06-10/scripts/script-2026-06-10.md",
+        "data/monthly/2026-06.md",
+        "data/reports/2026-05-25.md"
+      ],
+      "suggested_label": "seed"
+    },
+    {
+      "term": "模型路由/调度",
+      "normalized_id": "model_routing",
+      "category": "推理部署",
+      "difficulty": "进阶",
+      "count_scripts": 26,
+      "count_reports": 128,
+      "count_daily": 121,
+      "count_weekly": 2,
+      "count_monthly": 5,
+      "count_total": 154,
+      "files_scripts": 13,
+      "files_reports": 37,
+      "file_coverage": 50,
+      "sample_contexts": [
+        "c自己还在疯狂推Claude呢。 --- ## 场景4：DeepSeek疑似降智 **时长**: 18s **配音**: 最近两天，多位开发者反映DeepS",
+        "消息一出，全网疯传，十万用户同时涌进Team，直接把服务器挤爆了。Codex被迫降智，OpenAI紧急封堵漏洞，活动最终结束。有人几块钱就开了Team子号，但狂欢也",
+        "节奏。 ## 场景 4: OpenAI 年亏 385 亿 + GPT 5.5 降智 第三条，OpenAI 的日子是真的不好过。2025 年亏了 385 亿美元，同"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-06-06/scripts/script-2026-06-06.md",
+        "news-pipeline/2026-06-07/scripts/script-2026-06-07.md",
+        "news-pipeline/2026-06-17/scripts/video-script-2026-06-17.md",
+        "data/monthly/2026-06.md",
+        "data/reports/2026-05-27.md"
+      ],
+      "suggested_label": "seed"
+    },
+    {
+      "term": "Token",
+      "normalized_id": "token",
+      "category": "模型基础",
+      "difficulty": "入门",
+      "count_scripts": 8,
+      "count_reports": 100,
+      "count_daily": 95,
+      "count_weekly": 4,
+      "count_monthly": 1,
+      "count_total": 108,
+      "files_scripts": 6,
+      "files_reports": 36,
+      "file_coverage": 42,
+      "sample_contexts": [
+        "pro ultra speed正式发布，万亿参数1T旗舰模型，最高突破1000 tokens/s。小米在AI赛道上越跑越快，这次直接对标GPT和Claude。国产模型的竞争",
+        "疯了。GLM-5.2 正式开源，API 价格直接打到 8 块和 28 块每百万 token，社区实测前端能力确实猛，国外评测也给了很高的分。Trae、OpenRouter",
+        "超过 70 亿美元的融资。而且 Vercel 的数据显示 DeepSeek 的 token 调用量已经超过 OpenAI 了，成本才占总支出的百分之一。一边融巨资一边疯狂"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-06-09/scripts/script-2026-06-09.md",
+        "news-pipeline/2026-06-17/scripts/video-script-2026-06-17.md",
+        "news-pipeline/2026-06-19/scripts/script-2026-06-19.md",
+        "data/monthly/2026-06.md",
+        "data/reports/2026-05-25.md"
+      ],
+      "suggested_label": "seed"
+    },
+    {
+      "term": "多模态",
+      "normalized_id": "multimodal",
+      "category": "模型基础",
+      "difficulty": "入门",
+      "count_scripts": 7,
+      "count_reports": 39,
+      "count_daily": 39,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 46,
+      "files_scripts": 6,
+      "files_reports": 19,
+      "file_coverage": 25,
+      "sample_contexts": [
+        "**: 15s 最后看Google，动作也不小。 发布了Gemma 4 12B多模态模型， 没有encoder设计，笔记本就能跑。 还推出了Dreambeans梦豆",
+        "第一名。 支持音画同步生成，生成的图片质量大幅跃升。 这意味着马斯克的AI团队在多模态领域开始发力了。 Grok不再是那个只会嘴炮的聊天机器人了。 --- ##",
+        "歌开源 Gemma 4 12B（场景6） 谷歌开源了 Gemma 4 12B 多模态模型。 重点是： 16GB 内存或显存就能跑。 支持文本、图片、视频、音频输入"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-06-04/scripts/scripts.md",
+        "news-pipeline/2026-06-06/scripts/script-2026-06-06.md",
+        "news-pipeline/2026-06-10/scripts/script-2026-06-10.md",
+        "data/reports/2026-05-29.md",
+        "data/reports/2026-05-30.md"
+      ],
+      "suggested_label": "seed"
+    },
+    {
+      "term": "Chain-of-Thought（思维链）",
+      "normalized_id": "cot",
+      "category": "推理",
+      "difficulty": "进阶",
+      "count_scripts": 6,
+      "count_reports": 35,
+      "count_daily": 33,
+      "count_weekly": 1,
+      "count_monthly": 1,
+      "count_total": 41,
+      "files_scripts": 4,
+      "files_reports": 20,
+      "file_coverage": 24,
+      "sample_contexts": [
+        "疑似 V4 + 70 亿融资 第二条，DeepSeek 网页版快速模式出现了新的思维链形式，社区都在猜是不是 V4 模型灰度。更劲爆的是路透社确认他们完成了超过 70",
+        "转站已经上线了接口。 ## 场景4 — Codex 降智 Codex 5.5 xhigh 最近写代码质量明显下降，社区推测可能是为 5.6 版本让路。说实话这操作挺常见",
+        "表态，多个中转站已经上线了接口。 ### Scene 4 Codex 5.5 xhigh 最近写代码质量明显下降，社区推测可能是为 5.6 版本让路。说实话这操作挺常见"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-06-17/scripts/video-script-2026-06-17.md",
+        "news-pipeline/2026-06-19/scripts/script-2026-06-19.md",
+        "news-pipeline/2026-06-29/scripts/video-script-2026-06-29.md",
+        "data/monthly/2026-06.md",
+        "data/reports/2026-05-27.md"
+      ],
+      "suggested_label": "seed"
+    },
+    {
+      "term": "蒸馏",
+      "normalized_id": "distillation",
+      "category": "模型训练",
+      "difficulty": "进阶",
+      "count_scripts": 17,
+      "count_reports": 30,
+      "count_daily": 25,
+      "count_weekly": 0,
+      "count_monthly": 5,
+      "count_total": 47,
+      "files_scripts": 8,
+      "files_reports": 11,
+      "file_coverage": 19,
+      "sample_contexts": [
+        "2026-05-29 **标题**: Claude Opus 4.8 翻车了？蒸馏 Qwen/DeepSeek 自称身份错乱 **总时长**: ~120s --",
+        "问它是谁，它说自己是 Qwen。 --- ## 第一条: Opus 4.8 蒸馏争议 (20s) 社区发现用简体中文问 Opus 4.8 是谁，10次测试6次",
+        "35B，总参数达到 1T，性能接近 Sonnet 四点六水平，而且没用任何第三方蒸馏。 --- ## 第三段：Codex 模型换血 (Scene 4) **画"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-05-29/scripts/script.md",
+        "news-pipeline/2026-06-03/scripts/video-script.md",
+        "news-pipeline/2026-06-26/scripts/script-2026-06-26.md",
+        "data/monthly/2026-06.md",
+        "data/reports/2026-05-29.md"
+      ],
+      "suggested_label": "seed"
+    },
+    {
+      "term": "上下文窗口",
+      "normalized_id": "context_window",
+      "category": "模型基础",
+      "difficulty": "入门",
+      "count_scripts": 8,
+      "count_reports": 20,
+      "count_daily": 19,
+      "count_weekly": 1,
+      "count_monthly": 0,
+      "count_total": 28,
+      "files_scripts": 6,
+      "files_reports": 11,
+      "file_coverage": 17,
+      "sample_contexts": [
+        "on-3-Ultra-550B正式开源。 550B参数，但只激活55B，100万上下文窗口。 已经上线OpenRouter，免费就能用。 更猛的是同时发布的Vera CP",
+        "场景5） 第四个，华为低调开源了盘古openPangu 2.0，支持512K超长上下文窗口。虽然热度不如GLM和DeepSeek，但华为在企业级市场还是有底蕴的。这次开源",
+        "（场景5） 第四个，华为低调开源了盘古openPangu 2.0，支持512K超长上下文窗口。虽然热度不如GLM和DeepSeek，但华为在企业级市场还是有底蕴的。这次"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-06-05/scripts/script-2026-06-05.md",
+        "news-pipeline/2026-06-18/scripts/script-2026-06-18.md",
+        "news-pipeline/2026-06-30/scripts/script-2026-06-30.md",
+        "data/reports/2026-05-27.md",
+        "data/reports/2026-06-05.md"
+      ],
+      "suggested_label": "seed"
+    },
+    {
+      "term": "隐私/数据安全",
+      "normalized_id": "privacy",
+      "category": "安全",
+      "difficulty": "入门",
+      "count_scripts": 8,
+      "count_reports": 17,
+      "count_daily": 14,
+      "count_weekly": 3,
+      "count_monthly": 0,
+      "count_total": 25,
+      "files_scripts": 6,
+      "files_reports": 10,
+      "file_coverage": 16,
+      "sample_contexts": [
+        "从\"聊天\"进化到\"帮你干活\"。 微信生态+AI，这个组合拳的想象空间太大了。 但隐私问题也随之而来——AI能看到你的聊天记录吗？ --- ## 场景6：英伟达",
+        "的能帮你付了。 AI从聊天工具变成真正的数字助手，微信这步棋走得很快。 但安全和隐私问题，也随之而来。 --- ## 场景8：结尾CTA **时长**: 5s",
+        "用卡。消费积分直接兑换token算力，相当于你刷卡消费就能赚AI额度。这波操作把隐私党和商业派都炸出来了，有人觉得是创新，有人担心消费数据被AI模型利用。 ---"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-06-05/scripts/script-2026-06-05.md",
+        "news-pipeline/2026-06-06/scripts/script-2026-06-06.md",
+        "news-pipeline/2026-06-13/scripts/script-2026-06-13.md",
+        "data/reports/2026-06-07.md",
+        "data/reports/2026-06-13.md"
+      ],
+      "suggested_label": "seed"
+    },
+    {
+      "term": "开放权重/开源模型",
+      "normalized_id": "open_weights",
+      "category": "开源商业",
+      "difficulty": "入门",
+      "count_scripts": 6,
+      "count_reports": 15,
+      "count_daily": 15,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 21,
+      "files_scripts": 5,
+      "files_reports": 9,
+      "file_coverage": 14,
+      "sample_contexts": [
+        "pilot用DeepSeek来降低成本。你品品：全球最大的软件公司，要用一个中国开源模型来省钱。这就好比麦当劳突然推出螺蛳粉汉堡——不是不行，就是有点魔幻。DeepSe",
+        "叫\"小微\"的 AI 助手，不是聊天机器人，是真的能帮你操作微信。用的是腾讯自研加开源模型。以后发消息、回评论、搜东西，可能都可以让小微代劳了。微信帮你用微信，这个场景想",
+        "磅动作。 **So What（影响啥）：** 920亿参数+512K上下文，在开源模型里算得上第一梯队。对企业用户来说，国产开源模型意味着更好的合规性和本地部署可能性"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-06-21/scripts/script-2026-06-21.md",
+        "news-pipeline/2026-06-24/scripts/video-script-2026-06-24.md",
+        "news-pipeline/2026-07-01/scripts/script-2026-07-01-condensed.md",
+        "data/reports/2026-05-26.md",
+        "data/reports/2026-06-05.md"
+      ],
+      "suggested_label": "seed"
+    },
+    {
+      "term": "MCP",
+      "normalized_id": "mcp",
+      "category": "模型应用",
+      "difficulty": "进阶",
+      "count_scripts": 0,
+      "count_reports": 19,
+      "count_daily": 19,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 19,
+      "files_scripts": 0,
+      "files_reports": 12,
+      "file_coverage": 12,
+      "sample_contexts": [
+        "smart-search-cli + grill-me + Trellis + MCP - 使用 Cursor++ 插件接入 GPT-5.5 等模型 - **参考帖子",
+        "t/2370886)） - **邪修的风终于吹到了建模界（cc+freecad+mcp)** — Claude Code + FreeCAD + MCP 建模实践。（",
+        "reecad+mcp)** — Claude Code + FreeCAD + MCP 建模实践。（[118浏览 / 1回复](https://linux.do/t/"
+      ],
+      "example_paths": [
+        "data/reports/2026-05-27.md",
+        "data/reports/2026-06-11.md"
+      ],
+      "suggested_label": "seed"
+    },
+    {
+      "term": "模型幻觉",
+      "normalized_id": "hallucination",
+      "category": "模型基础",
+      "difficulty": "入门",
+      "count_scripts": 2,
+      "count_reports": 18,
+      "count_daily": 17,
+      "count_weekly": 1,
+      "count_monthly": 0,
+      "count_total": 20,
+      "files_scripts": 1,
+      "files_reports": 10,
+      "file_coverage": 11,
+      "sample_contexts": [
+        "等大家发现的时候已经跑在前面了。 ### 事件五（场景6）— Gemini 因幻觉被起诉 [语言破格] [语言破格] 重大法律先例来了。德国法院正式判决，Goo",
+        "言破格] 重大法律先例来了。德国法院正式判决，Google的Gemini因为产生幻觉被起诉。以后AI胡说八道不再是\"技术局限\"，而是要负法律责任的。这判决一出，全世",
+        "5 用起来很飘啊** — Fable-5 消耗速度比 4.8 快一倍，疑似\"智力幻觉\"（[119浏览 / 2回复](https://linux.do/t/23808"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-06-22/scripts/script-2026-06-22.md",
+        "data/reports/2026-06-12.md",
+        "data/reports/2026-06-14.md"
+      ],
+      "suggested_label": "seed"
+    },
+    {
+      "term": "Benchmark（评测）",
+      "normalized_id": "benchmark",
+      "category": "评测",
+      "difficulty": "入门",
+      "count_scripts": 4,
+      "count_reports": 14,
+      "count_daily": 12,
+      "count_weekly": 0,
+      "count_monthly": 2,
+      "count_total": 18,
+      "files_scripts": 4,
+      "files_reports": 7,
+      "file_coverage": 11,
+      "sample_contexts": [
+        "DeepSeek V4.1 集体预告。 第五条，Qwen3.7-max 登顶 Arena。 国产模型首次在盲测中超越 Claude Opus。 阿里这波赢麻了。 第六",
+        "双十一还猛。 ### 事件二（场景3）— GLM 5.2 登顶 Design Arena [角色破格] [角色破格] 国产模型这次真的杀疯了。智谱GLM 5.2直接登",
+        "这事儿争议很大。 第三个，国产模型终于扬眉吐气。 Qwen3.7-max 在 Arena 盲测里直接干翻了 Claude Opus 4.6。 阿里这波属于弯道超车了。"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-05-27/scripts/video-script.md",
+        "news-pipeline/2026-06-22/scripts/script-2026-06-22.md",
+        "news-pipeline/scripts/2026-05-26.md",
+        "data/monthly/2026-06.md",
+        "data/reports/2026-05-26.md"
+      ],
+      "suggested_label": "seed"
+    },
+    {
+      "term": "出口管制",
+      "normalized_id": "export_control",
+      "category": "开源商业",
+      "difficulty": "入门",
+      "count_scripts": 7,
+      "count_reports": 18,
+      "count_daily": 15,
+      "count_weekly": 3,
+      "count_monthly": 0,
+      "count_total": 25,
+      "files_scripts": 4,
+      "files_reports": 5,
+      "file_coverage": 9,
+      "sample_contexts": [
+        "正在直接购买中国AI公司DeepSeek的API。 一边是美国官方层层设防，各种出口管制； 另一边是企业用脚投票，真金白银砸向中国模型。 原因很简单——便宜、好用、性价",
+        "ook（场景1） 今天AI圈直接炸了。Anthropic的Fable 5因为美国出口管制被下架了，对，你没听错，AI模型也能被\"禁运\"。OpenAI那边也不好过，据说正",
+        "闻，一次给你讲明白。 --- ## 第一条：Claude Fable 5 因出口管制下架（场景2） 第一件大事，Claude的旗舰模型Fable 5，因为美国出口管"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-06-05/scripts/script-2026-06-05.md",
+        "news-pipeline/2026-06-18/scripts/script-2026-06-18.md",
+        "news-pipeline/2026-06-21/scripts/script-2026-06-21.md",
+        "data/reports/2026-06-16.md",
+        "data/reports/2026-06-18.md"
+      ],
+      "suggested_label": "seed"
+    },
+    {
+      "term": "评测方法论",
+      "normalized_id": "eval",
+      "category": "评测",
+      "difficulty": "进阶",
+      "count_scripts": 8,
+      "count_reports": 13,
+      "count_daily": 13,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 21,
+      "files_scripts": 5,
+      "files_reports": 4,
+      "file_coverage": 9,
+      "sample_contexts": [
+        "集体预告。 第五条，Qwen3.7-max 登顶 Arena。 国产模型首次在盲测中超越 Claude Opus。 阿里这波赢麻了。 第六条，AI 在数学领域搞",
+        "觉得是创新，有人担心消费数据被AI模型利用。 --- ## 场景5: 多模型横评（预估 15s） **TTS文本**： 有大佬做了个硬核横评，Unity项目里同",
+        "# 场景5: 多模型横评（预估 15s） **TTS文本**： 有大佬做了个硬核横评，Unity项目里同时测Kimi K2.7 Code、Composer 2.5、"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-05-27/scripts/video-script.md",
+        "news-pipeline/2026-06-13/scripts/script-2026-06-13.md",
+        "news-pipeline/2026-06-15/scripts/script-2026-06-15.md",
+        "data/reports/2026-05-26.md",
+        "data/reports/2026-06-13.md"
+      ],
+      "suggested_label": "seed"
+    },
+    {
+      "term": "推理（Inference）",
+      "normalized_id": "inference",
+      "category": "推理部署",
+      "difficulty": "入门",
+      "count_scripts": 3,
+      "count_reports": 7,
+      "count_daily": 6,
+      "count_weekly": 1,
+      "count_monthly": 0,
+      "count_total": 10,
+      "files_scripts": 3,
+      "files_reports": 6,
+      "file_coverage": 9,
+      "sample_contexts": [
+        "H100上跑出1000+tokens每秒，这速度直接起飞。如果这个路线走通，以后推理成本可能要大降。 ## 第五段：OpenAI 考虑大幅降价 最后一条，OpenAI",
+        "边。MiMo-v2.5-Pro-UltraSpeed版本上线，1T参数旗舰模型，推理速度直接突破1000 tokens每秒。有用户体验完直呼\"由奢入俭难\"，回去用其他模",
+        "真香。同时MiMo-V2.5-Pro-UltraSpeed发布，万亿参数旗舰模型推理速度突破一千 tokens 每秒。用户体验完直呼由奢入俭难，这个速度确实太炸了。"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-06-11/scripts/script-2026-06-11.md",
+        "news-pipeline/2026-06-13/scripts/script-2026-06-13.md",
+        "news-pipeline/weekly/2026-06-08~2026-06-14/scripts/script.md",
+        "data/reports/2026-06-13.md",
+        "data/reports/2026-06-27.md"
+      ],
+      "suggested_label": "seed"
+    },
+    {
+      "term": "Function Calling",
+      "normalized_id": "function_calling",
+      "category": "模型应用",
+      "difficulty": "进阶",
+      "count_scripts": 1,
+      "count_reports": 9,
+      "count_daily": 9,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 10,
+      "files_scripts": 1,
+      "files_reports": 7,
+      "file_coverage": 8,
+      "sample_contexts": [
+        "阿里 Qwen3.7-Max 跑进编码模型全球第二梯队。 超长任务续航加大规模工具调用能力， 在复杂 Agent 场景下表现突出。 国产模型在编码赛道上， 正在快速",
+        "n3.7-Max 登顶编码模型全球第二梯队 - 核心竞争力：超长任务续航与大规模工具调用能力 - 复杂 Agent 场景下极具潜力 - **参考帖子**：[Qwen3.",
+        "- **阶跃星辰发布Step 3.7 Flash** — 高速推理+原生多模态+工具调用的旗舰多模态推理模型（浏览 521 / 回复 14） - **腾讯混元发布Hy-"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-06-10/scripts/script-2026-06-10.md",
+        "data/reports/2026-05-27.md",
+        "data/reports/2026-05-29.md"
+      ],
+      "suggested_label": "seed"
+    },
+    {
+      "term": "vLLM / 推理框架",
+      "normalized_id": "vllm",
+      "category": "推理部署",
+      "difficulty": "专业",
+      "count_scripts": 1,
+      "count_reports": 7,
+      "count_daily": 7,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 8,
+      "files_scripts": 1,
+      "files_reports": 7,
+      "file_coverage": 8,
+      "sample_contexts": [
+        "费模型渠道也有人汇总了，Google Gemini API 每天 1500 次、Ollama、OpenRouter 都能白嫖。 --- ## CTA 结尾 (5s)",
+        "* — 免费AI模型渠道汇总：Google Gemini API每天1500次、Ollama、OpenRouter等（浏览 652 / 回复 11） ### Claude",
+        "12B 部署体验** — 5090 单卡 Q8 量化 80+ tokens/s，llama.cpp 尚未适配多模态（浏览 753 / 回复 13） - **Gemini Web"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-05-28/scripts/script.md",
+        "data/reports/2026-05-28.md",
+        "data/reports/2026-06-05.md"
+      ],
+      "suggested_label": "seed"
+    },
+    {
+      "term": "安全护栏/过滤器",
+      "normalized_id": "guardrails",
+      "category": "安全",
+      "difficulty": "进阶",
+      "count_scripts": 2,
+      "count_reports": 15,
+      "count_daily": 12,
+      "count_weekly": 3,
+      "count_monthly": 0,
+      "count_total": 17,
+      "files_scripts": 2,
+      "files_reports": 5,
+      "file_coverage": 7,
+      "sample_contexts": [
+        "个化学溶剂模型， 有人问个医学术语， 全部被拒。 社区直接给它起了个外号： 「敏感肌」。 --- ## 事件2：Notion 与 Anthropic 的戏剧性反",
+        "区评测终于出来了。 结论：代码能力目前最强，没有之一。 但问题也很明显：贵，而且安全过滤器极严，几乎不可能破限。 有人说是更说人话、上下文更大的GPT5.5，也有人抱怨消",
+        "* - Anthropic 推出迄今最强 Mythos 级模型，安全分类器导致「敏感肌」问题引发热议 2. **Bug Team 狂欢与封号潮** - OpenAI"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-06-10/scripts/script-2026-06-10.md",
+        "news-pipeline/2026-06-12/scripts/script-2026-06-12.md",
+        "data/reports/2026-06-10.md",
+        "data/reports/2026-06-12.md"
+      ],
+      "suggested_label": "seed"
+    },
+    {
+      "term": "模型量化",
+      "normalized_id": "quantization",
+      "category": "推理部署",
+      "difficulty": "进阶",
+      "count_scripts": 1,
+      "count_reports": 7,
+      "count_daily": 7,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 8,
+      "files_scripts": 1,
+      "files_reports": 5,
+      "file_coverage": 6,
+      "sample_contexts": [
+        "了 13 款本地模型横向对比，Gemma-4、Qwen3.6 等 Q4_K_M 量化版本都测了一遍。免费模型渠道也有人汇总了，Google Gemini API 每",
+        "光，支持18种语言含简体中文 - **本地模型评测热**：13款模型Q4_K_M量化横向对比，社区探索免费模型渠道 ## 新内容 ### OpenAI 生态动荡",
+        "13个本地部署模型横向对比评测，包括Gemma-4、Qwen3.6等Q4_K_M量化版本（浏览 336 / 回复 14） - **总结一下哪里可以白嫖到一些模型**"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-05-28/scripts/script.md",
+        "data/reports/2026-05-28.md",
+        "data/reports/2026-06-05.md"
+      ],
+      "suggested_label": "candidate"
+    },
+    {
+      "term": "MoE（混合专家）",
+      "normalized_id": "moe",
+      "category": "模型架构",
+      "difficulty": "进阶",
+      "count_scripts": 3,
+      "count_reports": 4,
+      "count_daily": 4,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 7,
+      "files_scripts": 2,
+      "files_reports": 4,
+      "file_coverage": 6,
+      "sample_contexts": [
+        "MAI Thinking 一和 MAI Code 一 Flash 两个自研模型。MoE 架构，激活参数 35B，总参数达到 1T，性能接近 Sonnet 四点六水平，",
+        "nking 一和 MAI Code 一 Flash 两个自研模型。MoE 架构，激活参数 35B，总参数达到 1T，性能接近 Sonnet 四点六水平，而且没用任何第三",
+        "-Thinking-1和MAI-Code-1-Flash，采用MoE架构，35B激活参数，总参数1T。性能接近Sonnet 4.6水平，而且没有使用第三方模型蒸馏。这标"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-06-03/scripts/video-script.md",
+        "news-pipeline/weekly/2026-06-01~2026-06-07/scripts/script.md",
+        "data/reports/2026-06-03.md",
+        "data/reports/2026-06-21.md"
+      ],
+      "suggested_label": "candidate"
+    },
+    {
+      "term": "Fine-tune（微调）",
+      "normalized_id": "finetune",
+      "category": "模型训练",
+      "difficulty": "进阶",
+      "count_scripts": 4,
+      "count_reports": 3,
+      "count_daily": 2,
+      "count_weekly": 0,
+      "count_monthly": 1,
+      "count_total": 7,
+      "files_scripts": 2,
+      "files_reports": 3,
+      "file_coverage": 5,
+      "sample_contexts": [
+        "一条一条给你捋清楚。 --- ## Scene 2 — GLM-5.2 登顶微调榜「没蒸馏 Claude」 标题：GLM-5.2 登顶微调榜，被质疑蒸馏 Cl",
+        "GLM-5.2 登顶微调榜「没蒸馏 Claude」 标题：GLM-5.2 登顶微调榜，被质疑蒸馏 Claude What：智谱的 GLM-5.2 在一个微调排行",
+        "在改变竞争格局。 **Now What（值不值得跟进）**：GLM开源后的下游微调和部署生态会快速扩张，DeepSeek新模型正式发布后横向评测潮不可避免。 #"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-07-07/scripts/script-2026-07-07.md",
+        "news-pipeline/monthly/2026-06/scripts/script-2026-06.md",
+        "data/monthly/2026-06.md",
+        "data/reports/2026-07-07.md"
+      ],
+      "suggested_label": "candidate"
+    },
+    {
+      "term": "上下文压缩",
+      "normalized_id": "context_compression",
+      "category": "推理部署",
+      "difficulty": "进阶",
+      "count_scripts": 2,
+      "count_reports": 4,
+      "count_daily": 4,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 6,
+      "files_scripts": 1,
+      "files_reports": 3,
+      "file_coverage": 4,
+      "sample_contexts": [
+        "aude这波操作，到底是安全策略还是误伤？ --- ## 事件4：CodeX自动压缩耗时（场景6） 用Codex写代码的朋友最近发现一个新坑——每次自动压缩要十分",
+        "deX自动压缩耗时（场景6） 用Codex写代码的朋友最近发现一个新坑——每次自动压缩要十分钟以上。本来写代码就烧token，现在还得等它压缩。有人调侃：这是Open",
+        "- Opus 4.8实锤致命BUG（报错型+空白型），新版Claude Code上下文压缩，申诉成功率极低。 4. **国产模型API生态加速：芒果TV限时免费九大模型"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-06-09/scripts/script-2026-06-09.md",
+        "data/reports/2026-05-30.md",
+        "data/reports/2026-06-09.md"
+      ],
+      "suggested_label": "candidate"
+    },
+    {
+      "term": "API Key（密钥）",
+      "normalized_id": "api_key",
+      "category": "安全",
+      "difficulty": "入门",
+      "count_scripts": 1,
+      "count_reports": 4,
+      "count_daily": 4,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 5,
+      "files_scripts": 1,
+      "files_reports": 3,
+      "file_coverage": 4,
+      "sample_contexts": [
+        "12s） What：NewAPI 被发现严重安全漏洞，攻击者可绕过认证直接获取 API 密钥。 So What：所有低于最新版本的实例都面临数据泄露风险，这是开源项目的供应",
+        "没有必要追赶AI浪潮** — （343 浏览） - **Opencode Go API Keys** — （327 浏览） - **高质量翻译模型选择** — （299 浏览）",
+        "2)） - **Linux / VS Code Server 下为 Codex API Key 模式开启 Fast** — VS Code 中开启 Codex Fast 模式"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-07-08/scripts/script-2026-07-08.md",
+        "data/reports/2026-06-09.md",
+        "data/reports/2026-06-12.md"
+      ],
+      "suggested_label": "candidate"
+    },
+    {
+      "term": "提示词注入",
+      "normalized_id": "prompt_injection",
+      "category": "安全",
+      "difficulty": "进阶",
+      "count_scripts": 0,
+      "count_reports": 4,
+      "count_daily": 4,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 4,
+      "files_scripts": 0,
+      "files_reports": 4,
+      "file_coverage": 4,
+      "sample_contexts": [
+        "在账号能白嫖吗？或者有没有低价...（浏览 801） - **【细思极恐】中转站提示词注入** — ...（浏览 645） - **pro20x没有重置次数和邀请按钮，要",
+        ".8 恶性Bug** — Opus 4.8 在长会话中会混淆用户消息，出现虚假\"提示词注入攻击\"描述（浏览 553 / 8 回复） - **Anthropic 将扩大 K",
+        "333） - **【AI 与 AI 安全】如何快速 hack 开源模型** — 提示词注入原理深度解析（[2454325](https://linux.do/t/topi"
+      ],
+      "example_paths": [
+        "data/reports/2026-06-15.md",
+        "data/reports/2026-06-17.md"
+      ],
+      "suggested_label": "candidate"
+    },
+    {
+      "term": "Computer Use",
+      "normalized_id": "computer_use",
+      "category": "模型应用",
+      "difficulty": "进阶",
+      "count_scripts": 0,
+      "count_reports": 4,
+      "count_daily": 4,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 4,
+      "files_scripts": 0,
+      "files_reports": 3,
+      "file_coverage": 3,
+      "sample_contexts": [
+        "0 | ## 今日技术趋势 1. **Codex生态大更新：Windows Computer Use+手机远程控制** - 相关帖子：#2271681（608浏览/10回复）",
+        "如何让 Codex 指挥 Claude 工作，实现多 Agent 协作 - **Computer Use 插件** — 用户测试 Codex 的 computer use 功能，反馈\"",
+        "协作 - **Computer Use 插件** — 用户测试 Codex 的 computer use 功能，反馈\"目前测试了一些高难度的复杂的流程还没出错过\" ### Claud"
+      ],
+      "example_paths": [
+        "data/reports/2026-05-30.md",
+        "data/reports/2026-06-25.md"
+      ],
+      "suggested_label": "candidate"
+    },
+    {
+      "term": "延迟 Latency",
+      "normalized_id": "latency",
+      "category": "推理部署",
+      "difficulty": "入门",
+      "count_scripts": 0,
+      "count_reports": 4,
+      "count_daily": 4,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 4,
+      "files_scripts": 0,
+      "files_reports": 3,
+      "file_coverage": 3,
+      "sample_contexts": [
+        "2） - **codex负责人Tibo宣布正在调查延迟升高问题** — 用户反映首字延迟近十秒，Codex团队已介入调查（浏览 1.4k / 回复 30） - **中转",
+        "] Antigravity里面的Gemini3.5flash怎么这么快** — 首字延迟极低，与 mimo 同级（浏览 654） - **[2527200] gemin",
+        "uperGrok反代再通过Cursor++在Cursor中使用Grok-4.5。首字延迟经常几十秒而在GrokBuild中快很多（浏览 469） - **印度Super"
+      ],
+      "example_paths": [
+        "data/reports/2026-05-28.md",
+        "data/reports/2026-07-06.md"
+      ],
+      "suggested_label": "candidate"
+    },
+    {
+      "term": "推测解码",
+      "normalized_id": "speculative_decoding",
+      "category": "推理部署",
+      "difficulty": "专业",
+      "count_scripts": 0,
+      "count_reports": 5,
+      "count_daily": 5,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 5,
+      "files_scripts": 0,
+      "files_reports": 2,
+      "file_coverage": 2,
+      "sample_contexts": [
+        "5.4k views） 4. **DeepSeek 联合北大发布 DSpark 推测解码框架** -- V4 单用户生成速度提升 60%-85%，但社区反映降智明显、频",
+        "DeepSeek 动态 - **DeepSeek 联合北大发布 DSpark 推测解码框架** -- V4 单用户生成速度提升 60%-85%（[2484694](h",
+        "1 Pro 与特斯拉中国达成合作，DeepSeek 联合北大发布 DSpark 推测解码框架但稳定性堪忧。AI 编程工具生态持续洗牌，Codex 爆出 SSD 杀手级"
+      ],
+      "example_paths": [
+        "data/reports/2026-06-28.md",
+        "data/reports/2026-W26.md"
+      ],
+      "suggested_label": "candidate"
+    },
+    {
+      "term": "A2A（智能体互联）",
+      "normalized_id": "a2a",
+      "category": "模型应用",
+      "difficulty": "进阶",
+      "count_scripts": 1,
+      "count_reports": 3,
+      "count_daily": 3,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 4,
+      "files_scripts": 1,
+      "files_reports": 1,
+      "file_coverage": 2,
+      "sample_contexts": [
+        "选择。 开源生图的军备竞赛，又多了一个狠角色。 --- ## 场景5：微信 A2A 助手 **时长**: 15s **配音**: 微信要搞大事了。 联合手机厂",
+        "宝渠道已到账（#2306815，238 浏览） 5. **微信联合手机厂商推出 A2A 助手功能** — 系统 AI 可直接发送微信消息与音视频通话（#2304281",
+        "I 监管新动向（浏览 1.2k / 回复 17） - **微信联合手机厂商推出 A2A 助手功能** — 系统 AI 可直接操作微信（浏览 251 / 回复 3） -"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-06-05/scripts/script-2026-06-05.md",
+        "data/reports/2026-06-05.md"
+      ],
+      "suggested_label": "candidate"
+    },
+    {
+      "term": "Diffusion（扩散模型）",
+      "normalized_id": "diffusion",
+      "category": "模型架构",
+      "difficulty": "进阶",
+      "count_scripts": 1,
+      "count_reports": 1,
+      "count_daily": 1,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 2,
+      "files_scripts": 1,
+      "files_reports": 1,
+      "file_coverage": 2,
+      "sample_contexts": [
+        "经在大量使用Fable-5写报告了，这模型是真能打。 ## 第四段：谷歌开源 Diffusion Gemma 谷歌这次是真放大招。开源了Diffusion Gemma，把Dif",
+        "//linux.do/t/2370135) 1188浏览） 4. **谷歌开源 Diffusion Gemma** — H100上跑出1000+tps，Diffusion架构突破"
+      ],
+      "example_paths": [
+        "news-pipeline/2026-06-11/scripts/script-2026-06-11.md",
+        "data/reports/2026-06-11.md"
+      ],
+      "suggested_label": "candidate"
+    },
+    {
+      "term": "预训练",
+      "normalized_id": "pretraining",
+      "category": "模型训练",
+      "difficulty": "入门",
+      "count_scripts": 0,
+      "count_reports": 2,
+      "count_daily": 2,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 2,
+      "files_scripts": 0,
+      "files_reports": 2,
+      "file_coverage": 2,
+      "sample_contexts": [
+        "**UCLA副教授顾全全官宣离开字节跳动Seed** — 曾领衔AI制药与大模型预训练优化（浏览 176 / 回复 0） - **英伟达AIPC发布会** — AIP",
+        "5 Pro 传 7 月 17 日发布** — 放弃微调 2.5 Pro 改为全新预训练，重点提升前端开发能力（浏览 858 | [2548603](https://l"
+      ],
+      "example_paths": [
+        "data/reports/2026-06-03.md",
+        "data/reports/2026-07-09.md"
+      ],
+      "suggested_label": "candidate"
+    },
+    {
+      "term": "Prompt 工程",
+      "normalized_id": "prompt_engineering",
+      "category": "模型应用",
+      "difficulty": "入门",
+      "count_scripts": 0,
+      "count_reports": 2,
+      "count_daily": 2,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 2,
+      "files_scripts": 0,
+      "files_reports": 2,
+      "file_coverage": 2,
+      "sample_contexts": [
+        "s） - **内嵌 HTML 代替 Markdown 提示词 4.1** -- 提示词工程的新思路（[2485131](https://linux.do/t/248513",
+        "- **[2528879] Agent应用开发是阶段性产物吗？** — 类似 prompt 工程师的阶段性讨论（浏览 1600） - **[2527550] 将上下文转成图像让"
+      ],
+      "example_paths": [
+        "data/reports/2026-06-28.md",
+        "data/reports/2026-07-06.md"
+      ],
+      "suggested_label": "candidate"
+    },
+    {
+      "term": "RAG（检索增强生成）",
+      "normalized_id": "rag",
+      "category": "模型应用",
+      "difficulty": "进阶",
+      "count_scripts": 0,
+      "count_reports": 2,
+      "count_daily": 2,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 2,
+      "files_scripts": 0,
+      "files_reports": 2,
+      "file_coverage": 2,
+      "sample_contexts": [
+        "适用于企业自建rag系统的知识库管理平台** — 通用知识库管理平台，用于自建 RAG 知识库场景。支持多种文档解析、灵活切分策略、混合检索，可对接多种LLM。...",
+        "架构** — 公司要搭建一个AI中台架构，前端dify，后端MCP、Agent、RAG、vLLM...（浏览 128） - [2516649] **Safepal B"
+      ],
+      "example_paths": [
+        "data/reports/2026-06-08.md",
+        "data/reports/2026-07-03.md"
+      ],
+      "suggested_label": "candidate"
+    },
+    {
+      "term": "Tokenizer（分词器）",
+      "normalized_id": "tokenizer",
+      "category": "模型架构",
+      "difficulty": "进阶",
+      "count_scripts": 0,
+      "count_reports": 2,
+      "count_daily": 2,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 2,
+      "files_scripts": 0,
+      "files_reports": 1,
+      "file_coverage": 1,
+      "sample_contexts": [
+        "正式发布** — Anthropic 发布新一代 Sonnet 模型，采用新 tokenizer，性能对标 GLM 5.2（浏览 2.2k） - **Fable 5 即将恢复供",
+        "*Claude Sonnet 5 正式发布** — 价格维持 3/15，采用新 tokenizer，8/31 前有 2/10 折扣（浏览 2.2k） - **Claude Son"
+      ],
+      "example_paths": [
+        "data/reports/2026-07-01.md"
+      ],
+      "suggested_label": "candidate"
+    },
+    {
+      "term": "KV Cache",
+      "normalized_id": "kv_cache",
+      "category": "推理部署",
+      "difficulty": "专业",
+      "count_scripts": 0,
+      "count_reports": 1,
+      "count_daily": 1,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 1,
+      "files_scripts": 0,
+      "files_reports": 1,
+      "file_coverage": 1,
+      "sample_contexts": [
+        "746] - **关于未来 LLM 的缓存会不会非常大，命中率非常高？** — KV Cache 与算力需求讨论（浏览 537）[2535854] - **不可复制的公共品——"
+      ],
+      "example_paths": [
+        "data/reports/2026-07-07.md"
+      ],
+      "suggested_label": "candidate"
+    },
+    {
+      "term": "Scaling Law",
+      "normalized_id": "scaling_law",
+      "category": "模型训练",
+      "difficulty": "专业",
+      "count_scripts": 0,
+      "count_reports": 1,
+      "count_daily": 1,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 1,
+      "files_scripts": 0,
+      "files_reports": 1,
+      "file_coverage": 1,
+      "sample_contexts": [
+        "Scaling Laws曲线有bug** — 前 OpenAI 研究员指出原始 Scaling Laws 有错误（浏览 585） ### 其他话题 - **[2529053] AI"
+      ],
+      "example_paths": [
+        "data/reports/2026-07-06.md"
+      ],
+      "suggested_label": "candidate"
+    },
+    {
+      "term": "Transformer",
+      "normalized_id": "transformer",
+      "category": "模型架构",
+      "difficulty": "专业",
+      "count_scripts": 0,
+      "count_reports": 1,
+      "count_daily": 1,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 1,
+      "files_scripts": 0,
+      "files_reports": 1,
+      "file_coverage": 1,
+      "sample_contexts": [
+        "过高的感慨（浏览 263 / 回复 4） - **AI与AI安全** — 科普 Transformer 原理系列文章开篇（浏览 142 / 回复 1） - **豆包上可以抽出1Gbp"
+      ],
+      "example_paths": [
+        "data/reports/2026-06-16.md"
+      ],
+      "suggested_label": "candidate"
+    },
+    {
+      "term": "Alignment（对齐）",
+      "normalized_id": "alignment",
+      "category": "安全",
+      "difficulty": "进阶",
+      "count_scripts": 0,
+      "count_reports": 0,
+      "count_daily": 0,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 0,
+      "files_scripts": 0,
+      "files_reports": 0,
+      "file_coverage": 0,
+      "sample_contexts": [],
+      "example_paths": [],
+      "suggested_label": "skip"
+    },
+    {
+      "term": "Attention（注意力）",
+      "normalized_id": "attention",
+      "category": "模型架构",
+      "difficulty": "专业",
+      "count_scripts": 0,
+      "count_reports": 0,
+      "count_daily": 0,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 0,
+      "files_scripts": 0,
+      "files_reports": 0,
+      "file_coverage": 0,
+      "sample_contexts": [],
+      "example_paths": [],
+      "suggested_label": "skip"
+    },
+    {
+      "term": "数据污染",
+      "normalized_id": "data_contamination",
+      "category": "评测",
+      "difficulty": "进阶",
+      "count_scripts": 0,
+      "count_reports": 0,
+      "count_daily": 0,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 0,
+      "files_scripts": 0,
+      "files_reports": 0,
+      "file_coverage": 0,
+      "sample_contexts": [],
+      "example_paths": [],
+      "suggested_label": "skip"
+    },
+    {
+      "term": "Embedding（向量嵌入）",
+      "normalized_id": "embedding",
+      "category": "模型应用",
+      "difficulty": "进阶",
+      "count_scripts": 0,
+      "count_reports": 0,
+      "count_daily": 0,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 0,
+      "files_scripts": 0,
+      "files_reports": 0,
+      "file_coverage": 0,
+      "sample_contexts": [],
+      "example_paths": [],
+      "suggested_label": "skip"
+    },
+    {
+      "term": "Human-in-the-loop",
+      "normalized_id": "human_in_the_loop",
+      "category": "安全",
+      "difficulty": "进阶",
+      "count_scripts": 0,
+      "count_reports": 0,
+      "count_daily": 0,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 0,
+      "files_scripts": 0,
+      "files_reports": 0,
+      "file_coverage": 0,
+      "sample_contexts": [],
+      "example_paths": [],
+      "suggested_label": "skip"
+    },
+    {
+      "term": "开源协议/商用许可",
+      "normalized_id": "license",
+      "category": "开源商业",
+      "difficulty": "入门",
+      "count_scripts": 0,
+      "count_reports": 0,
+      "count_daily": 0,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 0,
+      "files_scripts": 0,
+      "files_reports": 0,
+      "file_coverage": 0,
+      "sample_contexts": [],
+      "example_paths": [],
+      "suggested_label": "skip"
+    },
+    {
+      "term": "LoRA",
+      "normalized_id": "lora",
+      "category": "模型训练",
+      "difficulty": "专业",
+      "count_scripts": 0,
+      "count_reports": 0,
+      "count_daily": 0,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 0,
+      "files_scripts": 0,
+      "files_reports": 0,
+      "file_coverage": 0,
+      "sample_contexts": [],
+      "example_paths": [],
+      "suggested_label": "skip"
+    },
+    {
+      "term": "RLHF",
+      "normalized_id": "rlhf",
+      "category": "模型训练",
+      "difficulty": "进阶",
+      "count_scripts": 0,
+      "count_reports": 0,
+      "count_daily": 0,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 0,
+      "files_scripts": 0,
+      "files_reports": 0,
+      "file_coverage": 0,
+      "sample_contexts": [],
+      "example_paths": [],
+      "suggested_label": "skip"
+    },
+    {
+      "term": "Sandbox（沙箱）",
+      "normalized_id": "sandbox",
+      "category": "安全",
+      "difficulty": "进阶",
+      "count_scripts": 0,
+      "count_reports": 0,
+      "count_daily": 0,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 0,
+      "files_scripts": 0,
+      "files_reports": 0,
+      "file_coverage": 0,
+      "sample_contexts": [],
+      "example_paths": [],
+      "suggested_label": "skip"
+    },
+    {
+      "term": "SFT（监督微调）",
+      "normalized_id": "sft",
+      "category": "模型训练",
+      "difficulty": "进阶",
+      "count_scripts": 0,
+      "count_reports": 0,
+      "count_daily": 0,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 0,
+      "files_scripts": 0,
+      "files_reports": 0,
+      "file_coverage": 0,
+      "sample_contexts": [],
+      "example_paths": [],
+      "suggested_label": "skip"
+    },
+    {
+      "term": "结构化输出",
+      "normalized_id": "structured_output",
+      "category": "模型应用",
+      "difficulty": "进阶",
+      "count_scripts": 0,
+      "count_reports": 0,
+      "count_daily": 0,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 0,
+      "files_scripts": 0,
+      "files_reports": 0,
+      "file_coverage": 0,
+      "sample_contexts": [],
+      "example_paths": [],
+      "suggested_label": "skip"
+    },
+    {
+      "term": "合成数据",
+      "normalized_id": "synthetic_data",
+      "category": "模型训练",
+      "difficulty": "进阶",
+      "count_scripts": 0,
+      "count_reports": 0,
+      "count_daily": 0,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 0,
+      "files_scripts": 0,
+      "files_reports": 0,
+      "file_coverage": 0,
+      "sample_contexts": [],
+      "example_paths": [],
+      "suggested_label": "skip"
+    },
+    {
+      "term": "向量数据库",
+      "normalized_id": "vector_db",
+      "category": "模型应用",
+      "difficulty": "进阶",
+      "count_scripts": 0,
+      "count_reports": 0,
+      "count_daily": 0,
+      "count_weekly": 0,
+      "count_monthly": 0,
+      "count_total": 0,
+      "files_scripts": 0,
+      "files_reports": 0,
+      "file_coverage": 0,
+      "sample_contexts": [],
+      "example_paths": [],
+      "suggested_label": "skip"
+    }
+  ]
+}

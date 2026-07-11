@@ -1,0 +1,2283 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-07-12",
+  "reuse_gap_days": 14,
+  "narrator_agent": "ai-concept-narrator",
+  "corpus_extract": "extracts/term-frequency.json",
+  "concepts": [
+    {
+      "id": "agent",
+      "name": "Agent（智能体）",
+      "aliases": [
+        "智能体",
+        "AI Agent",
+        "Agents"
+      ],
+      "category": "模型应用",
+      "tier": 1,
+      "difficulty": "入门",
+      "status": "ready",
+      "one_liner": "不只聊天，还能自己规划步骤、调用工具去完成目标的 AI。",
+      "analogy": "请了个助理：你说目标，它自己查资料、点按钮、改文件，不用你一步步指挥。",
+      "script_15s": "今天的专业锚点：什么是 Agent？简单说，它不只陪你聊天，还能自己规划步骤、调用工具把事做完。就好比请了个助理，你只说目标，它自己去跑。所以权限一大，就得加边界和确认。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-07-12",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "Agent",
+        "智能体",
+        "AI Agent",
+        "自主执行"
+      ],
+      "corpus": {
+        "count_total": 226,
+        "count_scripts": 37,
+        "count_reports": 189,
+        "top_paths": [
+          "news-pipeline/2026-05-28/scripts/script.md",
+          "news-pipeline/2026-06-05/scripts/script-2026-06-05.md",
+          "news-pipeline/2026-06-10/scripts/script-2026-06-10.md",
+          "data/monthly/2026-06.md",
+          "data/reports/2026-05-25.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "权限与删库风险",
+          "和聊天模型的区别"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "token",
+      "name": "Token",
+      "aliases": [
+        "tokens",
+        "令牌"
+      ],
+      "category": "模型基础",
+      "tier": 1,
+      "difficulty": "入门",
+      "status": "ready",
+      "one_liner": "模型处理文本时切分出的最小计费与计算单元。",
+      "analogy": "像手机流量按 KB 计费，AI 按 token 计费。",
+      "script_15s": "今天的专业锚点：Token 是什么？它是模型读写文字时的最小字块，也是计费单位。就好比流量按 KB 算，AI 按 token 算。所以同样一句话，不同分词方式，花费和速度都会不一样。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-07-12",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "token",
+        "Token",
+        "按量计费",
+        "token 消耗"
+      ],
+      "corpus": {
+        "count_total": 108,
+        "count_scripts": 8,
+        "count_reports": 100,
+        "top_paths": [
+          "news-pipeline/2026-06-09/scripts/script-2026-06-09.md",
+          "news-pipeline/2026-06-17/scripts/video-script-2026-06-17.md",
+          "news-pipeline/2026-06-19/scripts/script-2026-06-19.md",
+          "data/monthly/2026-06.md",
+          "data/reports/2026-05-25.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "计费关系",
+          "中英分词差异"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "context_window",
+      "name": "上下文窗口",
+      "aliases": [
+        "Context Window",
+        "长上下文",
+        "context window"
+      ],
+      "category": "模型基础",
+      "tier": 1,
+      "difficulty": "入门",
+      "status": "ready",
+      "one_liner": "模型一次对话里能同时“看见”并处理的信息量上限。",
+      "analogy": "工作台桌面：桌子越大，一次能摊开的文件越多。",
+      "script_15s": "今天的专业锚点：上下文窗口是什么？它是模型一次能装进临时记忆的信息上限。就好比桌面越大，能同时摊开的文件越多。窗口变大，整库代码、长文档才塞得进一次对话。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-07-12",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "上下文窗口",
+        "context window",
+        "长上下文",
+        "百万上下文",
+        "128K",
+        "200K"
+      ],
+      "corpus": {
+        "count_total": 28,
+        "count_scripts": 8,
+        "count_reports": 20,
+        "top_paths": [
+          "news-pipeline/2026-06-05/scripts/script-2026-06-05.md",
+          "news-pipeline/2026-06-18/scripts/script-2026-06-18.md",
+          "news-pipeline/2026-06-30/scripts/script-2026-06-30.md",
+          "data/reports/2026-05-27.md",
+          "data/reports/2026-06-05.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "为什么越大越贵",
+          "长文档/代码库场景"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "distillation",
+      "name": "蒸馏",
+      "aliases": [
+        "distill",
+        "model distillation"
+      ],
+      "category": "模型训练",
+      "tier": 1,
+      "difficulty": "进阶",
+      "status": "ready",
+      "one_liner": "用大模型的输出或行为去训练更小模型，迁移能力并降成本。",
+      "analogy": "学霸做题，学弟照着学思路；学得像，但不等于自己推导过。",
+      "script_15s": "今天的专业锚点：什么是模型蒸馏？就是让大模型当老师，小模型学它的回答方式，好用又更省。就好比学霸带练，徒弟进步快。所以能力接近时，也常引来训练数据与归属的争议。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-07-12",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "蒸馏",
+        "distill",
+        "distillation",
+        "身份错乱"
+      ],
+      "corpus": {
+        "count_total": 47,
+        "count_scripts": 17,
+        "count_reports": 30,
+        "top_paths": [
+          "news-pipeline/2026-05-29/scripts/script.md",
+          "news-pipeline/2026-06-03/scripts/video-script.md",
+          "news-pipeline/2026-06-26/scripts/script-2026-06-26.md",
+          "data/monthly/2026-06.md",
+          "data/reports/2026-05-29.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "和抄袭指控",
+          "小模型为何像大模型"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "multimodal",
+      "name": "多模态",
+      "aliases": [
+        "Multi-Modal",
+        "multimodal"
+      ],
+      "category": "模型基础",
+      "tier": 1,
+      "difficulty": "入门",
+      "status": "ready",
+      "one_liner": "同一模型能理解和生成多种模态，如文本、图像、音频、视频。",
+      "analogy": "从只能读盲文，到长了眼睛和耳朵。",
+      "script_15s": "今天的专业锚点：多模态是什么？就是 AI 不只懂字，还能看图、听声音，甚至理解视频。就好比从只能读文字，到长了眼睛和耳朵。它让 AI 真正接进截图、单据和真实工作流。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-07-12",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "多模态",
+        "multimodal",
+        "看图",
+        "语音输入"
+      ],
+      "corpus": {
+        "count_total": 46,
+        "count_scripts": 7,
+        "count_reports": 39,
+        "top_paths": [
+          "news-pipeline/2026-06-04/scripts/scripts.md",
+          "news-pipeline/2026-06-06/scripts/script-2026-06-06.md",
+          "news-pipeline/2026-06-10/scripts/script-2026-06-10.md",
+          "data/reports/2026-05-29.md",
+          "data/reports/2026-05-30.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "工作流价值"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "cot",
+      "name": "Chain-of-Thought（思维链）",
+      "aliases": [
+        "CoT",
+        "思维链",
+        "思考强度",
+        "xhigh"
+      ],
+      "category": "推理",
+      "tier": 1,
+      "difficulty": "进阶",
+      "status": "ready",
+      "one_liner": "让模型先写出中间推理步骤再给答案，以提高复杂任务正确率。",
+      "analogy": "老师要求写出解题过程，比直接填答案更不容易跳步出错。",
+      "script_15s": "今天的专业锚点：思维链 CoT 是什么？就是让模型先把推理步骤写出来，再给结论。就好比考试要写过程，不靠蒙最终答案。思考强度调高，往往更稳，但更慢、更费 token。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-07-12",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "Chain-of-Thought",
+        "CoT",
+        "思维链",
+        "思考强度",
+        "xhigh",
+        "reasoning"
+      ],
+      "corpus": {
+        "count_total": 41,
+        "count_scripts": 6,
+        "count_reports": 35,
+        "top_paths": [
+          "news-pipeline/2026-06-17/scripts/video-script-2026-06-17.md",
+          "news-pipeline/2026-06-19/scripts/script-2026-06-19.md",
+          "news-pipeline/2026-06-29/scripts/video-script-2026-06-29.md",
+          "data/monthly/2026-06.md",
+          "data/reports/2026-05-27.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "思考强度设置",
+          "为何更准但更慢"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "moe",
+      "name": "MoE（混合专家）",
+      "aliases": [
+        "混合专家",
+        "Mixture of Experts",
+        "MoE 架构"
+      ],
+      "category": "模型架构",
+      "tier": 1,
+      "difficulty": "进阶",
+      "status": "ready",
+      "one_liner": "模型内有多个专家子网络，每次只激活其中一部分来回答。",
+      "analogy": "医院分诊：不叫全院医生会诊，只派对症的几位专家。",
+      "script_15s": "今天的专业锚点：MoE 混合专家是什么？模型里有很多专家模块，每次只叫醒相关的几位来答。就好比医院先分诊，不把全院医生都拉来。所以总参数可以很大，单次计算却更省。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-07-12",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "MoE",
+        "混合专家",
+        "激活参数",
+        "总参数"
+      ],
+      "corpus": {
+        "count_total": 7,
+        "count_scripts": 3,
+        "count_reports": 4,
+        "top_paths": [
+          "news-pipeline/2026-06-03/scripts/video-script.md",
+          "news-pipeline/weekly/2026-06-01~2026-06-07/scripts/script.md",
+          "data/reports/2026-06-03.md",
+          "data/reports/2026-06-21.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "激活参数 vs 总参数",
+          "成本优势"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "mcp",
+      "name": "MCP（Model Context Protocol）",
+      "aliases": [
+        "Model Context Protocol"
+      ],
+      "category": "模型应用",
+      "tier": 1,
+      "difficulty": "进阶",
+      "status": "ready",
+      "one_liner": "一种让 AI 应用以标准方式连接外部工具与数据源的协议。",
+      "analogy": "USB 接口：外设各异，插口统一就能连。",
+      "script_15s": "今天的专业锚点：MCP 是什么？它是让 AI 用统一方式接数据库、文件、浏览器等工具的协议。就好比 USB，设备不同，接口标准。有了它，Agent 换工具不用每次从零适配。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-07-12",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "MCP",
+        "Model Context Protocol"
+      ],
+      "corpus": {
+        "count_total": 19,
+        "count_scripts": 0,
+        "count_reports": 19,
+        "top_paths": [
+          "data/reports/2026-05-27.md",
+          "data/reports/2026-06-11.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "和 Function Calling 关系",
+          "工具生态"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "hallucination",
+      "name": "模型幻觉",
+      "aliases": [
+        "幻觉",
+        "hallucination"
+      ],
+      "category": "模型基础",
+      "tier": 1,
+      "difficulty": "入门",
+      "status": "ready",
+      "one_liner": "模型生成看起来合理但与事实或输入不符的内容。",
+      "analogy": "口才很好的人一本正经说错细节。",
+      "script_15s": "今天的专业锚点：模型幻觉是什么？就是答得像真的，其实事实不对或凭空编造。就好比口才很好却记错细节。重要结论要核对来源，或用检索把证据塞进上下文。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-07-12",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "幻觉",
+        "hallucination",
+        "胡说八道"
+      ],
+      "corpus": {
+        "count_total": 20,
+        "count_scripts": 2,
+        "count_reports": 18,
+        "top_paths": [
+          "news-pipeline/2026-06-22/scripts/script-2026-06-22.md",
+          "data/reports/2026-06-12.md",
+          "data/reports/2026-06-14.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "如何缓解",
+          "和 RAG 关系"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "benchmark",
+      "name": "Benchmark（评测跑分）",
+      "aliases": [
+        "跑分",
+        "评测",
+        "Arena"
+      ],
+      "category": "评测",
+      "tier": 1,
+      "difficulty": "入门",
+      "status": "ready",
+      "one_liner": "用固定题集量化比较模型能力的测试基准。",
+      "analogy": "模拟考：方便排名，不等于真实上班表现。",
+      "script_15s": "今天的专业锚点：Benchmark 评测是什么？就是用一套固定题目给模型打分、做横评。就好比模拟考，方便比名次。选模型时，跑分只是参考，真实项目和盲测更要紧。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-07-12",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "Benchmark",
+        "跑分",
+        "Arena",
+        "评测"
+      ],
+      "corpus": {
+        "count_total": 18,
+        "count_scripts": 4,
+        "count_reports": 14,
+        "top_paths": [
+          "news-pipeline/2026-05-27/scripts/video-script.md",
+          "news-pipeline/2026-06-22/scripts/script-2026-06-22.md",
+          "news-pipeline/scripts/2026-05-26.md",
+          "data/monthly/2026-06.md",
+          "data/reports/2026-05-26.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "为何不能只看跑分"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "data_contamination",
+      "name": "数据污染",
+      "aliases": [
+        "刷榜",
+        "测试集泄露",
+        "data contamination"
+      ],
+      "category": "评测",
+      "tier": 1,
+      "difficulty": "进阶",
+      "status": "ready",
+      "one_liner": "评测题或其高度相似内容进入训练数据，导致分数虚高。",
+      "analogy": "期末原题混进了平时练习册。",
+      "script_15s": "今天的专业锚点：什么是数据污染？评测题或很像的题在训练时就被模型见过，分会虚高。就好比考试前练过原题。所以跑分很猛、一上手真实项目就翻车时，要怀疑污染。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-07-12",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "数据污染",
+        "刷榜",
+        "测试集泄露",
+        "contamination"
+      ],
+      "corpus": {
+        "count_total": 0,
+        "count_scripts": 0,
+        "count_reports": 0,
+        "top_paths": []
+      },
+      "angles": {
+        "available": [
+          "和实测差距"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "function_calling",
+      "name": "Function Calling（工具调用）",
+      "aliases": [
+        "工具调用",
+        "tool use",
+        "tool calling"
+      ],
+      "category": "模型应用",
+      "tier": 1,
+      "difficulty": "进阶",
+      "status": "ready",
+      "one_liner": "模型按约定格式发起对外部函数/API 的调用，再根据结果继续回答。",
+      "analogy": "人会打电话问前台，而不是凭记忆瞎报号。",
+      "script_15s": "今天的专业锚点：Function Calling 是什么？模型不只生成文字，还能按格式去调外部函数或 API。就好比它会打电话查实时信息，而不是死记硬背。这是 Agent 真正能“动手”的基础。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-07-12",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "Function Calling",
+        "工具调用",
+        "tool use",
+        "tool calling"
+      ],
+      "corpus": {
+        "count_total": 10,
+        "count_scripts": 1,
+        "count_reports": 9,
+        "top_paths": [
+          "news-pipeline/2026-06-10/scripts/script-2026-06-10.md",
+          "data/reports/2026-05-27.md",
+          "data/reports/2026-05-29.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "Agent 的基础能力"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "open_weights",
+      "name": "开源模型 / 开放权重",
+      "aliases": [
+        "开放权重",
+        "开源模型",
+        "open weight"
+      ],
+      "category": "开源商业",
+      "tier": 1,
+      "difficulty": "入门",
+      "status": "ready",
+      "one_liner": "模型权重公开可下载，允许本地或私有化部署与再分发（视协议而定）。",
+      "analogy": "菜谱公开：你可以在自己厨房做，怎么卖还看授权。",
+      "script_15s": "今天的专业锚点：开放权重是什么？就是模型参数可以下载到自己机器上跑。就好比菜谱公开，厨房你做主。注意：开源权重不等于任意商用，还要看许可证。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-07-12",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "开源模型",
+        "开放权重",
+        "open-weight",
+        "open source model"
+      ],
+      "corpus": {
+        "count_total": 21,
+        "count_scripts": 6,
+        "count_reports": 15,
+        "top_paths": [
+          "news-pipeline/2026-06-21/scripts/script-2026-06-21.md",
+          "news-pipeline/2026-06-24/scripts/video-script-2026-06-24.md",
+          "news-pipeline/2026-07-01/scripts/script-2026-07-01-condensed.md",
+          "data/reports/2026-05-26.md",
+          "data/reports/2026-06-05.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "开源不等于免费商用"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "license",
+      "name": "开源商用许可",
+      "aliases": [
+        "Apache 2.0",
+        "商用许可",
+        "开源协议"
+      ],
+      "category": "开源商业",
+      "tier": 1,
+      "difficulty": "入门",
+      "status": "ready",
+      "one_liner": "规定模型与代码能否商用、改、再分发的法律条款。",
+      "analogy": "租房合同：能住、能转租，条款写得清清楚楚。",
+      "script_15s": "今天的专业锚点：开源商用许可是什么？它写明模型能不能商用、修改和再分发。就好比合同条款，不是口头“开源就随便用”。选 Apache 类协议，中小团队私有化落地才更安心。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-07-12",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "Apache 2.0",
+        "开源协议",
+        "商用许可",
+        "允许商用"
+      ],
+      "corpus": {
+        "count_total": 0,
+        "count_scripts": 0,
+        "count_reports": 0,
+        "top_paths": []
+      },
+      "angles": {
+        "available": [
+          "对企业的意义"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "api_key",
+      "name": "API Key（密钥）",
+      "aliases": [
+        "API密钥",
+        "API 密钥",
+        "密钥泄露"
+      ],
+      "category": "安全",
+      "tier": 1,
+      "difficulty": "入门",
+      "status": "ready",
+      "one_liner": "调用云端模型服务时的身份与计费凭证。",
+      "analogy": "家门钥匙：丢了别人就能进屋刷你的额度。",
+      "script_15s": "今天的专业锚点：API Key 是什么？它是调用模型服务的钥匙，也是计费凭证。就好比家门钥匙，挂在大门外等于等人进屋。正确做法是放服务端环境变量，别写进前端或公开仓库。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-07-12",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "API Key",
+        "API密钥",
+        "密钥泄露",
+        "额度被刷"
+      ],
+      "corpus": {
+        "count_total": 5,
+        "count_scripts": 1,
+        "count_reports": 4,
+        "top_paths": [
+          "news-pipeline/2026-07-08/scripts/script-2026-07-08.md",
+          "data/reports/2026-06-09.md",
+          "data/reports/2026-06-12.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "泄露怎么防"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "finetune",
+      "name": "Fine-tune（微调）",
+      "aliases": [
+        "微调",
+        "fine-tuning",
+        "fine tune"
+      ],
+      "category": "模型训练",
+      "tier": 1,
+      "difficulty": "进阶",
+      "status": "ready",
+      "one_liner": "在通用模型上用领域数据继续训练，使行为贴合特定任务。",
+      "analogy": "通才读完专科培训，变成岗位熟手。",
+      "script_15s": "今天的专业锚点：微调 Fine-tune 是什么？在通用模型上用你的数据再训练，让它更懂行。就好比大学生去上岗前集训。适合稳定口径和风格；知识常变时，往往更该配检索。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-07-12",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "微调",
+        "fine-tune",
+        "fine tuning",
+        "微调排行榜"
+      ],
+      "corpus": {
+        "count_total": 7,
+        "count_scripts": 4,
+        "count_reports": 3,
+        "top_paths": [
+          "news-pipeline/2026-07-07/scripts/script-2026-07-07.md",
+          "news-pipeline/monthly/2026-06/scripts/script-2026-06.md",
+          "data/monthly/2026-06.md",
+          "data/reports/2026-07-07.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "和 RAG 怎么选"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "rag",
+      "name": "RAG（检索增强生成）",
+      "aliases": [
+        "检索增强",
+        "retrieval augmented"
+      ],
+      "category": "模型应用",
+      "tier": 1,
+      "difficulty": "进阶",
+      "status": "ready",
+      "one_liner": "先检索外部知识再生成回答，把最新或私有资料注入上下文。",
+      "analogy": "开卷考试：允许边翻资料边答。",
+      "script_15s": "今天的专业锚点：RAG 是什么？先去知识库检索相关片段，再让模型据此回答。就好比开卷考试，现查现答。企业私有文档、制度更新频繁时，它比反复重训更划算。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-07-12",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "RAG",
+        "检索增强",
+        "知识库"
+      ],
+      "corpus": {
+        "count_total": 2,
+        "count_scripts": 0,
+        "count_reports": 2,
+        "top_paths": [
+          "data/reports/2026-06-08.md",
+          "data/reports/2026-07-03.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "和微调对比",
+          "企业知识库"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "guardrails",
+      "name": "安全护栏 / 过滤器",
+      "aliases": [
+        "安全过滤器",
+        "guardrail",
+        "对齐过滤"
+      ],
+      "category": "安全",
+      "tier": 1,
+      "difficulty": "进阶",
+      "status": "ready",
+      "one_liner": "对模型输入输出做安全与合规约束的策略与过滤器。",
+      "analogy": "安保与门禁：该拦的拦住，有时也会误拦正常人。",
+      "script_15s": "今天的专业锚点：安全护栏是什么？是套在模型前后的规则和过滤器，限制危险或违规内容。就好比门禁，该拦的拦，偶尔也误伤正常问题。觉得模型“太敏感”，常常是护栏策略在收紧。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-07-12",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "安全过滤器",
+        "guardrail",
+        "内容过滤",
+        "拒绝回答"
+      ],
+      "corpus": {
+        "count_total": 17,
+        "count_scripts": 2,
+        "count_reports": 15,
+        "top_paths": [
+          "news-pipeline/2026-06-10/scripts/script-2026-06-10.md",
+          "news-pipeline/2026-06-12/scripts/script-2026-06-12.md",
+          "data/reports/2026-06-10.md",
+          "data/reports/2026-06-12.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "为何有时过严"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "model_dumbing",
+      "name": "模型「降智」",
+      "aliases": [
+        "降智",
+        "体验下降",
+        "路由降级"
+      ],
+      "category": "推理部署",
+      "tier": 1,
+      "difficulty": "进阶",
+      "status": "ready",
+      "one_liner": "用户感知到同一入口下回答质量变差，原因可能是路由、限流、对齐或压缩而非“变笨”。",
+      "analogy": "同一窗口换了更省成本的柜员，你感觉服务缩水。",
+      "script_15s": "今天的专业锚点：为什么会感觉模型“降智”？不一定是底座突然变笨，更常见是路由换模型、推理预算变少或安全策略收紧。就好比同一窗口换了更省成本的柜员。对比时要固定入口、提示和任务再下判断。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-07-12",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "降智",
+        "路由",
+        "调度策略",
+        "体验下降"
+      ],
+      "corpus": {
+        "count_total": 154,
+        "count_scripts": 26,
+        "count_reports": 128,
+        "top_paths": [
+          "news-pipeline/2026-06-06/scripts/script-2026-06-06.md",
+          "news-pipeline/2026-06-07/scripts/script-2026-06-07.md",
+          "news-pipeline/2026-06-17/scripts/video-script-2026-06-17.md",
+          "data/monthly/2026-06.md",
+          "data/reports/2026-05-27.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "可能原因",
+          "用户如何自查"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "quantization",
+      "name": "模型量化",
+      "aliases": [
+        "量化",
+        "Q4",
+        "Q8",
+        "GGUF",
+        "4bit"
+      ],
+      "category": "推理部署",
+      "tier": 1,
+      "difficulty": "进阶",
+      "status": "ready",
+      "one_liner": "降低权重数值精度以减小体积和加速推理，并尽量保持可用效果。",
+      "analogy": "高清片压成更小体积：观感接近，体积小很多。",
+      "script_15s": "今天的专业锚点：模型量化是什么？把权重从高精度压到更低比特，体积更小、更好跑。就好比视频压缩，观感还行，文件轻很多。所以消费级显卡也能跑本地大模型，但极端压缩可能掉点。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-07-12",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "量化",
+        "Q4",
+        "Q8",
+        "4bit",
+        "GGUF"
+      ],
+      "corpus": {
+        "count_total": 8,
+        "count_scripts": 1,
+        "count_reports": 7,
+        "top_paths": [
+          "news-pipeline/2026-05-28/scripts/script.md",
+          "data/reports/2026-05-28.md",
+          "data/reports/2026-06-05.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "本地部署为何能跑"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "sandbox",
+      "name": "Sandbox（沙箱）",
+      "aliases": [],
+      "category": "安全",
+      "tier": 3,
+      "difficulty": "进阶",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "Sandbox（沙箱）"
+      ],
+      "corpus": {
+        "count_total": 0,
+        "count_scripts": 0,
+        "count_reports": 0,
+        "top_paths": []
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "human_in_the_loop",
+      "name": "Human-in-the-loop",
+      "aliases": [],
+      "category": "安全",
+      "tier": 3,
+      "difficulty": "进阶",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "Human-in-the-loop"
+      ],
+      "corpus": {
+        "count_total": 0,
+        "count_scripts": 0,
+        "count_reports": 0,
+        "top_paths": []
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "prompt_injection",
+      "name": "提示词注入",
+      "aliases": [],
+      "category": "安全",
+      "tier": 2,
+      "difficulty": "进阶",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "提示词注入"
+      ],
+      "corpus": {
+        "count_total": 4,
+        "count_scripts": 0,
+        "count_reports": 4,
+        "top_paths": [
+          "data/reports/2026-06-15.md",
+          "data/reports/2026-06-17.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "computer_use",
+      "name": "Computer Use",
+      "aliases": [],
+      "category": "模型应用",
+      "tier": 2,
+      "difficulty": "进阶",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "Computer Use"
+      ],
+      "corpus": {
+        "count_total": 4,
+        "count_scripts": 0,
+        "count_reports": 4,
+        "top_paths": [
+          "data/reports/2026-05-30.md",
+          "data/reports/2026-06-25.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "context_compression",
+      "name": "上下文压缩",
+      "aliases": [],
+      "category": "推理部署",
+      "tier": 2,
+      "difficulty": "进阶",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "上下文压缩"
+      ],
+      "corpus": {
+        "count_total": 6,
+        "count_scripts": 2,
+        "count_reports": 4,
+        "top_paths": [
+          "news-pipeline/2026-06-09/scripts/script-2026-06-09.md",
+          "data/reports/2026-05-30.md",
+          "data/reports/2026-06-09.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "tokenizer",
+      "name": "Tokenizer（分词器）",
+      "aliases": [],
+      "category": "模型架构",
+      "tier": 3,
+      "difficulty": "进阶",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "Tokenizer（分词器）"
+      ],
+      "corpus": {
+        "count_total": 2,
+        "count_scripts": 0,
+        "count_reports": 2,
+        "top_paths": [
+          "data/reports/2026-07-01.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "kv_cache",
+      "name": "KV Cache",
+      "aliases": [],
+      "category": "推理部署",
+      "tier": 3,
+      "difficulty": "专业",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "KV Cache"
+      ],
+      "corpus": {
+        "count_total": 1,
+        "count_scripts": 0,
+        "count_reports": 1,
+        "top_paths": [
+          "data/reports/2026-07-07.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "diffusion",
+      "name": "Diffusion（扩散模型）",
+      "aliases": [],
+      "category": "模型架构",
+      "tier": 3,
+      "difficulty": "进阶",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "Diffusion（扩散模型）"
+      ],
+      "corpus": {
+        "count_total": 2,
+        "count_scripts": 1,
+        "count_reports": 1,
+        "top_paths": [
+          "news-pipeline/2026-06-11/scripts/script-2026-06-11.md",
+          "data/reports/2026-06-11.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "embedding",
+      "name": "Embedding（向量嵌入）",
+      "aliases": [],
+      "category": "模型应用",
+      "tier": 3,
+      "difficulty": "进阶",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "Embedding（向量嵌入）"
+      ],
+      "corpus": {
+        "count_total": 0,
+        "count_scripts": 0,
+        "count_reports": 0,
+        "top_paths": []
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "rlhf",
+      "name": "RLHF",
+      "aliases": [],
+      "category": "模型训练",
+      "tier": 3,
+      "difficulty": "进阶",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "RLHF"
+      ],
+      "corpus": {
+        "count_total": 0,
+        "count_scripts": 0,
+        "count_reports": 0,
+        "top_paths": []
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "alignment",
+      "name": "Alignment（对齐）",
+      "aliases": [],
+      "category": "安全",
+      "tier": 3,
+      "difficulty": "进阶",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "Alignment（对齐）"
+      ],
+      "corpus": {
+        "count_total": 0,
+        "count_scripts": 0,
+        "count_reports": 0,
+        "top_paths": []
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "speculative_decoding",
+      "name": "推测解码",
+      "aliases": [],
+      "category": "推理部署",
+      "tier": 3,
+      "difficulty": "专业",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "推测解码"
+      ],
+      "corpus": {
+        "count_total": 5,
+        "count_scripts": 0,
+        "count_reports": 5,
+        "top_paths": [
+          "data/reports/2026-06-28.md",
+          "data/reports/2026-W26.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "a2a",
+      "name": "A2A（智能体互联）",
+      "aliases": [],
+      "category": "模型应用",
+      "tier": 3,
+      "difficulty": "进阶",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "A2A（智能体互联）"
+      ],
+      "corpus": {
+        "count_total": 4,
+        "count_scripts": 1,
+        "count_reports": 3,
+        "top_paths": [
+          "news-pipeline/2026-06-05/scripts/script-2026-06-05.md",
+          "data/reports/2026-06-05.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "export_control",
+      "name": "出口管制",
+      "aliases": [],
+      "category": "开源商业",
+      "tier": 2,
+      "difficulty": "入门",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "出口管制"
+      ],
+      "corpus": {
+        "count_total": 25,
+        "count_scripts": 7,
+        "count_reports": 18,
+        "top_paths": [
+          "news-pipeline/2026-06-05/scripts/script-2026-06-05.md",
+          "news-pipeline/2026-06-18/scripts/script-2026-06-18.md",
+          "news-pipeline/2026-06-21/scripts/script-2026-06-21.md",
+          "data/reports/2026-06-16.md",
+          "data/reports/2026-06-18.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "latency",
+      "name": "延迟 Latency",
+      "aliases": [],
+      "category": "推理部署",
+      "tier": 2,
+      "difficulty": "入门",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "延迟 Latency"
+      ],
+      "corpus": {
+        "count_total": 4,
+        "count_scripts": 0,
+        "count_reports": 4,
+        "top_paths": [
+          "data/reports/2026-05-28.md",
+          "data/reports/2026-07-06.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "pretraining",
+      "name": "预训练",
+      "aliases": [],
+      "category": "模型训练",
+      "tier": 3,
+      "difficulty": "入门",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "预训练"
+      ],
+      "corpus": {
+        "count_total": 2,
+        "count_scripts": 0,
+        "count_reports": 2,
+        "top_paths": [
+          "data/reports/2026-06-03.md",
+          "data/reports/2026-07-09.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "prompt_engineering",
+      "name": "Prompt 工程",
+      "aliases": [],
+      "category": "模型应用",
+      "tier": 3,
+      "difficulty": "入门",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "Prompt 工程"
+      ],
+      "corpus": {
+        "count_total": 2,
+        "count_scripts": 0,
+        "count_reports": 2,
+        "top_paths": [
+          "data/reports/2026-06-28.md",
+          "data/reports/2026-07-06.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "scaling_law",
+      "name": "Scaling Law",
+      "aliases": [],
+      "category": "模型训练",
+      "tier": 3,
+      "difficulty": "专业",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "Scaling Law"
+      ],
+      "corpus": {
+        "count_total": 1,
+        "count_scripts": 0,
+        "count_reports": 1,
+        "top_paths": [
+          "data/reports/2026-07-06.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "transformer",
+      "name": "Transformer",
+      "aliases": [],
+      "category": "模型架构",
+      "tier": 3,
+      "difficulty": "专业",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "Transformer"
+      ],
+      "corpus": {
+        "count_total": 1,
+        "count_scripts": 0,
+        "count_reports": 1,
+        "top_paths": [
+          "data/reports/2026-06-16.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "synthetic_data",
+      "name": "合成数据",
+      "aliases": [],
+      "category": "模型训练",
+      "tier": 3,
+      "difficulty": "进阶",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "合成数据"
+      ],
+      "corpus": {
+        "count_total": 0,
+        "count_scripts": 0,
+        "count_reports": 0,
+        "top_paths": []
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "structured_output",
+      "name": "结构化输出",
+      "aliases": [],
+      "category": "模型应用",
+      "tier": 3,
+      "difficulty": "进阶",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "结构化输出"
+      ],
+      "corpus": {
+        "count_total": 0,
+        "count_scripts": 0,
+        "count_reports": 0,
+        "top_paths": []
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "privacy",
+      "name": "隐私/数据安全",
+      "aliases": [],
+      "category": "安全",
+      "tier": 2,
+      "difficulty": "入门",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "隐私/数据安全"
+      ],
+      "corpus": {
+        "count_total": 25,
+        "count_scripts": 8,
+        "count_reports": 17,
+        "top_paths": [
+          "news-pipeline/2026-06-05/scripts/script-2026-06-05.md",
+          "news-pipeline/2026-06-06/scripts/script-2026-06-06.md",
+          "news-pipeline/2026-06-13/scripts/script-2026-06-13.md",
+          "data/reports/2026-06-07.md",
+          "data/reports/2026-06-13.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "inference",
+      "name": "推理（Inference）",
+      "aliases": [],
+      "category": "推理部署",
+      "tier": 2,
+      "difficulty": "入门",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "推理（Inference）"
+      ],
+      "corpus": {
+        "count_total": 10,
+        "count_scripts": 3,
+        "count_reports": 7,
+        "top_paths": [
+          "news-pipeline/2026-06-11/scripts/script-2026-06-11.md",
+          "news-pipeline/2026-06-13/scripts/script-2026-06-13.md",
+          "news-pipeline/weekly/2026-06-08~2026-06-14/scripts/script.md",
+          "data/reports/2026-06-13.md",
+          "data/reports/2026-06-27.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "vllm",
+      "name": "vLLM / 推理框架",
+      "aliases": [],
+      "category": "推理部署",
+      "tier": 2,
+      "difficulty": "专业",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "vLLM / 推理框架"
+      ],
+      "corpus": {
+        "count_total": 8,
+        "count_scripts": 1,
+        "count_reports": 7,
+        "top_paths": [
+          "news-pipeline/2026-05-28/scripts/script.md",
+          "data/reports/2026-05-28.md",
+          "data/reports/2026-06-05.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "eval",
+      "name": "评测方法论",
+      "aliases": [],
+      "category": "评测",
+      "tier": 2,
+      "difficulty": "进阶",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "评测方法论"
+      ],
+      "corpus": {
+        "count_total": 21,
+        "count_scripts": 8,
+        "count_reports": 13,
+        "top_paths": [
+          "news-pipeline/2026-05-27/scripts/video-script.md",
+          "news-pipeline/2026-06-13/scripts/script-2026-06-13.md",
+          "news-pipeline/2026-06-15/scripts/script-2026-06-15.md",
+          "data/reports/2026-05-26.md",
+          "data/reports/2026-06-13.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "rate_limit",
+      "name": "Rate Limit / 配额",
+      "aliases": [],
+      "category": "推理部署",
+      "tier": 2,
+      "difficulty": "入门",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "Rate Limit / 配额"
+      ],
+      "corpus": {
+        "count_total": 386,
+        "count_scripts": 38,
+        "count_reports": 348,
+        "top_paths": [
+          "news-pipeline/2026-06-04/scripts/scripts.md",
+          "news-pipeline/2026-06-06/scripts/script-2026-06-06.md",
+          "news-pipeline/2026-06-12/scripts/script-2026-06-12.md",
+          "data/monthly/2026-06.md",
+          "data/reports/2026-05-26.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "model_routing",
+      "name": "模型路由/调度",
+      "aliases": [],
+      "category": "推理部署",
+      "tier": 2,
+      "difficulty": "进阶",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "模型路由/调度"
+      ],
+      "corpus": {
+        "count_total": 154,
+        "count_scripts": 26,
+        "count_reports": 128,
+        "top_paths": [
+          "news-pipeline/2026-06-06/scripts/script-2026-06-06.md",
+          "news-pipeline/2026-06-07/scripts/script-2026-06-07.md",
+          "news-pipeline/2026-06-17/scripts/video-script-2026-06-17.md",
+          "data/monthly/2026-06.md",
+          "data/reports/2026-05-27.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    }
+  ]
+}
