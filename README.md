@@ -4,7 +4,11 @@ AI 短视频 / 日报 **技术概念库**：可检索、可复用、可防重复
 服务「今日羊报 AI」的 **每期专业锚点（默认 15 秒）** 与报告中的技术一句。
 
 > **不是** AI 百科、论文笔记或自动爬虫。  
-> **是** 内容工具：每个正式概念都要能回答——什么新闻时讲？15 秒怎么讲？最近讲过没？
+> **是** 内容工具：每个正式概念都要能回答——  
+> 1）什么新闻时讲？　2）15 秒怎么讲？　3）最近讲过没？
+
+**仓库**：git submodule → [`IVANLEE99/ai-concept-bank`](https://github.com/IVANLEE99/ai-concept-bank)  
+**版本**：1.0.0（20 ready + 27 candidate）
 
 ---
 
@@ -25,13 +29,40 @@ ai-concept-bank/
 └── _archive/                 # 历史方案草稿（非主库）
 ```
 
+| 文件 | 谁写 | 谁读 |
+|------|------|------|
+| `extracts/*` | 定期扫语料 | 裁定 seed 时人 + Agent |
+| `concepts.json` | 裁定 + narrator + 审核 | 视频 / 日报 pipeline |
+| `usage-log.json` | 每期用完后 | 选题 gap、复盘 |
+| narrator agent | 维护人改 prompt | Claude 调 Agent 时 |
+
 **禁止**再建 `news-pipeline/concept-bank/`。下游 skill 只认本目录。
 
 ---
 
-## 种子从哪来
+## 一、要解决什么问题
 
-种子 **不是** 拍脑袋，而是：
+全量脚本分析的结论：选题垂直，但技术深度接近 0。「每期塞一个专业解释」若靠临场发挥，会出现：
+
+| 痛点 | 后果 |
+|------|------|
+| 概念随手抓 | 和当天新闻脱节，像硬上课 |
+| 台词各写各的 | 口径不稳、易标题党 |
+| 没有使用记录 | 同一概念连讲三天，或永远不讲高频词 |
+| 库散落在 social_media / 方案草稿 | 下游 skill 不知道读谁 |
+
+本库服务两条消费线（skill 按下方「下游约定」接入）：
+
+- **日报 / 报告**：技术锚点一句（`one_liner`）
+- **短视频**：每期 1 个专业锚点（默认 15s；周月可 30–60s）
+
+---
+
+## 二、设计原则（五条）
+
+### 1. 语料决定「讲什么」
+
+种子来自真实内容反提，不是方案文档拍脑袋。
 
 | 语料 | 路径 |
 |------|------|
@@ -39,25 +70,47 @@ ai-concept-bank/
 | 日报 | `data/reports/*.md`（排除 `*_press.md`） |
 | 周报 / 月报 | `data/weekly/*.md`、`data/monthly/*.md` |
 
-提取结果见 [`extracts/term-frequency.json`](extracts/term-frequency.json)。  
-收录时跳过：公司名/型号本体、权益黑话、无法 15s 定义的八卦。
+提取结果见 [`extracts/term-frequency.json`](extracts/term-frequency.json) / [`.md`](extracts/term-frequency.md)。
 
-重跑提取：内容风格大变或每月维护时，用同样规则扫一遍语料，更新 `extracts/`，再裁定新 `candidate` / `seed`。
+**不收录**：公司名 / 型号本体、权益黑话（白嫖、号池…）、无法 15s 定义的八卦。  
+**可收录**：能 15s 讲清，且不懂会妨碍理解新闻的技术概念。
+
+重跑提取：内容风格大变或每月维护时，扫一遍语料，更新 `extracts/`，再裁定新 `candidate` / seed。
+
+### 2. Agent 决定「怎么讲」
+
+所有讲解台词 **只由 `ai-concept-narrator` 生产**（见下文铁律）。
+
+### 3. 库只存「审过的成品」
+
+状态机把「发现」和「能上片」拆开（见 status 流）。
+
+### 4. 单一事实源、单一路径
+
+```text
+主数据：ai-concept-bank/concepts.json
+使用：  ai-concept-bank/usage-log.json
+SOP：   ai-concept-bank/README.md（本文件）
+```
+
+### 5. 可运营，不追求「一次建完」
+
+日捡候选 → 周补台词 → 月重扫语料。少收录、持续更新，优于一次塞 200 个半成品。
 
 ---
 
-## 铁律：台词只由 ai-concept-narrator 生产
+## 三、铁律：台词只由 ai-concept-narrator 生产
 
 | 允许 | 禁止 |
 |------|------|
-| 调用 **ai-concept-narrator** 写 `script_15s` / `script_60s` | 人手从白说库/旧草稿直接 copy 标 `ready` |
+| 调用 **ai-concept-narrator** 写 `script_15s` / `script_60s` | 人手从白说库 / 旧草稿直接 copy 标 `ready` |
 | 人工 **审核** `reviewed=true` 后改 `status=ready` | 主会话即兴编造长段专业锚点并当成品 |
 | 换角度时 **重新** 调 narrator | 同角度 14 天内复读同一条 |
 
 Agent 定义：
 
-- 仓内：[`agents/ai-concept-narrator.md`](agents/ai-concept-narrator.md)  
-- 已同步：`~/.claude/agents/ai-concept-narrator.md`、项目 `.claude/agents/`  
+- 仓内：[`agents/ai-concept-narrator.md`](agents/ai-concept-narrator.md)
+- 已同步：`~/.claude/agents/ai-concept-narrator.md`、项目 `.claude/agents/`
 - 请求模板：[`prompts/script-15s-request.md`](prompts/script-15s-request.md)
 
 调用示例（Claude Code）：
@@ -68,37 +121,85 @@ Agent 定义：
 Read concepts.json 后返回 JSON；确认后写入并保持 reviewed=false。
 ```
 
+旧「白说库」只可作 **风格参考**，不能直接 copy 标 ready。
+
 ---
 
-## concepts.json 要点
+## 四、concepts.json 字段设计
 
-| 字段 | 说明 |
-|------|------|
-| `id` | 稳定主键 |
-| `status` | `candidate` → `draft` → `ready` → `used` / `stale` |
-| `tier` | 1 优先讲解 · 2/3 候补 |
-| `script_15s` | TTS 成品；`ready` 时必填 |
-| `script_meta.authored_by` | 固定 `ai-concept-narrator` |
-| `script_meta.reviewed` | 人工/主会话抽检通过 |
-| `news_keywords` | 日报/脚本匹配 |
-| `corpus` | 反提频次与样例路径 |
-| `angles` | 可讲角度 / 已讲角度 |
-| `last_used` / `use_count` | 与 usage-log 双写 |
-| `reuse_gap_days` | 库级默认 **14**；换角度可缩短到 7 |
+| 组 | 字段 | 作用 |
+|----|------|------|
+| 身份 | `id`, `name`, `aliases` | 稳定主键 + 展示 + 匹配别名 |
+| 分层 | `category`, `tier`, `difficulty`, `status` | 选题与难度节奏 |
+| 讲解 | `one_liner`, `analogy`, `script_15s`, `script_60s` | 报告一句 / 15s / 深潜 |
+| 产线 | `script_meta`（作者、日期、reviewed、angle、confidence） | 可追溯、可拒收 low 置信 |
+| 匹配 | `news_keywords` | 当天新闻自动挂钩 |
+| 证据 | `corpus`（count、paths） | 证明语料里真出现过 |
+| 防重复 | `angles`, `last_used`, `use_count` | 换角度复用、14 天 gap |
+| 扩展 | `related_events`, `sources` | 案例与出处（可后补） |
+
+库级：`reuse_gap_days` 默认 **14**（换角度可缩短到 7）；`narrator_agent` 固定为 `ai-concept-narrator`。
 
 ### status 流
 
 ```text
 candidate  语料有、未立项
-draft      已立项，台词未审
+draft      已立项，台词未审（或未写）
 ready      narrator 已写 + reviewed
 used       已上视频并记入 usage-log（过 gap 后仍可再选）
 stale      定义过时，需重写
 ```
 
+### 15 秒公式（强制）
+
+```text
+概念名点题 → 1 句白话定义 → 1 个生活化比喻 → 1 句价值/与新闻关系
+目标 60–80 字，硬上限约 100 字
+```
+
+违禁词：佬友、Linuxdo、L站、炸了、炸裂、大瓜、吃瓜、闹鬼、白嫖、薅羊毛、震惊、杀疯了、赢麻…
+
+### ready 质量门
+
+| 检查 | 要求 |
+|------|------|
+| 作者 | `script_meta.authored_by == "ai-concept-narrator"` |
+| 审核 | `reviewed == true` |
+| 正文 | `script_15s` 非空，约 60–100 字 |
+| 违禁 | 无上表违禁词 |
+| 公式 | 含定义 + 比喻 + 价值 |
+| 置信 | `confidence` 不为 `low`（low 只许停在 draft） |
+| 可追溯 | 尽量有 `corpus` 或明确 `sources` |
+
 ---
 
-## 每期选题优先级
+## 五、端到端数据流
+
+```text
+┌─────────────────┐     频次表      ┌──────────────┐
+│ 脚本 + 日报语料  │ ─────────────► │ extracts/    │
+└─────────────────┘                 └──────┬───────┘
+                                           │ 裁定 seed / candidate
+                                           ▼
+                                    ┌──────────────┐
+                                    │ concepts.json│
+                                    │ draft/candid.│
+                                    └──────┬───────┘
+                                           │ ai-concept-narrator
+                                           ▼
+                                    ┌──────────────┐
+                                    │ script_15s   │
+                                    │ reviewed→ready
+                                    └──────┬───────┘
+                         ┌─────────────────┼─────────────────┐
+                         ▼                 ▼                 ▼
+                  视频专业锚点        报告技术一句        usage-log
+                  (ai-news-factory)  (linuxdo-daily)    last_used++
+```
+
+---
+
+## 六、每期选题优先级
 
 ```text
 P1  当日新闻命中 news_keywords，且 gap 满足
@@ -111,16 +212,73 @@ P3  tier=1 中 last_used 最旧或 null
 1. 同概念 **同角度** ≥ 14 天  
 2. 同 `category` 不连续超过 2 期  
 3. 每期专业锚点默认 **1** 个  
+4. 灰色 / 权益话题 **不进概念库当 seed**
 
 ---
 
-## 日 / 周 / 月维护
+## 七、如何维护更新（实操）
+
+### 7.1 每天（写日报 / 做视频时，2–5 分钟）
+
+1. 看到新黑话：在 `concepts.json` 加 `status: candidate`（可只填 `id/name/news_keywords`），或记到周末批量加。  
+2. 本期用了某个 ready 概念：  
+   - `usage-log.json` **append** 一条  
+   - 更新该概念 `last_used`、`use_count++`  
+   - 本次 `angle` 写入 `angles.used`（若还没有）
+
+### 7.2 每周（约 15 分钟）
+
+1. 看本周脚本 / `extracts`，有无新高频词。  
+2. 值得讲的 `candidate` → `draft`（补全 category、keywords、angles）。  
+3. 调 Agent 写台词：
+
+```text
+使用 ai-concept-narrator：
+按 prompts/script-15s-request.md 为 id=xxx 生产 15s；
+先 Read concepts.json；返回 JSON，写入后 reviewed=false，status 保持 draft。
+```
+
+4. 抽检：技术对不对、有无违禁词、能不能 TTS。  
+5. 通过：`reviewed=true`，`status=ready`。  
+6. 检查 tier1 是否有 **>14 天未用** → 排进下周锚点候选。
+
+### 7.3 每月（约 30 分钟）
+
+1. **重跑语料提取**，更新 `extracts/`，裁定新 seed。  
+2. 复盘 usage-log：哪类反馈好、是否仍懵 → 换角度或标 `stale`。  
+3. 过时定义：`stale` → 再调 narrator。  
+4. 可选：高频概念补 `script_60s`（周报 / 月报深潜）。  
+5. 子模块 commit + 父仓更新指针（见下文）。
+
+### 7.4 换角度复用（同一概念再讲）
+
+不要复读同一条 `script_15s`。
+
+1. 看 `angles.available` / `used`。  
+2. 指定新角度（如 MoE 的「激活参数 vs 总参数」）。  
+3. **再调 narrator** 生成新 `script_15s`。  
+4. 旧角度进 `used`；冷却：换角度 ≥7 天，同角度 ≥14 天。
+
+### 7.5 库里没有但今天必须讲
+
+```text
+当天新闻命中新词
+  → 先 candidate/draft 入库（可极简）
+  → 立刻调 narrator 写 15s
+  → 快审 → ready
+  → 进视频锚点
+  → 记 usage-log
+```
+
+不要在 ai-news-factory 主会话里即兴写一大段专业解释当定稿。
+
+### 日 / 周 / 月一览
 
 | 节奏 | 动作 |
 |------|------|
-| **每天** | 写日报/脚本时记下新词 → `candidate`；若使用某概念 → 写 `usage-log` 并更新 `last_used` |
-| **每周** | 合并别名；`candidate` 晋升 `draft`；调 narrator 补台词；抽检 → `ready`；看超 14 天未用的 tier1 |
-| **每月** | 重跑或增量 term-frequency；复盘掉线/追问；`stale` 重写；可选补 `script_60s` |
+| **每天** | 新词 → `candidate`；用过 → `usage-log` + `last_used` |
+| **每周** | 别名合并；晋升 draft；narrator 补台词；抽检 ready；扫超期未用 tier1 |
+| **每月** | 重跑 term-frequency；复盘；stale 重写；可选 script_60s |
 
 ### usage-log 一条示例
 
@@ -140,13 +298,13 @@ P3  tier=1 中 last_used 最旧或 null
 
 ---
 
-## 与下游 skill 的约定（预留）
+## 八、与下游 skill 的约定
 
-| 消费方 | 用法 |
-|--------|------|
-| **linuxdo-daily** Writer | 「技术锚点」优先匹配 `news_keywords`，可引用 `one_liner` |
-| **ai-news-factory** Phase 1 | 读本库做锚点候选 + gap |
-| **ai-news-factory** Phase 2 | 口播优先用已 `ready` 的 `script_15s`；缺则调 **ai-concept-narrator**，禁止主会话瞎编 |
+| 消费方 | 应做 | 不应做 |
+|--------|------|--------|
+| **linuxdo-daily** Writer | 「技术锚点」匹配 `news_keywords`，可引用 `one_liner` | 论坛标题党当技术解释 |
+| **ai-news-factory** Phase 1 | 读本库做锚点候选 + gap | 另起概念库 |
+| **ai-news-factory** Phase 2 | 口播用已 `ready` 的 `script_15s`；缺则调 **ai-concept-narrator** | 主会话瞎编长锚点 |
 
 路径（相对项目根）：
 
@@ -157,52 +315,75 @@ ai-concept-bank/usage-log.json
 
 ---
 
-## 15 秒公式
+## 九、设计取舍
 
-```text
-概念名点题 + 1 句白话定义 + 1 个生活化比喻 + 1 句价值/新闻关系
-```
-
-违禁：佬友、Linuxdo、L站、炸了、炸裂、大瓜、吃瓜、闹鬼、白嫖、薅羊毛、震惊…
+| 选项 | 我们的选择 | 原因 |
+|------|------------|------|
+| 百科式大而全 | 否，少而可上片 | 维护不动等于死库 |
+| 纯 Markdown 表 | JSON 主库 + README | skill / 脚本好解析 |
+| 人手写全部台词 | narrator 专产 | 口径统一、可扩展 60s |
+| 按难度课程表讲 | 新闻优先 + 库兜底 | 避免和日报脱节 |
+| 自动升降 tier | MVP 不做 | 先人审，规则写在 SOP |
 
 ---
 
-## 当前 MVP 状态
+## 十、当前 MVP 状态
 
 - 语料：脚本约 48 + 日报约 50 + 周报 4 + 月报 1（见 extracts）  
-- **ready 种子：20**（`status=ready`，含 `script_15s`）  
-- **candidate：若干**（无强制台词）  
+- **ready 种子：20**（含 `script_15s`）  
+- **candidate：27**（无强制台词）  
 - `usage-log` 初始为空  
 
-查看 ready 列表：
+Ready 列表：
 
 ```bash
 python3 -c "import json;d=json.load(open('concepts.json'));print([c['id'] for c in d['concepts'] if c['status']=='ready'])"
 ```
 
+当前 ready：`agent` · `token` · `context_window` · `distillation` · `multimodal` · `cot` · `moe` · `mcp` · `hallucination` · `benchmark` · `data_contamination` · `function_calling` · `open_weights` · `license` · `api_key` · `finetune` · `rag` · `guardrails` · `model_dumbing` · `quantization`
+
 ---
 
-## 子模块提交
+## 十一、子模块提交
 
 本目录为 git submodule（`IVANLEE99/ai-concept-bank`）。
 
 ```bash
-# 在子模块内
+# 1) 子模块内提交并推送
 cd ai-concept-bank
 git add -A && git status
-git commit -m "feat: concept bank MVP + narrator agent + corpus extract"
+git commit -m "feat: …"
 git push
 
-# 回父仓更新指针
+# 2) 父仓更新指针并推送
 cd ..
 git add ai-concept-bank
-git commit -m "chore: bump ai-concept-bank submodule"
+git commit -m "chore: bump ai-concept-bank"
+git push
 ```
 
-（仅在你明确要求 commit 时执行。）
+Agent 定义若有改动，同步到可调用位置：
+
+```bash
+cp ai-concept-bank/agents/ai-concept-narrator.md ~/.claude/agents/
+cp ai-concept-bank/agents/ai-concept-narrator.md .claude/agents/
+```
+
+---
+
+## 十二、一句话 + 日常三件事
+
+**ai-concept-bank =「从真实脚本/日报长出来的概念库存」+「只准讲解 Agent 写的 15 秒台词」+「使用日志防重复」。**
+
+日常只记三条：
+
+1. **新词进 candidate**  
+2. **台词只调 narrator，审完再 ready**  
+3. **用过就写 usage-log，并遵守 14 天冷却**
 
 ---
 
 ## 版本
 
-- **1.0.0** — MVP：语料反提、20 ready 种子、narrator agent、usage-log、SOP  
+- **1.0.0** — MVP：语料反提、20 ready 种子、narrator agent、usage-log、设计原则与维护 SOP  
+- **1.0.1** — README 补全设计思路与维护更新专章  
