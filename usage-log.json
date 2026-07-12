@@ -1,4 +1,16 @@
 {
   "version": "1.0.0",
-  "log": []
+  "log": [
+    {
+      "date": "2026-07-12",
+      "concept_id": "agent",
+      "angle": "基础定义",
+      "mode": "daily",
+      "duration_sec": 15,
+      "news_trigger": "64个AI智能体一小时攻克50年数学难题（场景5）",
+      "report_path": "data/reports/2026-07-12.md",
+      "script_path": "news-pipeline/2026-07-12/scripts/script-2026-07-12.md",
+      "notes": "首次使用；插入位置为图论猜想之后"
+    }
+  ]
 }
