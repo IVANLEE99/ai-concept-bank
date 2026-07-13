@@ -84,7 +84,12 @@
         "reviewed": true,
         "angle": "基础定义",
         "confidence": "high",
-        "forbidden_check": "pass"
+        "forbidden_check": "pass",
+        "angles": {
+          "used": [
+            "基础定义"
+          ]
+        }
       },
       "news_keywords": [
         "token",
@@ -117,8 +122,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-07-13",
+      "use_count": 1
     },
     {
       "id": "context_window",
@@ -1062,8 +1067,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-07-12",
+      "use_count": 1
     },
     {
       "id": "quantization",

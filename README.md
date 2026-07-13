@@ -220,11 +220,28 @@ P3  tier=1 中 last_used 最旧或 null
 
 ### 7.1 每天（写日报 / 做视频时，2–5 分钟）
 
-1. 看到新黑话：在 `concepts.json` 加 `status: candidate`（可只填 `id/name/news_keywords`），或记到周末批量加。  
+1. 看到新黑话：优先写进日报 `## 概念候选（供 concept-bank）`；若执行 `linuxdo-daily` 的受控入库步骤，可去重过滤后只追加最小 `candidate`（不写口播、不晋升 ready）。
 2. 本期用了某个 ready 概念：  
    - `usage-log.json` **append** 一条  
    - 更新该概念 `last_used`、`use_count++`  
    - 本次 `angle` 写入 `angles.used`（若还没有）
+
+#### linuxdo-daily 受控入库边界（v15.1）
+
+`linuxdo-daily` 可在日报 Markdown 写入后读取 `## 概念候选（供 concept-bank）`，但只能做最小候选入库：
+
+```text
+读取日报候选
+  → 与 concepts.json 的 id/name/aliases/news_keywords 去重
+  → 过滤营销词、产品名、模型型号、权益黑话、低可信和无法 15s 定义的表达
+  → 只追加 status=candidate 的最小条目
+  → jq empty ai-concept-bank/concepts.json
+  → 等待周维护 / term-frequency 验证
+```
+
+禁止在该步骤中调用 narrator、写 `script_15s`、设置 `reviewed=true`、晋升 `draft/ready`、写 `usage-log` 或修改已有 ready 概念。
+
+日报候选负责发现新词；`term-frequency` 负责验证长期价值；维护 Agent 决定后续 `candidate → draft → ready`。
 
 ### 7.2 每周（约 15 分钟）
 
@@ -276,7 +293,7 @@ P3  tier=1 中 last_used 最旧或 null
 
 | 节奏 | 动作 |
 |------|------|
-| **每天** | 新词 → `candidate`；用过 → `usage-log` + `last_used` |
+| **每天** | 新词 → 日报候选 / 受控最小 `candidate`；用过 → `usage-log` + `last_used` |
 | **每周** | 别名合并；晋升 draft；narrator 补台词；抽检 ready；扫超期未用 tier1 |
 | **每月** | 重跑 term-frequency；复盘；stale 重写；可选 script_60s |
 
@@ -302,7 +319,7 @@ P3  tier=1 中 last_used 最旧或 null
 
 | 消费方 | 应做 | 不应做 |
 |--------|------|--------|
-| **linuxdo-daily** Writer | 「技术锚点」匹配 `news_keywords`，可引用 `one_liner` | 论坛标题党当技术解释 |
+| **linuxdo-daily** Writer | 「技术锚点」匹配 `news_keywords`，可引用 `one_liner`；日报候选可受控追加最小 `candidate` | 论坛标题党当技术解释；自动写口播或晋升 ready |
 | **ai-news-factory** Phase 1 | 读本库做锚点候选 + gap | 另起概念库 |
 | **ai-news-factory** Phase 2 | 口播用已 `ready` 的 `script_15s`；缺则调 **ai-concept-narrator** | 主会话瞎编长锚点 |
 
@@ -377,7 +394,7 @@ cp ai-concept-bank/agents/ai-concept-narrator.md .claude/agents/
 
 日常只记三条：
 
-1. **新词进 candidate**  
+1. **新词先入日报候选，合格才进 candidate**
 2. **台词只调 narrator，审完再 ready**  
 3. **用过就写 usage-log，并遵守 14 天冷却**
 
@@ -387,3 +404,4 @@ cp ai-concept-bank/agents/ai-concept-narrator.md .claude/agents/
 
 - **1.0.0** — MVP：语料反提、20 ready 种子、narrator agent、usage-log、设计原则与维护 SOP  
 - **1.0.1** — README 补全设计思路与维护更新专章  
+- **1.0.2** — 同步 linuxdo-daily v15.1 受控候选入库边界

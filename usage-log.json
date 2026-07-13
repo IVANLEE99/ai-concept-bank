@@ -11,6 +11,28 @@
       "report_path": "data/reports/2026-07-12.md",
       "script_path": "news-pipeline/2026-07-12/scripts/script-2026-07-12.md",
       "notes": "首次使用；插入位置为图论猜想之后"
+    },
+    {
+      "date": "2026-07-12",
+      "concept_id": "model_dumbing",
+      "angle": "基础定义",
+      "mode": "weekly",
+      "duration_sec": 15,
+      "news_trigger": "GPT-5.6上线后juice值下调、5.5降智吐槽（场景2→3）",
+      "report_path": "data/weekly/2026-07-06~2026-07-12.md",
+      "script_path": "news-pipeline/weekly/2026-07-06~2026-07-12/scripts/script-2026-07-06~2026-07-12.md",
+      "notes": "周报锚点；库中仅15s台词，兜底使用；插入位置为GPT-5.6上线之后"
+    },
+    {
+      "date": "2026-07-13",
+      "concept_id": "token",
+      "angle": "基础定义",
+      "mode": "daily",
+      "duration_sec": 15,
+      "news_trigger": "Codex取消5h额度改为纯周额度 + Tibo推荐CPA反代（场景3→场景7）",
+      "report_path": "data/reports/2026-07-13.md",
+      "script_path": "news-pipeline/2026-07-13/scripts/script-2026-07-13.md",
+      "notes": "首次使用token概念；命中Codex额度计费和CPA流量计费"
     }
   ]
 }
