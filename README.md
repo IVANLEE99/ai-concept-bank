@@ -20,7 +20,8 @@ ai-concept-bank/
 ├── concepts.json             # 主库
 ├── usage-log.json            # 上线使用记录
 ├── agents/
-│   └── ai-concept-narrator.md
+│   ├── ai-concept-narrator.md
+│   └── ai-concept-promoter.md
 ├── prompts/
 │   └── script-15s-request.md
 ├── extracts/
@@ -110,7 +111,8 @@ SOP：   ai-concept-bank/README.md（本文件）
 Agent 定义：
 
 - 仓内：[`agents/ai-concept-narrator.md`](agents/ai-concept-narrator.md)
-- 已同步：`~/.claude/agents/ai-concept-narrator.md`、项目 `.claude/agents/`
+- 晋升编排：[`agents/ai-concept-promoter.md`](agents/ai-concept-promoter.md)
+- 可调用位置：项目 `.claude/agents/`；如需全局调用，再同步到 `~/.claude/agents/`
 - 请求模板：[`prompts/script-15s-request.md`](prompts/script-15s-request.md)
 
 调用示例（Claude Code）：
@@ -122,6 +124,25 @@ Read concepts.json 后返回 JSON；确认后写入并保持 reviewed=false。
 ```
 
 旧「白说库」只可作 **风格参考**，不能直接 copy 标 ready。
+
+### candidate 晋升 Agent
+
+需要把候选概念推进到正式可用状态时，调用 `ai-concept-promoter`：
+
+```text
+使用 agent ai-concept-promoter：
+把 id=rate_limit 从 candidate 推进到 ready。
+```
+
+第一次调用执行立项检查、调用 narrator、写入 `draft` 并展示审核包。人工确认后再调用：
+
+```text
+使用 agent ai-concept-promoter：
+审核通过，把 id=rate_limit 晋升 ready。
+```
+
+没有明确的“审核通过”指令时，Agent 必须停在 `draft`，不得自动设置
+`script_meta.reviewed=true`。
 
 ---
 
@@ -384,6 +405,8 @@ Agent 定义若有改动，同步到可调用位置：
 ```bash
 cp ai-concept-bank/agents/ai-concept-narrator.md ~/.claude/agents/
 cp ai-concept-bank/agents/ai-concept-narrator.md .claude/agents/
+cp ai-concept-bank/agents/ai-concept-promoter.md ~/.claude/agents/
+cp ai-concept-bank/agents/ai-concept-promoter.md .claude/agents/
 ```
 
 ---

@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated": "2026-07-12",
+  "updated": "2026-07-15",
   "reuse_gap_days": 14,
   "narrator_agent": "ai-concept-narrator",
   "corpus_extract": "extracts/term-frequency.json",
@@ -239,8 +239,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-07-14",
+      "use_count": 2
     },
     {
       "id": "multimodal",
@@ -406,15 +406,16 @@
           "成本优势"
         ],
         "used": [
-          "基础定义"
+          "基础定义",
+          "架构创新：国产大模型靠 MoE 架构做文章而非单纯堆参数"
         ]
       },
       "related_events": [],
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-07-15",
+      "use_count": 1
     },
     {
       "id": "mcp",
@@ -1849,23 +1850,34 @@
     {
       "id": "scaling_law",
       "name": "Scaling Law",
-      "aliases": [],
+      "aliases": [
+        "规模定律",
+        "缩放定律",
+        "Scaling Laws"
+      ],
       "category": "模型训练",
       "tier": 3,
       "difficulty": "专业",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
+      "status": "ready",
+      "one_liner": "一条经验规律：模型规模、训练数据量和算力增大时，性能往往按可预测曲线提升。",
+      "analogy": "像备考，书读得越多、练得越久，分数大体能沿着一条曲线往上走。",
+      "script_15s": "今天说 Scaling Law。它是条经验规律：模型规模、数据和算力越大，性能往往按可预测曲线提升。像备考，投入越多分数大体照规律涨。这是砸钱堆规模的底气，近年也常被重新审视。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
+        "authored_at": "2026-07-15",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "reviewed_at": "2026-07-15",
+        "reviewed_by": "user"
       },
       "news_keywords": [
-        "Scaling Law"
+        "Scaling Law",
+        "Scaling Laws",
+        "规模定律",
+        "缩放定律"
       ],
       "corpus": {
         "count_total": 1,
@@ -2199,16 +2211,18 @@
       "category": "推理部署",
       "tier": 2,
       "difficulty": "入门",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
+      "status": "ready",
+      "one_liner": "API 的流量阀门，限制你在一定时间内的请求次数，超了就拒绝或排队。",
+      "analogy": "餐厅叫号牌——一次只能进几桌客人，防止后厨忙不过来。",
+      "script_15s": "Rate Limit，速率限制。API对你说\"你问太快了，等会儿再来\"。就像餐厅叫号，一次只进几桌，防止忙不过来。调API遇到它，要么排队要么加钱。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
+        "authored_at": "2026-07-15",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
       },
       "news_keywords": [
         "Rate Limit / 配额"

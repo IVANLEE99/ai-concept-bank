@@ -33,6 +33,17 @@
       "report_path": "data/reports/2026-07-13.md",
       "script_path": "news-pipeline/2026-07-13/scripts/script-2026-07-13.md",
       "notes": "首次使用token概念；命中Codex额度计费和CPA流量计费"
+    },
+    {
+      "date": "2026-07-15",
+      "concept_id": "moe",
+      "angle": "架构创新：国产大模型靠 MoE 架构做文章而非单纯堆参数",
+      "mode": "daily",
+      "duration_sec": 15,
+      "news_trigger": "Kimi K3 押注架构创新 / 混元 Hy3 1bit 单卡跑 / GLM-5.2，均基于 MoE 架构",
+      "report_path": "data/reports/2026-07-15.md",
+      "script_path": "news-pipeline/2026-07-15/scripts/script-2026-07-15.md",
+      "notes": "首次使用 MoE 锚点；scaling_law 概念未 eligible 故改用 MoE（同属架构主线）"
     }
   ]
 }
