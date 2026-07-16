@@ -1259,16 +1259,18 @@
       "category": "模型应用",
       "tier": 2,
       "difficulty": "进阶",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
+      "status": "ready",
+      "one_liner": "AI 通过观察屏幕图形界面，用鼠标和键盘直接操作软件的能力。",
+      "analogy": "给 AI 装上眼睛和手，它就能自己点按钮、填表单，不用你代劳。",
+      "script_15s": "今天的专业锚点：Computer Use，电脑操作。简单说，AI 能看懂屏幕，自己动鼠标、敲键盘来操作软件。就好比给它装了眼睛和手，替你完成重复点击。目前 Codex 已把这项能力用于 Windows 桌面操作。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
+        "authored_at": "2026-07-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass"
       },
       "news_keywords": [
         "Computer Use"
@@ -2259,16 +2261,18 @@
       "category": "推理部署",
       "tier": 2,
       "difficulty": "进阶",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
+      "status": "ready",
+      "one_liner": "按输入、任务或策略，决定真正由哪一个模型来处理请求。",
+      "analogy": "医院分诊：先看症状轻重，再派对应科室医生，不是往任意空诊室塞人。",
+      "script_15s": "今天的专业锚点：模型路由是什么？就是按问题类型、难度或策略，决定真正用哪一个模型来答。就好比医院分诊，先看症状再派对应医生。搞清它，才能分辨体验变差是换了模型，还是单纯排队限流。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
+        "authored_at": "2026-07-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
       },
       "news_keywords": [
         "模型路由/调度"
