@@ -61,7 +61,7 @@
         "corpus:news-pipeline+data/reports"
       ],
       "last_used": "2026-07-12",
-      "use_count": 2
+      "use_count": 1
     },
     {
       "id": "token",
@@ -182,8 +182,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-07-17",
+      "use_count": 1
     },
     {
       "id": "distillation",
@@ -1010,8 +1010,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-07-16",
+      "use_count": 1
     },
     {
       "id": "model_dumbing",
@@ -1304,16 +1304,18 @@
       "category": "推理部署",
       "tier": 2,
       "difficulty": "进阶",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
+      "status": "draft",
+      "one_liner": "长会话快满或持续运行时，压缩整理较早上下文，腾出可继续工作的空间。",
+      "analogy": "像桌面堆满了，把旧文件归档，腾出工位继续干活。",
+      "script_15s": "上下文压缩：长会话快满或持续跑时，把较早内容压缩整理，腾出还能继续干活的空间。像桌面堆满了，把旧文件归档腾位——不是把桌子变大，是给会话续命。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": null,
+        "authored_at": "2026-07-16",
         "reviewed": false,
-        "angle": null
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
       },
       "news_keywords": [
         "上下文压缩"
@@ -2298,6 +2300,169 @@
       "related_events": [],
       "sources": [
         "corpus:news-pipeline+data/reports"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "agentic_misalignment",
+      "name": "Agentic Misalignment",
+      "aliases": [
+        "智能体目标错位",
+        "Agent 目标错位"
+      ],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "Agentic Misalignment",
+        "智能体目标错位",
+        "Agent 对齐",
+        "越权改代码"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-07-17.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "zdr_zero_data_retention",
+      "name": "ZDR（零数据保留）",
+      "aliases": [
+        "Zero Data Retention",
+        "零数据保留"
+      ],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "ZDR",
+        "零数据保留",
+        "Zero Data Retention"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-07-17.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "agent_harness",
+      "name": "Agent Harness",
+      "aliases": [
+        "智能体运行时框架",
+        "Harness"
+      ],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "Harness",
+        "agent loop",
+        "智能体框架",
+        "Grok Build"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-07-17.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "code_arena",
+      "name": "Code Arena",
+      "aliases": [
+        "前端竞技场",
+        "Arena 代码评测"
+      ],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "Code Arena",
+        "Arena.ai",
+        "前端竞技场",
+        "Kivine"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-07-17.md#概念候选"
       ],
       "last_used": null,
       "use_count": 0

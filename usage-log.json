@@ -44,6 +44,28 @@
       "report_path": "data/reports/2026-07-15.md",
       "script_path": "news-pipeline/2026-07-15/scripts/script-2026-07-15.md",
       "notes": "首次使用 MoE 锚点；scaling_law 概念未 eligible 故改用 MoE（同属架构主线）"
+    },
+    {
+      "date": "2026-07-16",
+      "concept_id": "guardrails",
+      "angle": "基础定义",
+      "mode": "daily",
+      "duration_sec": 15,
+      "news_trigger": "Claude Fable 5 /btw 侧信道绕过安全拦截",
+      "report_path": "data/reports/2026-07-16.md",
+      "script_path": "news-pipeline/2026-07-16/scripts/script-2026-07-16.md",
+      "notes": "护栏仅绑聊天界面未绑工具层"
+    },
+    {
+      "date": "2026-07-17",
+      "concept_id": "context_window",
+      "angle": "基础定义",
+      "mode": "daily",
+      "duration_sec": 15,
+      "news_trigger": "Kimi K3 正式上线，约 1M 上下文",
+      "report_path": "data/reports/2026-07-17.md",
+      "script_path": "news-pipeline/2026-07-17/scripts/script-2026-07-17.md",
+      "notes": "标准模式日报；锚点插在 K3 段后"
     }
   ]
 }
