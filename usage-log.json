@@ -1,71 +1,48 @@
 {
-  "version": "1.0.0",
-  "log": [
+  "entries": [
     {
-      "date": "2026-07-12",
-      "concept_id": "agent",
-      "angle": "基础定义",
+      "date": "2026-07-19",
+      "concept_id": "agent_harness",
+      "angle": "definition",
       "mode": "daily",
       "duration_sec": 15,
-      "news_trigger": "64个AI智能体一小时攻克50年数学难题（场景5）",
-      "report_path": "data/reports/2026-07-12.md",
-      "script_path": "news-pipeline/2026-07-12/scripts/script-2026-07-12.md",
-      "notes": "首次使用；插入位置为图论猜想之后"
+      "news_trigger": "Kimi K3 Harness/CLI 拉胯",
+      "report_path": "data/reports/2026-07-19.md",
+      "script_path": "news-pipeline/2026-07-19/scripts/script-2026-07-19.md",
+      "notes": "auto by ai-news-factory 2026-07-19"
     },
     {
-      "date": "2026-07-12",
-      "concept_id": "model_dumbing",
+      "date": "2026-07-19",
+      "concept_id": "function_calling",
       "angle": "基础定义",
       "mode": "weekly",
       "duration_sec": 15,
-      "news_trigger": "GPT-5.6上线后juice值下调、5.5降智吐槽（场景2→3）",
-      "report_path": "data/weekly/2026-07-06~2026-07-12.md",
-      "script_path": "news-pipeline/weekly/2026-07-06~2026-07-12/scripts/script-2026-07-06~2026-07-12.md",
-      "notes": "周报锚点；库中仅15s台词，兜底使用；插入位置为GPT-5.6上线之后"
+      "news_trigger": "Grok Build 上传争议与 Agent 工具链 / Function Calling",
+      "report_path": "data/weekly/2026-W28.md",
+      "script_path": "news-pipeline/weekly/2026-07-13~2026-07-19/scripts/script-2026-07-13~2026-07-19.md",
+      "notes": "W28 周刊锚点 15s 兜底"
     },
     {
-      "date": "2026-07-13",
-      "concept_id": "token",
+      "date": "2026-07-20",
+      "concept_id": "open_weights",
       "angle": "基础定义",
       "mode": "daily",
       "duration_sec": 15,
-      "news_trigger": "Codex取消5h额度改为纯周额度 + Tibo推荐CPA反代（场景3→场景7）",
-      "report_path": "data/reports/2026-07-13.md",
-      "script_path": "news-pipeline/2026-07-13/scripts/script-2026-07-13.md",
-      "notes": "首次使用token概念；命中Codex额度计费和CPA流量计费"
+      "news_trigger": "Qwen3.8-Max-Preview 上线并预告即将开源权重",
+      "report_path": "data/reports/2026-07-20.md",
+      "script_path": "news-pipeline/2026-07-20/scripts/script-2026-07-20.md",
+      "notes": "auto-select no-confirm; hits open weights teaser"
     },
     {
-      "date": "2026-07-15",
-      "concept_id": "moe",
-      "angle": "架构创新：国产大模型靠 MoE 架构做文章而非单纯堆参数",
-      "mode": "daily",
-      "duration_sec": 15,
-      "news_trigger": "Kimi K3 押注架构创新 / 混元 Hy3 1bit 单卡跑 / GLM-5.2，均基于 MoE 架构",
-      "report_path": "data/reports/2026-07-15.md",
-      "script_path": "news-pipeline/2026-07-15/scripts/script-2026-07-15.md",
-      "notes": "首次使用 MoE 锚点；scaling_law 概念未 eligible 故改用 MoE（同属架构主线）"
-    },
-    {
-      "date": "2026-07-16",
-      "concept_id": "guardrails",
+      "date": "2026-07-21",
+      "concept_id": "rate_limit",
       "angle": "基础定义",
       "mode": "daily",
       "duration_sec": 15,
-      "news_trigger": "Claude Fable 5 /btw 侧信道绕过安全拦截",
-      "report_path": "data/reports/2026-07-16.md",
-      "script_path": "news-pipeline/2026-07-16/scripts/script-2026-07-16.md",
-      "notes": "护栏仅绑聊天界面未绑工具层"
-    },
-    {
-      "date": "2026-07-17",
-      "concept_id": "context_window",
-      "angle": "基础定义",
-      "mode": "daily",
-      "duration_sec": 15,
-      "news_trigger": "Kimi K3 正式上线，约 1M 上下文",
-      "report_path": "data/reports/2026-07-17.md",
-      "script_path": "news-pipeline/2026-07-17/scripts/script-2026-07-17.md",
-      "notes": "标准模式日报；锚点插在 K3 段后"
+      "news_trigger": "Kimi 暂停新订阅 / 额度与 Rate Limit",
+      "report_path": "data/reports/2026-07-21.md",
+      "script_path": "news-pipeline/2026-07-21/scripts/script-2026-07-21.md",
+      "notes": "auto pipeline 2026-07-21"
     }
   ]
 }

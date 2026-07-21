@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated": "2026-07-15",
+  "updated": "2026-07-21",
   "reuse_gap_days": 14,
   "narrator_agent": "ai-concept-narrator",
   "corpus_extract": "extracts/term-frequency.json",
@@ -682,8 +682,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-07-19",
+      "use_count": 1
     },
     {
       "id": "open_weights",
@@ -739,8 +739,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-07-20",
+      "use_count": 1
     },
     {
       "id": "license",
@@ -2247,14 +2247,16 @@
         "available": [
           "基础定义"
         ],
-        "used": []
+        "used": [
+          "基础定义"
+        ]
       },
       "related_events": [],
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-07-21",
+      "use_count": 1
     },
     {
       "id": "model_routing",
@@ -2417,14 +2419,16 @@
         "available": [
           "基础定义"
         ],
-        "used": []
+        "used": [
+          "definition"
+        ]
       },
       "related_events": [],
       "sources": [
         "data/reports/2026-07-17.md#概念候选"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-07-19",
+      "use_count": 1
     },
     {
       "id": "code_arena",
@@ -2624,6 +2628,46 @@
       "related_events": [],
       "sources": [
         "data/reports/2026-07-18.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "ai_superpod",
+      "name": "AI超节点",
+      "aliases": [
+        "超节点",
+        "Superpod"
+      ],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "超节点",
+        "Superpod",
+        "Scale-up"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-07-21.md#概念候选"
       ],
       "last_used": null,
       "use_count": 0
