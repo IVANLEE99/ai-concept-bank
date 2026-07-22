@@ -43,6 +43,17 @@
       "report_path": "data/reports/2026-07-21.md",
       "script_path": "news-pipeline/2026-07-21/scripts/script-2026-07-21.md",
       "notes": "auto pipeline 2026-07-21"
+    },
+    {
+      "date": "2026-07-22",
+      "concept_id": "multimodal",
+      "angle": "基础定义",
+      "mode": "daily",
+      "duration_sec": 15,
+      "news_trigger": "Gemini 3.6 Flash 全量上线 / 多模态入口",
+      "report_path": "data/reports/2026-07-22.md",
+      "script_path": "news-pipeline/2026-07-22/scripts/script.md",
+      "notes": "auto-select free-confirm pipeline"
     }
   ]
 }

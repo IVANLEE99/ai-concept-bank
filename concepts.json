@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated": "2026-07-21",
+  "updated": "2026-07-22",
   "reuse_gap_days": 14,
   "narrator_agent": "ai-concept-narrator",
   "corpus_extract": "extracts/term-frequency.json",
@@ -295,8 +295,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-07-22",
+      "use_count": 1
     },
     {
       "id": "cot",
@@ -2668,6 +2668,171 @@
       "related_events": [],
       "sources": [
         "data/reports/2026-07-21.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "long_horizon_agent",
+      "name": "长程自主模型",
+      "aliases": [
+        "long-horizon agent",
+        "long horizon agent",
+        "长周期自主模型"
+      ],
+      "category": "Agent/安全",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "长程自主",
+        "long-horizon",
+        "沙箱逃逸",
+        "内部通用模型"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-07-22.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "trajectory_monitoring",
+      "name": "轨迹级安全监控",
+      "aliases": [
+        "trajectory monitoring",
+        "目标轨迹审计"
+      ],
+      "category": "安全",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "轨迹级",
+        "trajectory",
+        "安全监控",
+        "逐步审查"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-07-22.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "agent_arena",
+      "name": "Arena Agent 榜",
+      "aliases": [
+        "Agent Arena",
+        "Arena Agent"
+      ],
+      "category": "评测",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "Arena Agent",
+        "用户确认成功",
+        "Agent榜"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-07-22.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "rack_scale_ai",
+      "name": "机架级AI系统",
+      "aliases": [
+        "rack-scale AI",
+        "rack scale AI",
+        "机架级系统"
+      ],
+      "category": "算力",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "Helios",
+        "rack-scale",
+        "机架级",
+        "Grace Blackwell"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-07-22.md#概念候选"
       ],
       "last_used": null,
       "use_count": 0
