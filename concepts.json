@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated": "2026-07-31",
+  "updated": "2026-08-04",
   "reuse_gap_days": 14,
   "narrator_agent": "ai-concept-narrator",
   "corpus_extract": "extracts/term-frequency.json",
@@ -687,11 +687,11 @@
     },
     {
       "id": "open_weights",
-      "name": "开源模型 / 开放权重",
+      "name": "开放权重（Open Weights）",
       "aliases": [
         "开放权重",
-        "开源模型",
-        "open weight"
+        "open weight",
+        "open weights"
       ],
       "category": "开源商业",
       "tier": 1,
@@ -710,10 +710,8 @@
         "forbidden_check": "pass"
       },
       "news_keywords": [
-        "开源模型",
         "开放权重",
-        "open-weight",
-        "open source model"
+        "open-weight"
       ],
       "corpus": {
         "count_total": 21,
@@ -1216,16 +1214,19 @@
       "category": "安全",
       "tier": 2,
       "difficulty": "进阶",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
+      "status": "ready",
+      "one_liner": "提示词注入是把恶意指令藏进输入或外部内容，诱导模型越过原本的任务边界。",
+      "analogy": "像有人把假便签夹进你的工作清单，骗你执行另一件事。",
+      "script_15s": "提示词注入是什么？就是把恶意指令藏在网页、邮件或文档里，诱导 AI 偏离原任务。像有人把假便签夹进工作清单，骗你改做别的事。它是 Agent 读取外部内容时必须防的安全风险。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "安全边界",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
       },
       "news_keywords": [
         "提示词注入"
@@ -1304,18 +1305,19 @@
       "category": "推理部署",
       "tier": 2,
       "difficulty": "进阶",
-      "status": "draft",
-      "one_liner": "长会话快满或持续运行时，压缩整理较早上下文，腾出可继续工作的空间。",
-      "analogy": "像桌面堆满了，把旧文件归档，腾出工位继续干活。",
-      "script_15s": "上下文压缩：长会话快满或持续跑时，把较早内容压缩整理，腾出还能继续干活的空间。像桌面堆满了，把旧文件归档腾位——不是把桌子变大，是给会话续命。",
+      "status": "ready",
+      "one_liner": "上下文压缩是在会话变长时整理早期内容，减少占用并保留任务所需信息。",
+      "analogy": "像桌面堆满后把旧文件归档，只留下当前工作需要的资料。",
+      "script_15s": "上下文压缩是什么？长会话快满时，系统把早期内容整理成摘要，腾出空间继续工作。像桌面堆满后归档旧文件，只留下当前需要的资料。它能延长 Agent 工作时间，但压缩过度可能丢细节，关键约束要单独保留。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": "2026-07-16",
-        "reviewed": false,
+        "authored_at": "2026-08-04",
+        "reviewed": true,
         "angle": "基础定义",
         "confidence": "high",
-        "forbidden_check": "pass"
+        "forbidden_check": "pass",
+        "facts_to_verify": []
       },
       "news_keywords": [
         "上下文压缩"
@@ -1350,16 +1352,19 @@
       "category": "模型架构",
       "tier": 3,
       "difficulty": "进阶",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
+      "status": "ready",
+      "one_liner": "Tokenizer 是把文字切成模型能处理的 token 单元的分词器。",
+      "analogy": "像把句子剪成统一规格的积木块再交给模型。",
+      "script_15s": "Tokenizer 是什么？它负责把文字切成模型能处理的 token 单元。就像把句子剪成统一规格的积木块，再交给 AI 理解。切法会影响文本长度和成本，所以同一句话，不同模型消耗可能不同。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
       },
       "news_keywords": [
         "Tokenizer（分词器）"
@@ -1392,16 +1397,19 @@
       "category": "推理部署",
       "tier": 3,
       "difficulty": "专业",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
+      "status": "ready",
+      "one_liner": "KV Cache 会缓存生成过程中已经计算过的注意力信息，减少重复计算。",
+      "analogy": "像做题时保留草稿，不必每一步都从头重算。",
+      "script_15s": "KV Cache 是什么？模型生成长文本时，会把已经算过的注意力信息先存起来。就像做题保留草稿，下一步不用从头重算。它能降低重复计算，让长上下文响应更快，但也会占用显存。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
       },
       "news_keywords": [
         "KV Cache"
@@ -1434,16 +1442,19 @@
       "category": "模型架构",
       "tier": 3,
       "difficulty": "进阶",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
+      "status": "ready",
+      "one_liner": "扩散模型从噪声出发，通过多步去噪生成图像等内容。",
+      "analogy": "像从一团雾里反复擦拭，逐渐显出完整画面。",
+      "script_15s": "Diffusion 扩散模型怎么生图？它先把画面看成一团噪声，再一步步去噪，直到得到符合提示的图像。就像从雾里反复擦拭，轮廓逐渐清晰。它解释了文生图的生成过程，也决定速度和细节表现。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
       },
       "news_keywords": [
         "Diffusion（扩散模型）"
@@ -1557,16 +1568,19 @@
       "category": "安全",
       "tier": 3,
       "difficulty": "进阶",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
+      "status": "ready",
+      "one_liner": "Alignment 是让模型行为更符合人类目标、安全要求和使用约束的训练与治理过程。",
+      "analogy": "像给导航设定目的地，同时规定不能走危险路段。",
+      "script_15s": "Alignment，也就是 AI 对齐，指让模型的行为更符合人的目标和安全约束。像给导航设定目的地，还规定不能走危险路段。它影响模型是否听指令、会不会越权，是安全评测和产品治理的基础。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
       },
       "news_keywords": [
         "Alignment（对齐）"
@@ -1597,16 +1611,19 @@
       "category": "推理部署",
       "tier": 3,
       "difficulty": "专业",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
+      "status": "ready",
+      "one_liner": "推测解码让小模型先猜一段，大模型再批量验证，以减少生成等待。",
+      "analogy": "像助理先写草稿，专家一次检查一串，而不是逐字口述。",
+      "script_15s": "推测解码是什么？让一个更快的小模型先猜下一段文字，再由大模型批量验证，猜对的部分就直接采用。像助理先写草稿，专家一次检查一串。它可能降低响应延迟，但收益取决于两个模型的配合和任务类型。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
       },
       "news_keywords": [
         "推测解码"
@@ -1640,16 +1657,19 @@
       "category": "模型应用",
       "tier": 3,
       "difficulty": "进阶",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
+      "status": "ready",
+      "one_liner": "A2A 是让不同智能体按约定发现彼此、交换任务和返回结果的通信方式。",
+      "analogy": "像不同公司的专员用统一工单格式协作。",
+      "script_15s": "A2A 是什么？它让不同 AI 智能体按协议发现彼此、分派任务并返回结果。像不同公司的专员用统一工单格式协作，不必猜接口。它能扩大 Agent 工作流，但身份认证、权限和结果可信度必须先设计。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
       },
       "news_keywords": [
         "A2A（智能体互联）"
@@ -1683,16 +1703,19 @@
       "category": "开源商业",
       "tier": 2,
       "difficulty": "入门",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
+      "status": "ready",
+      "one_liner": "出口管制是政府对特定技术、设备或相关交易设置的出口和转移限制。",
+      "analogy": "像给某些高性能设备办理跨境通行证，目的地和用途都要核验。",
+      "script_15s": "出口管制是什么？就是政府对特定技术、芯片或设备的跨境出口和转移设置限制。像高性能设备出境要办通行证，还要核验目的地和用途。它会影响 AI 算力供应、模型训练和企业采购，新闻中的限制清单值得持续关注。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
       },
       "news_keywords": [
         "出口管制"
@@ -1729,16 +1752,19 @@
       "category": "推理部署",
       "tier": 2,
       "difficulty": "入门",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
+      "status": "ready",
+      "one_liner": "Latency 是请求发出到系统返回结果之间的等待时间，也就是响应延迟。",
+      "analogy": "像点餐后等出餐，平均速度和最慢的一桌都会影响体验。",
+      "script_15s": "Latency，也就是响应延迟，指从请求发出到结果返回要等多久。像点餐后等出餐，不只看平均速度，偶尔特别慢也会影响体验。AI 应用要同时看首字延迟、完整响应时间和并发下的稳定性，再决定模型与硬件。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "成本与性能",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
       },
       "news_keywords": [
         "延迟 Latency"
@@ -1772,16 +1798,19 @@
       "category": "模型训练",
       "tier": 3,
       "difficulty": "入门",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
+      "status": "ready",
+      "one_liner": "预训练是在大规模通用数据上学习语言和世界规律的模型训练阶段。",
+      "analogy": "像先读完一座图书馆，再学习某个岗位的工作方法。",
+      "script_15s": "预训练是什么？模型先在海量通用数据上学习语言规律、知识和基本能力，再进入微调或对齐阶段。像先读完一座图书馆，再学习具体岗位的工作方法。预训练数据、算力和清洗质量，会深刻影响模型的上限与偏差。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
       },
       "news_keywords": [
         "预训练"
@@ -1815,16 +1844,19 @@
       "category": "模型应用",
       "tier": 3,
       "difficulty": "入门",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
+      "status": "ready",
+      "one_liner": "Prompt 工程是设计任务说明、上下文和输出格式，让模型更稳定完成目标的方法。",
+      "analogy": "像把模糊要求改成清晰的项目 brief 和验收标准。",
+      "script_15s": "Prompt 工程是什么？就是把目标、背景、步骤和输出格式设计清楚，让模型更稳定完成工作。像把模糊要求改成项目 brief 和验收标准。它能提升可控性，但不能替代事实核验、工具权限和结果测试。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "开发者怎么用",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
       },
       "news_keywords": [
         "Prompt 工程"
@@ -1911,16 +1943,19 @@
       "category": "模型架构",
       "tier": 3,
       "difficulty": "专业",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
+      "status": "ready",
+      "one_liner": "Transformer 是用注意力机制处理序列信息的神经网络架构。",
+      "analogy": "像会议中每个词都能快速参考与自己最相关的发言。",
+      "script_15s": "Transformer 是什么？它是一种用注意力机制处理文字序列的模型架构。像开会时每个词都能快速参考最相关的发言，而不是只听前一句。今天多数大语言模型都受它影响，速度、上下文和能力都与此有关。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
       },
       "news_keywords": [
         "Transformer"
@@ -2033,16 +2068,19 @@
       "category": "安全",
       "tier": 2,
       "difficulty": "入门",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
+      "status": "ready",
+      "one_liner": "隐私和数据安全关注个人信息如何收集、使用、存储与保护。",
+      "analogy": "像把重要文件交给代办，既要说明用途，也要防止被私自复制。",
+      "script_15s": "隐私和数据安全是什么？就是保护个人信息在收集、传输、存储和使用中的边界。像把重要文件交给代办，既要说明用途，也要防止被私自复制。使用 AI 服务时，要看数据是否留存、谁能访问，以及能否关闭训练使用。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "风险与避坑",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
       },
       "news_keywords": [
         "隐私/数据安全"
@@ -2079,16 +2117,19 @@
       "category": "推理部署",
       "tier": 2,
       "difficulty": "入门",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
+      "status": "ready",
+      "one_liner": "推理是训练完成的模型根据输入计算并生成结果的运行阶段。",
+      "analogy": "像学生学完课程后，真正上考场解题。",
+      "script_15s": "AI 推理是什么？不是推理题，而是训练完成的模型根据你的输入生成结果。就像学生学完课程后真正上考场解题。推理阶段决定响应速度、显存和调用成本，也是部署模型时最常优化的环节。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
       },
       "news_keywords": [
         "推理（Inference）"
@@ -2125,16 +2166,19 @@
       "category": "推理部署",
       "tier": 2,
       "difficulty": "专业",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
+      "status": "ready",
+      "one_liner": "vLLM 是面向大模型推理服务的开源框架，帮助提高吞吐并管理显存。",
+      "analogy": "像把厨房的备菜和出餐流程重新排队，让同一批厨师服务更多客人。",
+      "script_15s": "vLLM 是什么？它是服务大模型推理的开源框架，重点优化请求调度和显存利用。像把厨房的备菜、出餐重新排队，让同一批厨师服务更多客人。它适合部署模型 API，但最终效果还取决于硬件、模型和并发配置。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "开发者怎么用",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
       },
       "news_keywords": [
         "vLLM / 推理框架"
@@ -2169,16 +2213,19 @@
       "category": "评测",
       "tier": 2,
       "difficulty": "进阶",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
+      "status": "ready",
+      "one_liner": "评测方法论是用明确任务、数据和指标，系统比较模型能力与局限的方法。",
+      "analogy": "像统一考试规则后再比较成绩，而不是只看宣传海报。",
+      "script_15s": "评测方法论是什么？就是用统一任务、数据和指标比较模型表现。像先统一考试规则，再比较成绩，而不是只看宣传海报。好的评测要覆盖真实场景、成本和稳定性，还要防止数据泄露或针对题库刷分，才能帮助选择模型。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
       },
       "news_keywords": [
         "评测方法论"
@@ -3786,6 +3833,601 @@
       "related_events": [],
       "sources": [
         "data/reports/2026-07-31.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "coding_tools",
+      "name": "AI编程工具",
+      "aliases": [
+        "AI IDE",
+        "AI coding tools",
+        "编程智能体"
+      ],
+      "category": "开发工具",
+      "tier": 1,
+      "difficulty": "入门",
+      "status": "ready",
+      "one_liner": "AI 编程工具能协助生成、解释、修改和测试代码。",
+      "analogy": "像身边多了一个能读代码的结对程序员。",
+      "script_15s": "AI 编程工具是什么？它能帮你生成、解释、修改和测试代码，像身边多了一个能读项目的结对程序员。它能加快开发，但输出仍要经过测试和人工审查，尤其是涉及权限、数据和生产环境时。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "AI编程工具",
+        "AI IDE",
+        "Claude Code",
+        "Cursor",
+        "Copilot"
+      ],
+      "corpus": {
+        "count_total": 948,
+        "count_scripts": 112,
+        "count_reports": 836,
+        "top_paths": [
+          "data/reports/2026-06-24.md",
+          "data/reports/2026-07-12.md",
+          "data/reports/2026-08-03.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:extracts/term-frequency.json"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "account_risk",
+      "name": "账户风控",
+      "aliases": [
+        "账号风控",
+        "账户限制",
+        "封号"
+      ],
+      "category": "安全风险",
+      "tier": 2,
+      "difficulty": "入门",
+      "status": "ready",
+      "one_liner": "账户风控是平台根据登录、支付和使用行为识别异常并采取保护措施。",
+      "analogy": "像小区门卫根据出入规律判断是否需要二次核验。",
+      "script_15s": "账户风控是什么？平台会根据登录地点、设备、支付和使用频率判断账号是否异常。像小区门卫发现出入规律不对，就要求二次核验。它影响登录、额度和账号安全，申诉时要看平台规则，不要相信绕过方案。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "安全边界",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "账户风控",
+        "账号风控",
+        "账户限制",
+        "封号",
+        "异常登录"
+      ],
+      "corpus": {
+        "count_total": 476,
+        "count_scripts": 93,
+        "count_reports": 383,
+        "top_paths": [
+          "data/reports/2026-06-16.md",
+          "data/weekly/2026-W27.md",
+          "data/monthly/2026-07.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "安全边界"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:extracts/term-frequency.json"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "api",
+      "name": "API（应用程序接口）",
+      "aliases": [
+        "应用程序接口",
+        "接口",
+        "API接口"
+      ],
+      "category": "开发工具",
+      "tier": 1,
+      "difficulty": "入门",
+      "status": "ready",
+      "one_liner": "API 是软件之间按约定交换请求和结果的接口。",
+      "analogy": "像餐厅柜台，顾客按菜单下单，后厨按约定出餐。",
+      "script_15s": "API 是什么？它是软件之间交换请求和结果的接口。就像餐厅柜台，顾客按菜单下单，后厨按约定出餐。AI 产品通过 API 接入模型、工具和数据；接口设计、权限和配额会直接影响稳定性与成本。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "API",
+        "应用程序接口",
+        "接口调用",
+        "API开放"
+      ],
+      "corpus": {
+        "count_total": 295,
+        "count_scripts": 52,
+        "count_reports": 243,
+        "top_paths": [
+          "data/reports/2026-08-03.md",
+          "data/reports/2026-07-27.md",
+          "data/reports/2026-06-05.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:extracts/term-frequency.json"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "coding",
+      "name": "AI辅助编码",
+      "aliases": [
+        "AI 编程",
+        "AI coding",
+        "编码能力"
+      ],
+      "category": "开发工具",
+      "tier": 2,
+      "difficulty": "入门",
+      "status": "ready",
+      "one_liner": "AI 辅助编码是把模型用于补全、生成、重构和排查代码的开发方式。",
+      "analogy": "像让实习生先写初稿，工程师负责验收和把关。",
+      "script_15s": "AI 辅助编码是什么？就是让模型参与补全、生成、重构和排查代码。像让实习生先写初稿，工程师再验收把关。它能缩短重复劳动，但代码能运行不等于设计正确，测试、审查和安全边界仍不能省。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "能力边界",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "AI编程",
+        "AI coding",
+        "编码能力",
+        "代码生成"
+      ],
+      "corpus": {
+        "count_total": 286,
+        "count_scripts": 36,
+        "count_reports": 250,
+        "top_paths": [
+          "data/reports/2026-07-13.md",
+          "data/reports/2026-06-16.md",
+          "data/reports/2026-06-24.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "能力边界"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:extracts/term-frequency.json"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "voice",
+      "name": "语音交互",
+      "aliases": [
+        "语音模式",
+        "语音输入",
+        "语音输出",
+        "voice mode"
+      ],
+      "category": "多模态",
+      "tier": 2,
+      "difficulty": "入门",
+      "status": "ready",
+      "one_liner": "语音交互让 AI 通过语音输入和输出完成对话或操作。",
+      "analogy": "像把文字聊天换成一通能听懂你的电话。",
+      "script_15s": "语音交互是什么？就是 AI 能听懂你的声音，也能用声音回答或执行操作。像把文字聊天换成一通能听懂你的电话。它让移动、驾驶和无障碍场景更自然，但识别准确率、隐私和误触发仍要关注。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "工作流价值",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "语音",
+        "语音模式",
+        "语音输入",
+        "TTS",
+        "ASR"
+      ],
+      "corpus": {
+        "count_total": 118,
+        "count_scripts": 77,
+        "count_reports": 41,
+        "top_paths": [
+          "news-pipeline/2026-06-03/scripts/video-script.md",
+          "news-pipeline/2026-07-17/scripts/script-2026-07-17.md",
+          "data/reports/2026-07-25.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "工作流价值"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:extracts/term-frequency.json"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "ssd_bug",
+      "name": "异常日志写入",
+      "aliases": [
+        "SSD Bug",
+        "日志膨胀",
+        "磁盘磨损"
+      ],
+      "category": "安全风险",
+      "tier": 3,
+      "difficulty": "入门",
+      "status": "ready",
+      "one_liner": "异常日志写入是程序持续产生过量日志，可能快速消耗磁盘空间和写入寿命。",
+      "analogy": "像水龙头没关，细流一直把水箱灌满。",
+      "script_15s": "异常日志写入是什么？程序持续输出过量日志，会快速吃掉磁盘空间，甚至增加 SSD 写入压力。像水龙头没关，细流一直把水箱灌满。遇到这类问题要看版本说明、日志轮转和磁盘监控，别只盯着功能效果。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "风险与避坑",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "SSD",
+        "日志膨胀",
+        "磁盘磨损",
+        "异常写入"
+      ],
+      "corpus": {
+        "count_total": 12,
+        "count_scripts": 5,
+        "count_reports": 7,
+        "top_paths": [
+          "news-pipeline/2026-06-24/scripts/video-script-2026-06-24.md",
+          "data/reports/2026-06-24.md",
+          "data/reports/2026-08-01.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "风险与避坑"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:extracts/term-frequency.json"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "autonomous_driving",
+      "name": "自动驾驶",
+      "aliases": [
+        "无人驾驶",
+        "智能驾驶",
+        "L3",
+        "L4"
+      ],
+      "category": "AI应用",
+      "tier": 2,
+      "difficulty": "入门",
+      "status": "ready",
+      "one_liner": "自动驾驶让车辆用传感器和算法感知环境、规划路线并控制行驶。",
+      "analogy": "像一个会看路的副驾驶，但接管责任仍要看等级和法规。",
+      "script_15s": "自动驾驶是什么？车辆用传感器和算法看路、规划路线，再控制加速和转向。像一个会看路的副驾驶，但能否放手、出了问题谁负责，要看自动化等级和当地法规。技术能力与责任边界必须一起理解。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "责任边界",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "自动驾驶",
+        "无人驾驶",
+        "智能驾驶",
+        "L3",
+        "L4"
+      ],
+      "corpus": {
+        "count_total": 8,
+        "count_scripts": 5,
+        "count_reports": 3,
+        "top_paths": [
+          "news-pipeline/2026-06-21/scripts/script-2026-06-21.md",
+          "data/reports/2026-06-21.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "责任边界"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:extracts/term-frequency.json"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "image_gen",
+      "name": "图像生成",
+      "aliases": [
+        "文生图",
+        "图生图",
+        "Image Generation"
+      ],
+      "category": "多模态",
+      "tier": 2,
+      "difficulty": "入门",
+      "status": "ready",
+      "one_liner": "图像生成是模型根据文字、参考图或结构条件合成新图像。",
+      "analogy": "像给画师一段需求和草图，让它快速出多个方案。",
+      "script_15s": "图像生成是什么？模型根据文字、参考图或构图条件合成新的画面。像给画师一段需求和草图，让它快速出多个方案。它适合创意和原型设计，但版权、人物肖像、事实准确性和内容标识都需要同步考虑。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "图像生成",
+        "文生图",
+        "图生图",
+        "Image Generation"
+      ],
+      "corpus": {
+        "count_total": 7,
+        "count_scripts": 1,
+        "count_reports": 6,
+        "top_paths": [
+          "news-pipeline/2026-06-06/scripts/script-2026-06-06.md",
+          "data/reports/2026-06-09.md",
+          "data/reports/2026-07-22.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:extracts/term-frequency.json"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "attention",
+      "name": "Attention（注意力机制）",
+      "aliases": [
+        "注意力机制",
+        "Self-Attention",
+        "自注意力"
+      ],
+      "category": "模型架构",
+      "tier": 3,
+      "difficulty": "中等",
+      "status": "ready",
+      "one_liner": "Attention 会为输入中的不同 token 分配权重，突出当前相关信息。",
+      "analogy": "像读文章时给关键词画重点。",
+      "script_15s": "Attention 注意力机制是什么？模型会给不同 token 分配权重，优先参考当前最相关的信息。像读文章时给文章关键词画重点。它是 Transformer 理解上下文、建立词语联系的关键。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "Attention",
+        "注意力机制",
+        "Self-Attention",
+        "KDA"
+      ],
+      "corpus": {
+        "count_total": 3,
+        "count_scripts": 0,
+        "count_reports": 3,
+        "top_paths": [
+          "data/reports/2026-07-18.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:extracts/term-frequency.json"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "open_models",
+      "name": "开源模型",
+      "aliases": [
+        "开源大模型",
+        "open source model",
+        "开放模型"
+      ],
+      "category": "商业生态",
+      "tier": 1,
+      "difficulty": "入门",
+      "status": "ready",
+      "one_liner": "开源模型是公开模型代码、权重或使用方式的模型，开放程度取决于具体许可证。",
+      "analogy": "像公开菜谱和部分食材，但能否商用还要看菜单上的授权条款。",
+      "script_15s": "开源模型是什么？它泛指公开代码、权重或使用方式的大模型，但开放到什么程度要看许可证。像公开菜谱和部分食材，能不能商用还要看条款。它影响本地部署、合规和成本，别把开源直接等同于免费。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "开源模型",
+        "开源大模型",
+        "open source model",
+        "模型开源"
+      ],
+      "corpus": {
+        "count_total": 1861,
+        "count_scripts": 354,
+        "count_reports": 1507,
+        "top_paths": [
+          "data/reports/2026-07-12.md",
+          "data/reports/2026-08-01.md",
+          "data/reports/2026-08-03.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:extracts/term-frequency.json"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "prompt",
+      "name": "Prompt（提示词）",
+      "aliases": [
+        "提示词",
+        "prompting"
+      ],
+      "category": "AI应用",
+      "tier": 1,
+      "difficulty": "入门",
+      "status": "ready",
+      "one_liner": "Prompt 是用户给模型的任务说明、背景信息和输出要求。",
+      "analogy": "像给同事写任务单，目标、材料和格式越清楚越好执行。",
+      "script_15s": "Prompt 提示词是什么？它是你给模型的任务说明、背景资料和输出要求。像给同事写任务单，目标、材料和格式越清楚，结果越稳定。Prompt 不是魔法咒语，复杂任务还要配合工具、上下文和验证。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-08-04",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "Prompt",
+        "提示词",
+        "prompting"
+      ],
+      "corpus": {
+        "count_total": 85,
+        "count_scripts": 7,
+        "count_reports": 78,
+        "top_paths": [
+          "data/reports/2026-06-16.md",
+          "data/reports/2026-07-26.md",
+          "data/reports/2026-06-10.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:extracts/term-frequency.json"
       ],
       "last_used": null,
       "use_count": 0
