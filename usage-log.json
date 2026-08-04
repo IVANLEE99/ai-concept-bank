@@ -54,6 +54,105 @@
       "report_path": "data/reports/2026-07-22.md",
       "script_path": "news-pipeline/2026-07-22/scripts/script.md",
       "notes": "auto-select free-confirm pipeline"
+    },
+    {
+      "date": "2026-07-23",
+      "concept_id": "agent",
+      "angle": "基础定义",
+      "mode": "daily",
+      "duration_sec": 15,
+      "news_trigger": "OpenAI 评测 Agent 入侵 Hugging Face",
+      "report_path": "data/reports/2026-07-23.md",
+      "script_path": "news-pipeline/2026-07-23/scripts/script.md",
+      "notes": "auto daily pipeline"
+    },
+    {
+      "date": "2026-07-24",
+      "concept_id": "open_weights",
+      "angle": "基础定义",
+      "mode": "daily",
+      "duration_sec": 15,
+      "news_trigger": "YC联名反对封杀开放权重 / Kimi K3",
+      "report_path": "data/reports/2026-07-24.md",
+      "script_path": "news-pipeline/2026-07-24/scripts/script-2026-07-24.md",
+      "notes": "auto pipeline 2026-07-24"
+    },
+    {
+      "date": "2026-07-25",
+      "concept_id": "cot",
+      "angle": "基础定义",
+      "mode": "daily",
+      "duration_sec": 15,
+      "news_trigger": "DeepSeek 新思维链灰测 / 专家模式路由",
+      "report_path": "data/reports/2026-07-25.md",
+      "script_path": "news-pipeline/2026-07-25/scripts/script.md",
+      "notes": "auto selected; eligible ready"
+    },
+    {
+      "date": "2026-07-26",
+      "concept_id": "token",
+      "angle": "基础定义",
+      "mode": "daily",
+      "duration_sec": 15,
+      "news_trigger": "Opus 5 定价按百万 token；半价近前沿",
+      "report_path": "data/reports/2026-07-26.md",
+      "script_path": "news-pipeline/2026-07-26/scripts/script.md",
+      "notes": "auto daily video factory"
+    },
+    {
+      "date": "2026-07-26",
+      "concept_id": "data_contamination",
+      "angle": "基础定义",
+      "mode": "weekly",
+      "duration_sec": 15,
+      "news_trigger": "OpenAI Agent 沙箱逃逸 / 窃取基准答案 / 终止开关立法",
+      "report_path": "data/weekly/2026-W29.md",
+      "script_path": "news-pipeline/weekly/2026-07-20~2026-07-26/scripts/script-2026-07-20~2026-07-26.md",
+      "notes": "W29 weekly anchor; HF benchmark theft ties to data contamination framing"
+    },
+    {
+      "date": "2026-07-27",
+      "concept_id": "open_weights",
+      "angle": "基础定义",
+      "mode": "daily",
+      "duration_sec": 15,
+      "news_trigger": "开放权重公开信扩容 + Google/OpenAI 联署",
+      "report_path": "data/reports/2026-07-27.md",
+      "script_path": "news-pipeline/2026-07-27/scripts/script.md",
+      "notes": "ai-news-factory 0727 日报视频锚点"
+    },
+    {
+      "date": "2026-07-28",
+      "concept_id": "open_weights",
+      "angle": "基础定义",
+      "mode": "daily",
+      "duration_sec": 15,
+      "news_trigger": "Kimi K3 HF 开源 + Anthropic 开源权重立场",
+      "report_path": "data/reports/2026-07-28.md",
+      "script_path": "news-pipeline/2026-07-28/scripts/script-2026-07-28.md",
+      "notes": "auto-select free-confirm mode"
+    },
+    {
+      "date": "2026-07-29",
+      "concept_id": "license",
+      "angle": "基础定义",
+      "mode": "daily",
+      "duration_sec": 15,
+      "news_trigger": "Kimi K3 License 商用约束解读",
+      "report_path": "data/reports/2026-07-29.md",
+      "script_path": "news-pipeline/2026-07-29/scripts/script-2026-07-29.md",
+      "notes": "auto daily video anchor"
+    },
+    {
+      "date": "2026-07-31",
+      "concept_id": "guardrails",
+      "angle": "基础定义",
+      "mode": "daily",
+      "duration_sec": 15,
+      "news_trigger": "GPT-5.6 Sol 入侵 HuggingFace 账户事件（Scene7）",
+      "report_path": "data/reports/2026-07-31.md",
+      "script_path": "news-pipeline/2026-07-31/scripts/script-2026-07-31.md",
+      "notes": "免确认自动选定"
     }
   ]
 }
