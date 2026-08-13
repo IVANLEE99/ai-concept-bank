@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated": "2026-08-04",
+  "updated": "2026-08-13",
   "reuse_gap_days": 14,
   "narrator_agent": "ai-concept-narrator",
   "corpus_extract": "extracts/term-frequency.json",
@@ -68,7 +68,8 @@
       "name": "Token",
       "aliases": [
         "tokens",
-        "令牌"
+        "令牌",
+        "词元"
       ],
       "category": "模型基础",
       "tier": 1,
@@ -122,8 +123,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": "2026-07-26",
-      "use_count": 2
+      "last_used": "2026-08-13",
+      "use_count": 3
     },
     {
       "id": "context_window",
@@ -239,8 +240,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": "2026-07-14",
-      "use_count": 2
+      "last_used": "2026-08-09",
+      "use_count": 3
     },
     {
       "id": "multimodal",
@@ -572,12 +573,14 @@
           "基础定义"
         ]
       },
-      "related_events": [],
+      "related_events": [
+        "2026-08-08 Composio 编程框架实测"
+      ],
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": "2026-07-18",
-      "use_count": 1
+      "last_used": "2026-08-08",
+      "use_count": 2
     },
     {
       "id": "data_contamination",
@@ -1336,14 +1339,16 @@
         "available": [
           "基础定义"
         ],
-        "used": []
+        "used": [
+          "基础定义"
+        ]
       },
       "related_events": [],
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-08-09",
+      "use_count": 1
     },
     {
       "id": "tokenizer",
@@ -1775,21 +1780,26 @@
         "count_reports": 4,
         "top_paths": [
           "data/reports/2026-05-28.md",
-          "data/reports/2026-07-06.md"
+          "data/reports/2026-07-06.md",
+          "data/reports/2026-08-10.md"
         ]
       },
       "angles": {
         "available": [
           "基础定义"
         ],
-        "used": []
+        "used": [
+          "基础定义"
+        ]
       },
-      "related_events": [],
+      "related_events": [
+        "免费 DeepSeek API 限流/延迟话题"
+      ],
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-08-10",
+      "use_count": 1
     },
     {
       "id": "pretraining",
@@ -4428,6 +4438,418 @@
       "related_events": [],
       "sources": [
         "corpus:extracts/term-frequency.json"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "anti_distillation",
+      "name": "反蒸馏（Anti-Distillation）",
+      "aliases": [
+        "anti-distillation",
+        "拒用蒸馏"
+      ],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "反蒸馏",
+        "anti-distillation",
+        "不用蒸馏",
+        "拒用蒸馏"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义",
+          "技术伦理与企业路线选择"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-08-07.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "对抗式自进化-adversarial-self-evolution",
+      "name": "对抗式自进化（Adversarial Self-Evolution）",
+      "aliases": [],
+      "category": "训练方法",
+      "tier": 2,
+      "difficulty": "进阶",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "对抗式自进化",
+        "BigBang",
+        "自进化合成数据",
+        "合成数据"
+      ],
+      "corpus": {
+        "count_total": 0,
+        "count_scripts": 0,
+        "count_reports": 1,
+        "top_paths": [
+          "corpus:data/reports/2026-08-08.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:data/reports/2026-08-08.md"
+      ]
+    },
+    {
+      "id": "模型内记忆---模型外记忆-model-memory-taxonomy",
+      "name": "模型内记忆 / 模型外记忆（Model Memory Taxonomy）",
+      "aliases": [],
+      "category": "Agent",
+      "tier": 2,
+      "difficulty": "进阶",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "模型内记忆",
+        "模型外记忆",
+        "Memory File",
+        "记忆形态"
+      ],
+      "corpus": {
+        "count_total": 0,
+        "count_scripts": 0,
+        "count_reports": 1,
+        "top_paths": [
+          "corpus:data/reports/2026-08-08.md"
+        ]
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "corpus:data/reports/2026-08-08.md"
+      ]
+    },
+    {
+      "id": "auto_mode_autonomy",
+      "name": "自动模式 / 自治放行（Auto Mode）",
+      "aliases": [
+        "autonomy",
+        "autopilot",
+        "自动模式"
+      ],
+      "category": "Agent 运维",
+      "tier": 3,
+      "difficulty": "入门",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "自动模式",
+        "auto mode",
+        "自治放行",
+        "autonomy"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-08-09.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "auto_compact_window",
+      "name": "上下文自动压缩阈值（Auto-Compact Window）",
+      "aliases": [
+        "auto-compact",
+        "自动压缩阈值",
+        "claude_code_auto_compact_window"
+      ],
+      "category": "上下文管理",
+      "tier": 3,
+      "difficulty": "入门",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "auto-compact window",
+        "自动压缩阈值",
+        "claude_code_auto_compact_window"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-08-09.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "safety_fallback_downgrade",
+      "name": "安全降级切换（Safety Fallback）",
+      "aliases": [
+        "safety downgrade",
+        "降级切换",
+        "fallback"
+      ],
+      "category": "AI 安全",
+      "tier": 3,
+      "difficulty": "入门",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "safety fallback",
+        "降级切换",
+        "安全降级"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-08-09.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "juice_value",
+      "name": "Juice 值",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "Juice",
+        "果汁值",
+        "juice"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-08-10.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "headless_coding",
+      "name": "Headless Coding",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "headless coding",
+        "无头编码",
+        "headless"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-08-10.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "pelican_test",
+      "name": "鹈鹕测试（鹈鹕骑车）",
+      "aliases": [
+        "鹈鹕骑车",
+        "pelican test",
+        "pelican riding bicycle"
+      ],
+      "category": "评测方法论",
+      "tier": 3,
+      "difficulty": "易",
+      "status": "ready",
+      "one_liner": "让模型生成「鹈鹕骑自行车 2D 动画」并自动验证结果的快速前端/代码能力基准。",
+      "analogy": "好比让厨师现场做道快手菜：行不行，上手就知道。",
+      "script_15s": "鹈鹕测试，就是让 AI 画一只鹈鹕骑自行车的二维动画，还要自动验证结果。好比让厨师现场做道快手菜，验真手艺。新模型上线，社区常拿它快速比前端和代码能力。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-08-13",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "鹈鹕测试",
+        "鹈鹕骑车",
+        "pelican"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-08-13.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "killing_line_chart",
+      "name": "斩杀线图",
+      "aliases": [
+        "斩杀线",
+        "性能价格斩杀线",
+        "killing line"
+      ],
+      "category": "评测方法论",
+      "tier": 3,
+      "difficulty": "易",
+      "status": "ready",
+      "one_liner": "把不同模型的性能与价格画进同一张图，用更低价格达到相当性能、压过对手的那条分界线。",
+      "analogy": "性价比横评：性能和价格同台比，谁更省谁就把对手比下去。",
+      "script_15s": "今天的专业锚点：斩杀线图。它把各模型的性能、价格画成对比图，谁用更低价格达到相当性能，就把对手压过，那条线叫斩杀线。好比性价比横评。DeepSeek 新模型上线，社区就盯着看谁被比下去。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-08-13",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass"
+      },
+      "news_keywords": [
+        "斩杀线",
+        "斩杀线图",
+        "性能价格图"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-08-13.md#概念候选"
       ],
       "last_used": null,
       "use_count": 0
