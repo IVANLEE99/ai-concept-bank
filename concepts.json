@@ -1,9 +1,4 @@
 {
-  "version": "1.0.0",
-  "updated": "2026-08-13",
-  "reuse_gap_days": 14,
-  "narrator_agent": "ai-concept-narrator",
-  "corpus_extract": "extracts/term-frequency.json",
   "concepts": [
     {
       "id": "agent",
@@ -60,8 +55,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": "2026-07-23",
-      "use_count": 2
+      "last_used": "2026-09-14",
+      "use_count": 5
     },
     {
       "id": "token",
@@ -123,8 +118,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": "2026-08-13",
-      "use_count": 3
+      "last_used": "2026-09-05",
+      "use_count": 4
     },
     {
       "id": "context_window",
@@ -183,8 +178,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": "2026-07-17",
-      "use_count": 1
+      "last_used": "2026-08-29",
+      "use_count": 2
     },
     {
       "id": "distillation",
@@ -240,8 +235,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": "2026-08-09",
-      "use_count": 3
+      "last_used": "2026-10-01",
+      "use_count": 5
     },
     {
       "id": "multimodal",
@@ -296,8 +291,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": "2026-07-22",
-      "use_count": 1
+      "last_used": "2026-08-24",
+      "use_count": 2
     },
     {
       "id": "cot",
@@ -350,15 +345,16 @@
           "为何更准但更慢"
         ],
         "used": [
-          "基础定义"
+          "基础定义",
+          "思考强度设置"
         ]
       },
       "related_events": [],
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": "2026-07-25",
-      "use_count": 1
+      "last_used": "2026-10-02",
+      "use_count": 4
     },
     {
       "id": "moe",
@@ -403,20 +399,20 @@
       },
       "angles": {
         "available": [
-          "激活参数 vs 总参数",
           "成本优势"
         ],
         "used": [
           "基础定义",
-          "架构创新：国产大模型靠 MoE 架构做文章而非单纯堆参数"
+          "架构创新：国产大模型靠 MoE 架构做文章而非单纯堆参数",
+          "激活参数 vs 总参数"
         ]
       },
       "related_events": [],
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": "2026-07-15",
-      "use_count": 1
+      "last_used": "2026-09-21",
+      "use_count": 4
     },
     {
       "id": "mcp",
@@ -466,8 +462,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-10-01",
+      "use_count": 1
     },
     {
       "id": "hallucination",
@@ -520,8 +516,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-09-07",
+      "use_count": 1
     },
     {
       "id": "benchmark",
@@ -579,8 +575,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": "2026-08-08",
-      "use_count": 2
+      "last_used": "2026-09-23",
+      "use_count": 4
     },
     {
       "id": "data_contamination",
@@ -678,15 +674,23 @@
           "Agent 的基础能力"
         ],
         "used": [
-          "基础定义"
+          "基础定义",
+          {
+            "date": "2026-09-29",
+            "angle": "agent动手权限"
+          },
+          {
+            "date": "2026-10-05",
+            "angle": "Agent 的基础能力"
+          }
         ]
       },
       "related_events": [],
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": "2026-07-19",
-      "use_count": 1
+      "last_used": "2026-10-05",
+      "use_count": 3
     },
     {
       "id": "open_weights",
@@ -740,8 +744,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": "2026-07-28",
-      "use_count": 4
+      "last_used": "2026-10-07",
+      "use_count": 6
     },
     {
       "id": "license",
@@ -955,8 +959,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-08-25",
+      "use_count": 1
     },
     {
       "id": "guardrails",
@@ -1011,8 +1015,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": "2026-07-31",
-      "use_count": 2
+      "last_used": "2026-10-04",
+      "use_count": 4
     },
     {
       "id": "model_dumbing",
@@ -1026,15 +1030,15 @@
       "tier": 1,
       "difficulty": "进阶",
       "status": "ready",
-      "one_liner": "用户感知到同一入口下回答质量变差，原因可能是路由、限流、对齐或压缩而非“变笨”。",
-      "analogy": "同一窗口换了更省成本的柜员，你感觉服务缩水。",
-      "script_15s": "今天的专业锚点：为什么会感觉模型“降智”？不一定是底座突然变笨，更常见是路由换模型、推理预算变少或安全策略收紧。就好比同一窗口换了更省成本的柜员。对比时要固定入口、提示和任务再下判断。",
+      "one_liner": "同一个名字底下常盖着能力差很多的几档，名字升级不等于你拿到的那一档也升级。",
+      "analogy": "酒店挂着同一块牌，房间却分标间和套房。",
+      "script_15s": "模型降智里常被忽略的是同名不同档：名字升了，你用到的那一档未必升。好比酒店挂着同一块牌，房间却分标间和套房。前端显示 GPT-6，同名下有的档糖果题出错、有的正常，对比要写明具体档位。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": "2026-07-12",
+        "authored_at": "2026-09-26",
         "reviewed": true,
-        "angle": "基础定义",
+        "angle": "同名不同档",
         "confidence": "high",
         "forbidden_check": "pass"
       },
@@ -1059,18 +1063,22 @@
       "angles": {
         "available": [
           "可能原因",
-          "用户如何自查"
+          "用户如何自查",
+          "同名不同档"
         ],
         "used": [
-          "基础定义"
+          "基础定义",
+          "可能原因",
+          "用户如何自查",
+          "同名不同档"
         ]
       },
       "related_events": [],
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": "2026-07-12",
-      "use_count": 1
+      "last_used": "2026-09-26",
+      "use_count": 6
     },
     {
       "id": "quantization",
@@ -1127,8 +1135,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-09-22",
+      "use_count": 2
     },
     {
       "id": "sandbox",
@@ -1253,8 +1261,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-08-30",
+      "use_count": 1
     },
     {
       "id": "computer_use",
@@ -1292,14 +1300,16 @@
         "available": [
           "基础定义"
         ],
-        "used": []
+        "used": [
+          "基础定义"
+        ]
       },
       "related_events": [],
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-09-20",
+      "use_count": 1
     },
     {
       "id": "context_compression",
@@ -1347,8 +1357,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": "2026-08-09",
-      "use_count": 1
+      "last_used": "2026-10-09",
+      "use_count": 2
     },
     {
       "id": "tokenizer",
@@ -1600,14 +1610,19 @@
         "available": [
           "基础定义"
         ],
-        "used": []
+        "used": [
+          {
+            "date": "2026-09-30",
+            "angle": "基础定义"
+          }
+        ]
       },
       "related_events": [],
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-09-30",
+      "use_count": 1
     },
     {
       "id": "speculative_decoding",
@@ -1652,8 +1667,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-08-23",
+      "use_count": 1
     },
     {
       "id": "a2a",
@@ -1741,14 +1756,16 @@
         "available": [
           "基础定义"
         ],
-        "used": []
+        "used": [
+          "基础定义"
+        ]
       },
       "related_events": [],
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-09-27",
+      "use_count": 1
     },
     {
       "id": "latency",
@@ -2111,14 +2128,16 @@
         "available": [
           "基础定义"
         ],
-        "used": []
+        "used": [
+          "基础定义"
+        ]
       },
       "related_events": [],
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-09-19",
+      "use_count": 1
     },
     {
       "id": "inference",
@@ -2160,14 +2179,16 @@
         "available": [
           "基础定义"
         ],
-        "used": []
+        "used": [
+          "基础定义"
+        ]
       },
       "related_events": [],
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-09-04",
+      "use_count": 1
     },
     {
       "id": "vllm",
@@ -2256,14 +2277,16 @@
         "available": [
           "基础定义"
         ],
-        "used": []
+        "used": [
+          "基础定义"
+        ]
       },
       "related_events": [],
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-09-25",
+      "use_count": 1
     },
     {
       "id": "rate_limit",
@@ -2305,15 +2328,16 @@
           "基础定义"
         ],
         "used": [
-          "基础定义"
+          "基础定义",
+          "rate_limit_api_quota"
         ]
       },
       "related_events": [],
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": "2026-07-21",
-      "use_count": 1
+      "last_used": "2026-10-03",
+      "use_count": 3
     },
     {
       "id": "model_routing",
@@ -2354,14 +2378,16 @@
         "available": [
           "基础定义"
         ],
-        "used": []
+        "used": [
+          "基础定义"
+        ]
       },
       "related_events": [],
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-10-08",
+      "use_count": 3
     },
     {
       "id": "agentic_misalignment",
@@ -3893,14 +3919,16 @@
         "available": [
           "基础定义"
         ],
-        "used": []
+        "used": [
+          "基础定义"
+        ]
       },
       "related_events": [],
       "sources": [
         "corpus:extracts/term-frequency.json"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-09-21",
+      "use_count": 1
     },
     {
       "id": "account_risk",
@@ -3948,14 +3976,16 @@
         "available": [
           "安全边界"
         ],
-        "used": []
+        "used": [
+          "安全边界"
+        ]
       },
       "related_events": [],
       "sources": [
         "corpus:extracts/term-frequency.json"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-09-17",
+      "use_count": 1
     },
     {
       "id": "api",
@@ -4112,14 +4142,16 @@
         "available": [
           "工作流价值"
         ],
-        "used": []
+        "used": [
+          "工作流价值"
+        ]
       },
       "related_events": [],
       "sources": [
         "corpus:extracts/term-frequency.json"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-09-16",
+      "use_count": 1
     },
     {
       "id": "ssd_bug",
@@ -4381,14 +4413,16 @@
         "available": [
           "基础定义"
         ],
-        "used": []
+        "used": [
+          "基础定义"
+        ]
       },
       "related_events": [],
       "sources": [
         "corpus:extracts/term-frequency.json"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-08-31",
+      "use_count": 1
     },
     {
       "id": "prompt",
@@ -4433,14 +4467,16 @@
         "available": [
           "基础定义"
         ],
-        "used": []
+        "used": [
+          "基础定义"
+        ]
       },
       "related_events": [],
       "sources": [
         "corpus:extracts/term-frequency.json"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-09-08",
+      "use_count": 1
     },
     {
       "id": "anti_distillation",
@@ -4802,14 +4838,16 @@
         "available": [
           "基础定义"
         ],
-        "used": []
+        "used": [
+          "基础定义"
+        ]
       },
       "related_events": [],
       "sources": [
         "data/reports/2026-08-13.md#概念候选"
       ],
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-09-24",
+      "use_count": 2
     },
     {
       "id": "killing_line_chart",
@@ -4845,14 +4883,2180 @@
         "available": [
           "基础定义"
         ],
-        "used": []
+        "used": [
+          "基础定义"
+        ]
       },
       "related_events": [],
       "sources": [
         "data/reports/2026-08-13.md#概念候选"
       ],
+      "last_used": "2026-08-28",
+      "use_count": 1
+    },
+    {
+      "name": "TAOT",
+      "type": "candidate",
+      "one_liner": "面向混合专家模型训练中动态专家副本放置的拓扑感知最优传输方法",
+      "description": "TAOT (Topology-Aware Optimal Transport) 解决MoE（混合专家模型）专家并行（EP）中的负载不均衡问题。在EP并行中，每张卡处理多少token由路由动态分配，不干预会导致某些卡持续计算而某些卡空闲。TAOT通过动态调整计算资源分配（保持路由策略不变），实现负载均衡。",
+      "category": "AI-Infra",
+      "source": "https://linux.do/t/topic/2771948",
+      "date_added": "2026-08-19",
+      "status": "ready",
+      "id": "taot",
+      "aliases": [],
+      "tier": 3,
+      "difficulty": "基础",
+      "news_keywords": [
+        "TAOT"
+      ],
+      "sources": [
+        "https://linux.do/t/topic/2771948"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "analogy": "它像一张说明卡，帮助人们快速理解 TAOT 在系统中的作用。",
+      "script_15s": "TAOT，就是面向混合专家模型训练中动态专家副本放置的拓扑感知最优传输方法。它像一张说明卡，帮助人们快速理解 TAOT 在系统中的。理解它，能帮助判断相关技术或产品新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "name": "DeepSeek Harness 生态",
+      "type": "candidate",
+      "one_liner": "围绕DeepSeek官方harness(dsh)快速生长的插件生态，4天突破4000个插件",
+      "description": "DeepSeek Harness (dsh) 上线后社区插件生态爆发式增长，从2026-08-13 19:56到2026-08-18 00:36（100小时）GitHub公开仓库插件突破4000个。涵盖余额监控、防降智、路由优化、工具调用等方向。",
+      "category": "AI-Infra",
+      "source": "https://linux.do/t/topic/2768676",
+      "date_added": "2026-08-19",
+      "status": "ready",
+      "id": "deepseek_harness_ecosystem",
+      "aliases": [],
+      "tier": 3,
+      "difficulty": "基础",
+      "news_keywords": [
+        "DeepSeek Harness 生态"
+      ],
+      "sources": [
+        "https://linux.do/t/topic/2768676"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "analogy": "它像一张说明卡，帮助人们快速理解 DeepSeek Harness 生态 在系统中的作用。",
+      "script_15s": "DeepSeek Harness 生态，是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "name": "Operation CheepSeek",
+      "type": "candidate",
+      "one_liner": "OpenCode官方针对DeepSeek涨价推出的降价行动代号",
+      "description": "OpenCode官方在DeepSeek大幅涨价后发起'Operation CheepSeek'行动，将DeepSeek Flash额度从涨价后恢复至$30/月（原先一半）。同时推出command code goat套餐含sol模型$70额度。",
+      "category": "AI-Infra",
+      "source": "https://linux.do/t/topic/2763586",
+      "date_added": "2026-08-19",
+      "status": "ready",
+      "id": "operation_cheepseek",
+      "aliases": [],
+      "tier": 3,
+      "difficulty": "基础",
+      "news_keywords": [
+        "Operation CheepSeek"
+      ],
+      "sources": [
+        "https://linux.do/t/topic/2763586"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "analogy": "它像一张说明卡，帮助人们快速理解 Operation CheepSeek 在系统中的作用。",
+      "script_15s": "Operation CheepSeek，是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "name": "Cyber 验证（ChatGPT）",
+      "aliases": [
+        "ChatGPT Cyber",
+        "Cyber verification",
+        "cyber_verification"
+      ],
+      "status": "ready",
+      "one_liner": "OpenAI/ChatGPT 侧与高风险能力或账户信任相关的身份核验状态。",
+      "definition": "",
+      "analogy": "它像一张说明卡，帮助人们快速理解 Cyber 验证（ChatGPT） 在系统中的作用。",
+      "script_15s": "Cyber 验证（ChatGPT），是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "reviewed": true,
+        "source": "linuxdo-daily-2026-08-20",
+        "notes": "2026-08-20 日报多帖报告已过 Cyber 批量清退",
+        "authored_at": "2026-09-16",
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "Cyber",
+        "Cyber验证",
+        "cyber_verification",
+        "Persona验证"
+      ],
+      "category": "product-security",
+      "created_from": "daily-report-2026-08-20",
+      "id": "cyber_verification",
+      "tier": 3,
+      "difficulty": "基础",
+      "sources": [
+        "daily-report-2026-08-20"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "script_60s": null,
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "name": "AAS（advanced-account-security）",
+      "aliases": [
+        "advanced-account-security",
+        "高级账户安全"
+      ],
+      "status": "ready",
+      "one_liner": "账户层额外安全能力/状态标记，常与通行密钥等强校验一起出现。",
+      "definition": "",
+      "analogy": "它像一张说明卡，帮助人们快速理解 AAS（advanced-account-security） 在系统中的作用。",
+      "script_15s": "AAS（advanced-account-security），是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "reviewed": true,
+        "source": "linuxdo-daily-2026-08-20",
+        "notes": "Cyber 清退抓包字段中出现的新条件名",
+        "authored_at": "2026-09-16",
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "AAS",
+        "advanced-account-security",
+        "Passkeys"
+      ],
+      "category": "product-security",
+      "created_from": "daily-report-2026-08-20",
+      "id": "advanced_account_security",
+      "tier": 3,
+      "difficulty": "基础",
+      "sources": [
+        "daily-report-2026-08-20"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "script_60s": null,
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "name": "Luna / Sol / Terra（GPT 档位）",
+      "aliases": [
+        "luna",
+        "sol",
+        "terra",
+        "GPT-5.6 Luna",
+        "GPT-5.6 Sol"
+      ],
+      "status": "ready",
+      "one_liner": "社区对 GPT 体系不同推理/速度档位的习惯称呼，影响额度消耗与任务匹配。",
+      "definition": "",
+      "analogy": "它像一张说明卡，帮助人们快速理解 Luna / Sol / Terra（GPT 档位） 在系统中的作用。",
+      "script_15s": "Luna / Sol / Terra（GPT 档位），是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "reviewed": true,
+        "source": "linuxdo-daily-2026-08-20",
+        "notes": "日报大量讨论 luna/sol，terra 存在感争议",
+        "authored_at": "2026-09-16",
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "luna",
+        "sol",
+        "terra",
+        "Luna Max",
+        "5.6 sol"
+      ],
+      "category": "model-routing",
+      "created_from": "daily-report-2026-08-20",
+      "id": "luna_sol_terra_tiers",
+      "tier": 3,
+      "difficulty": "基础",
+      "sources": [
+        "daily-report-2026-08-20"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "script_60s": null,
+      "last_used": "2026-09-18",
+      "use_count": 1
+    },
+    {
+      "name": "muse Spark",
+      "aliases": [
+        "Muse Spark",
+        "muse Spark 1.2",
+        "muse模型"
+      ],
+      "status": "ready",
+      "one_liner": "第三方套餐中出现的 Spark 系代餐模型品牌名，可用性随渠道变更。",
+      "definition": "",
+      "analogy": "它像一张说明卡，帮助人们快速理解 muse Spark 在系统中的作用。",
+      "script_15s": "muse Spark，就是第三方套餐中出现的 Spark 系代餐模型品牌名，可用性随渠道变更。它像一张说明卡，帮助人们快速理解 muse Spark。理解它，能帮助判断相关技术或产品新闻的实际影响。",
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "reviewed": true,
+        "source": "linuxdo-daily-2026-08-20",
+        "notes": "OpenCode Go 上架评测后凌晨下架",
+        "authored_at": "2026-09-16",
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "muse",
+        "muse Spark",
+        "Muse Spark 1.2"
+      ],
+      "category": "model-product",
+      "created_from": "daily-report-2026-08-20",
+      "id": "muse_spark",
+      "tier": 3,
+      "difficulty": "基础",
+      "sources": [
+        "daily-report-2026-08-20"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "script_60s": null,
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "name": "抵扣系数（套餐层 token 折算）",
+      "status": "ready",
+      "one_liner": "套餐层把模型 token 折算成计费额度的比例系数，影响实际可用量。",
+      "source": "日报 2026-08-21：火山 GLM5.3 抵扣远超预期、ollama pro 用量偏少",
+      "id": "token_discount_factor",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "基础",
+      "news_keywords": [
+        "抵扣系数（套餐层 token 折算）"
+      ],
+      "sources": [
+        "日报 2026-08-21：火山 GLM5.3 抵扣远超预期、ollama pro 用量偏少"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "analogy": "它像一张说明卡，帮助人们快速理解 抵扣系数（套餐层 token 折算） 在系统中的作用。",
+      "script_15s": "抵扣系数（套餐层 token 折算），是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "name": "p2p 直连（远程 agent 通信）",
+      "status": "ready",
+      "one_liner": "agent 间或端到端不依赖中心服务器/局域网的点对点直连通信。",
+      "source": "日报 2026-08-21：DSH 手机版 p2p 直连远程 coding",
+      "id": "p2p_agent_connection",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "基础",
+      "news_keywords": [
+        "p2p 直连（远程 agent 通信）"
+      ],
+      "sources": [
+        "日报 2026-08-21：DSH 手机版 p2p 直连远程 coding"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "analogy": "它像一张说明卡，帮助人们快速理解 p2p 直连（远程 agent 通信） 在系统中的作用。",
+      "script_15s": "p2p 直连（远程 agent 通信），是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "name": "Vibe Coding",
+      "status": "ready",
+      "one_liner": "以自然语言意图驱动、依赖 AI agent 生成代码的编程范式。",
+      "source": "日报 2026-08-21：从古法编程到 vibe coding 的范式反思",
+      "id": "vibe_coding",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "基础",
+      "news_keywords": [
+        "Vibe Coding"
+      ],
+      "sources": [
+        "日报 2026-08-21：从古法编程到 vibe coding 的范式反思"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "analogy": "它像一张说明卡，帮助人们快速理解 Vibe Coding 在系统中的作用。",
+      "script_15s": "Vibe Coding，就是以自然语言意图驱动、依赖 AI agent 生成代码的编程范式。它像一张说明卡，帮助人们快速理解 Vibe Codin。理解它，能帮助判断相关技术或产品新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "name": "牛来（Ox-Alpha）",
+      "status": "ready",
+      "one_liner": "社区实测中身份不明的神秘开源/灰度模型代号，经 OpenRouter 放出，编码表现惊人但身份未确认。",
+      "analogy": "像一个蒙面高手突然出现在比武场——招式惊艳，但没人知道他是哪家门派的。",
+      "tech_anchors": [],
+      "explanation": "OpenRouter 灰度放出的匿名模型代号 Ox-Alpha，社区昵称「牛来」，日限 1000 次调用。在「鹈鹕骑自行车」SVG 动画基准中一次出图效果惊人。社区推测为 GLM 系或 z.ai 内部模型泄露路由（佐证：zcode 路由、tokenizer 行为、1012 错误码），但无官方背书。属于「盲测模型」内容形态的代表案例。",
+      "source": "linux.do 2026-08-24 日报，22 帖讨论",
+      "id": "ox_alpha",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "基础",
+      "news_keywords": [
+        "牛来（Ox-Alpha）"
+      ],
+      "sources": [
+        "linux.do 2026-08-24 日报，22 帖讨论"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "script_15s": "牛来（Ox-Alpha），是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "name": "峰谷计费",
+      "status": "ready",
+      "one_liner": "大模型 API 按时段差异化定价，高峰贵、低谷便宜，周末统一按低谷。",
+      "analogy": "像电费的峰谷电价——白天用电高峰贵，深夜便宜，引导错峰使用。",
+      "tech_anchors": [],
+      "explanation": "大模型 API 服务商按调用时段差异化定价的策略。高峰时段（工作日白天）单价高，低谷时段（夜间/周末）单价低，引导用户错峰调用以平衡算力负载。DeepSeek 自 2026-08-23 起周末全天统一按低谷计费。中转站（Opencode/Commandcode 等）是否跟进调价是社区关注焦点。",
+      "source": "linux.do 2026-08-24 日报，DeepSeek 官方公告",
+      "id": "time_of_use_pricing",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "基础",
+      "news_keywords": [
+        "峰谷计费"
+      ],
+      "sources": [
+        "linux.do 2026-08-24 日报，DeepSeek 官方公告"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": [
+          "基础定义"
+        ]
+      },
+      "script_15s": "峰谷计费，就是大模型 API 按时段差异化定价，高峰贵、低谷便宜，周末统一按低谷。像电费的峰谷电价——白天用电高峰贵，深夜便宜，引导错峰。理解它，能帮助判断相关技术或产品新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "last_used": "2026-10-10",
+      "use_count": 1
+    },
+    {
+      "name": "鹈鹕骑自行车",
+      "status": "ready",
+      "one_liner": "社区约定的 LLM 代码生成基准 prompt：用 HTML/SVG 画鹈鹕骑自行车的 2D 动画。",
+      "analogy": "像程序员的「Hello World」——一个简单到能快速跑、复杂到能看出模型真实水平的标尺。",
+      "tech_anchors": [],
+      "explanation": "linux.do 社区自发形成的 LLM 代码生成能力基准测试 prompt，要求模型用 HTML 绘制 SVG 2D 动画（鹈鹕骑自行车，或秦始皇骑北极熊等变体）。因涉及动画渲染、SVG 路径、物理感等多重能力，成为快速横向对比模型编码水平的约定俗成标尺。不同模型（Ox-Alpha、HY3/HY4、DS V4、GLM 等）均被拿来跑此基准。",
+      "source": "linux.do 社区约定，2026-08-24 日报高频出现",
+      "id": "pelican_bicycle_test",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "基础",
+      "news_keywords": [
+        "鹈鹕骑自行车"
+      ],
+      "sources": [
+        "linux.do 社区约定，2026-08-24 日报高频出现"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "script_15s": "鹈鹕骑自行车，就是社区约定的 LLM 代码生成基准 prompt：用 HTML/SVG。像程序员的「Hello World」——一个简单到能快。理解它，能帮助判断相关技术或产品新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "name": "重置卡",
+      "status": "ready",
+      "one_liner": "OpenAI Codex 订阅额度恢复机制：发放一次性重置卡，使用后周重置时间顺延。",
+      "analogy": "像游戏里的「体力药水」——喝了立刻回满体力，但下一次自然恢复的时间被推后了。",
+      "tech_anchors": [],
+      "explanation": "OpenAI Codex 订阅服务向用户发放的一次性额度恢复凭证。使用后可立即恢复已耗尽的额度，但副作用是原本的周重置时间会顺延一周。社区（tibo 预告）显示 Codex 付费订阅使用量重置时间为 PST 下午 2 点（北京时间次日凌晨 6 点）。该机制引发集中吐槽，因用户往往在不知情下使用导致周重置被推后。",
+      "source": "linux.do 2026-08-24 日报，社区实测机制行为",
+      "id": "quota_reset_card",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "基础",
+      "news_keywords": [
+        "重置卡"
+      ],
+      "sources": [
+        "linux.do 2026-08-24 日报，社区实测机制行为"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": [
+          "default"
+        ]
+      },
+      "script_15s": "重置卡，就是OpenAI Codex 订阅额度恢复机制：发放一次性重置卡，使用后周。像游戏里的「体力药水」——喝了立刻回满体力，但下一次自。理解它，能帮助判断相关技术或产品新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "last_used": "2026-10-04",
+      "use_count": 1
+    },
+    {
+      "name": "sub2api",
+      "status": "ready",
+      "one_liner": "把订阅制账号（sub）反向转成 API 调用的灰色方案。",
+      "analogy": "像把月卡会员的权益「拆零」卖给别人用——技术上可行，但服务商明确不允许。",
+      "tech_anchors": [],
+      "explanation": "将订阅制（subscription）账号的额度反向转化为 API 调用接口的灰色技术方案，本质是绕过官方 API 计费体系，用订阅额度充当 API 调用源。OpenAI（tibo）已明牌不再支持 sub2api。属于账号权益黑话与灰色地带操作。",
+      "source": "linux.do 2026-08-24 日报，tibo 明牌不支持",
+      "id": "sub2api",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "基础",
+      "news_keywords": [
+        "sub2api"
+      ],
+      "sources": [
+        "linux.do 2026-08-24 日报，tibo 明牌不支持"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "script_15s": "sub2api，就是把订阅制账号（sub）反向转成 API 调用的灰色方案。像把月卡会员的权益「拆零」卖给别人用——技术上可行，但。理解它，能帮助判断相关技术或产品新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "name": "Remote Control",
+      "status": "ready",
+      "one_liner": "Gemini Antigravity 的远程控制功能，原 Ultra 限定后下放 Pro 用户。",
+      "analogy": "像云电脑——你的算力和环境在云端，你在本地远程操作。",
+      "tech_anchors": [],
+      "explanation": "Google Gemini Antigravity（反重力）IDE 的远程控制功能，允许用户远程操控云端开发环境。早期仅 Ultra 订阅用户可用，2026-08-23 起下放至 Pro 用户。社区反映反代延迟（4-5 秒）比直接用 AI Studio 慢。",
+      "source": "linux.do 2026-08-24 日报，官方下放 Pro",
+      "id": "remote_control",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "基础",
+      "news_keywords": [
+        "Remote Control"
+      ],
+      "sources": [
+        "linux.do 2026-08-24 日报，官方下放 Pro"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "script_15s": "Remote Control，是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "near_memory_computing",
+      "name": "近存计算",
+      "aliases": [
+        "Near-Memory Computing",
+        "近存计算架构"
+      ],
+      "category": "硬件架构",
+      "tier": 3,
+      "difficulty": "进阶",
+      "status": "ready",
+      "one_liner": "近存计算 是与人工智能产品、模型或基础设施相关的概念。",
+      "analogy": "它像一张说明卡，帮助人们快速理解 近存计算 在系统中的作用。",
+      "script_15s": "近存计算，就是近存计算 是与人工智能产品、模型或基础设施相关的概念。它像一张说明卡，帮助人们快速理解 近存计算 在系统中的。理解它，能帮助判断相关技术或产品新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "近存计算",
+        "near-memory",
+        "O100",
+        "玄戒"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-08-25.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "hybrid_bonding_packaging",
+      "name": "晶圆级垂直堆叠封装",
+      "aliases": [
+        "Hybrid Bonding",
+        "混合键合",
+        "晶圆级堆叠"
+      ],
+      "category": "半导体工艺",
+      "tier": 3,
+      "difficulty": "进阶",
+      "status": "ready",
+      "one_liner": "晶圆级垂直堆叠封装 是与人工智能产品、模型或基础设施相关的概念。",
+      "analogy": "它像一张说明卡，帮助人们快速理解 晶圆级垂直堆叠封装 在系统中的作用。",
+      "script_15s": "晶圆级垂直堆叠封装，就是晶圆级垂直堆叠封装 是与人工智能产品、模型或基础设施相关的概念。它像一张说明卡，帮助人们快速理解 晶圆级垂直堆叠封装。理解它，能帮助判断相关技术或产品新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "Hybrid Bonding",
+        "混合键合",
+        "垂直堆叠",
+        "晶圆级封装"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-08-25.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "glm_hybrid_attn",
+      "name": "GLM-5.3-Flash 混合注意力",
+      "aliases": [
+        "mHC",
+        "流形约束超连接",
+        "稀疏+线性混合注意力"
+      ],
+      "category": "模型架构",
+      "tier": 3,
+      "difficulty": "进阶",
+      "status": "ready",
+      "one_liner": "GLM-5.3-Flash 混合注意力 是与人工智能产品、模型或基础设施相关的概念。",
+      "analogy": "它像一张说明卡，帮助人们快速理解 GLM-5.3-Flash 混合注意力 在系统中的作用。",
+      "script_15s": "GLM-5.3-Flash 混合注意力，是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "GLM-5.3-Flash",
+        "混合注意力",
+        "mHC"
+      ],
+      "corpus": {
+        "count_total": 0,
+        "count_scripts": 0,
+        "count_reports": 0,
+        "top_paths": []
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [
+        {
+          "date": "2026-08-27",
+          "src": "2816223",
+          "title": "智谱发布GLM-5.3-Flash：在中国AI芯片上规模化部署服务"
+        }
+      ],
+      "sources": [
+        "daily:2026-08-27"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "qwen4_arch",
+      "name": "Qwen4 架构（Flash-Next 预览）",
+      "aliases": [
+        "Qwen3.8-Flash-Next",
+        "Qwen4 架构",
+        "N-gram 嵌入表"
+      ],
+      "category": "模型架构",
+      "tier": 3,
+      "difficulty": "进阶",
+      "status": "ready",
+      "one_liner": "Qwen4 架构（Flash-Next 预览） 是与人工智能产品、模型或基础设施相关的概念。",
+      "analogy": "它像一张说明卡，帮助人们快速理解 Qwen4 架构（Flash-Next 预览） 在系统中的作用。",
+      "script_15s": "Qwen4 架构（Flash-Next 预览），是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "Qwen4",
+        "Qwen3.8-Flash-Next",
+        "Qwen4 架构"
+      ],
+      "corpus": {
+        "count_total": 0,
+        "count_scripts": 0,
+        "count_reports": 0,
+        "top_paths": []
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [
+        {
+          "date": "2026-08-27",
+          "src": "2810553",
+          "title": "阿里千问预告开源 Qwen3.8-Flash-Next（基于Qwen4架构）"
+        }
+      ],
+      "sources": [
+        "daily:2026-08-27"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "premium_team_seat",
+      "name": "Premium Team 席位",
+      "aliases": [
+        "Premium Team",
+        "OpenAI Premium Team"
+      ],
+      "category": "产品/订阅",
+      "tier": 4,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "Premium Team 席位 是与人工智能产品、模型或基础设施相关的概念。",
+      "analogy": "它像一张说明卡，帮助人们快速理解 Premium Team 席位 在系统中的作用。",
+      "script_15s": "Premium Team 席位，是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "Premium Team",
+        "OpenAI Premium Team"
+      ],
+      "corpus": {
+        "count_total": 0,
+        "count_scripts": 0,
+        "count_reports": 0,
+        "top_paths": []
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [
+        {
+          "date": "2026-08-27",
+          "src": "2811065",
+          "title": "Premium Team已正式上线，无5H限制 5倍用量"
+        }
+      ],
+      "sources": [
+        "daily:2026-08-27"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "tokenizer_fingerprint",
+      "name": "分词器指纹分析",
+      "aliases": [
+        "tokenizer fingerprint",
+        "token 指纹"
+      ],
+      "category": "技术方法",
+      "tier": 3,
+      "difficulty": "进阶",
+      "status": "ready",
+      "one_liner": "分词器指纹分析 是与人工智能产品、模型或基础设施相关的概念。",
+      "analogy": "它像一张说明卡，帮助人们快速理解 分词器指纹分析 在系统中的作用。",
+      "script_15s": "分词器指纹分析，就是分词器指纹分析 是与人工智能产品、模型或基础设施相关的概念。它像一张说明卡，帮助人们快速理解 分词器指纹分析 在系。理解它，能帮助判断相关技术或产品新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "分词器指纹",
+        "tokenizer fingerprint",
+        "Ox Alpha"
+      ],
+      "corpus": {
+        "count_total": 0,
+        "count_scripts": 0,
+        "count_reports": 0,
+        "top_paths": []
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [
+        {
+          "date": "2026-08-27",
+          "src": "2815530",
+          "title": "智谱确认 Ox Alpha 为 GLM 系列新版本"
+        }
+      ],
+      "sources": [
+        "daily:2026-08-27"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "high_margin_model_api",
+      "name": "高毛利模型 API",
+      "aliases": [
+        "API 毛利率",
+        "DeepSeek API 毛利"
+      ],
+      "category": "行业/商业",
+      "tier": 4,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "高毛利模型 API 是与人工智能产品、模型或基础设施相关的概念。",
+      "analogy": "它像一张说明卡，帮助人们快速理解 高毛利模型 API 在系统中的作用。",
+      "script_15s": "高毛利模型 API，就是高毛利模型 API 是与人工智能产品、模型或基础设施相关的概念。它像一张说明卡，帮助人们快速理解 高毛利模型 API。理解它，能帮助判断相关技术或产品新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "API 毛利率",
+        "DeepSeek 毛利",
+        "高毛利 API"
+      ],
+      "corpus": {
+        "count_total": 0,
+        "count_scripts": 0,
+        "count_reports": 0,
+        "top_paths": []
+      },
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [
+        {
+          "date": "2026-08-27",
+          "src": "2814399",
+          "title": "DeepSeek API毛利率高达82.9%，公司整体毛利率达44.6%"
+        }
+      ],
+      "sources": [
+        "daily:2026-08-27"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "gpt-astra--实习生级-agi",
+      "name": "GPT-Astra / 实习生级 AGI",
+      "aliases": [
+        "Astra",
+        "GPT-Astra",
+        "实习生级AGI"
+      ],
+      "category": "模型应用",
+      "tier": 3,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "OpenAI 内部 AGI 判定档位——自动化 AI 研究实习生级，可独立完成一周量级研究任务",
+      "source": "linux.do 2817991,2818018 @2026-08-28",
+      "news_keywords": [
+        "GPT-Astra / 实习生级 AGI"
+      ],
+      "sources": [
+        "linux.do 2817991,2818018 @2026-08-28"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "analogy": "它像一张说明卡，帮助人们快速理解 GPT-Astra / 实习生级 AGI 在系统中的作用。",
+      "script_15s": "GPT-Astra / 实习生级 AGI，是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "luna-reserve-机制",
+      "name": "luna reserve 机制",
+      "aliases": [
+        "luna reserve",
+        "Luna Reserve"
+      ],
+      "category": "推理部署",
+      "tier": 3,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "Codex 额度耗尽后概率触发的额外 luna 额度，看似独立于周限额",
+      "source": "linux.do 2821467,2817749 @2026-08-28",
+      "news_keywords": [
+        "luna reserve 机制"
+      ],
+      "sources": [
+        "linux.do 2821467,2817749 @2026-08-28"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "analogy": "它像一张说明卡，帮助人们快速理解 luna reserve 机制 在系统中的作用。",
+      "script_15s": "luna reserve 机制，是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "国产芯片规模化部署",
+      "name": "国产芯片规模化部署",
+      "aliases": [
+        "国产AI芯片部署"
+      ],
+      "category": "推理部署",
+      "tier": 3,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "GLM-5.3-Flash 在中国 AI 芯片（昇腾等）上规模化部署服务，智谱官方文档确认",
+      "source": "linux.do 2816182 @2026-08-28",
+      "news_keywords": [
+        "国产芯片规模化部署"
+      ],
+      "sources": [
+        "linux.do 2816182 @2026-08-28"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "analogy": "它像一张说明卡，帮助人们快速理解 国产芯片规模化部署 在系统中的作用。",
+      "script_15s": "国产芯片规模化部署，就是GLM-5.3-Flash 在中国 AI 芯片（昇腾等）上规模化部署服。它像一张说明卡，帮助人们快速理解 国产芯片规模化部署。理解它，能帮助判断相关技术或产品新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "昇腾-950-出口",
+      "name": "昇腾 950 出口",
+      "aliases": [
+        "昇腾出口",
+        "Ascend 950 export"
+      ],
+      "category": "开源商业",
+      "tier": 3,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "华为投标埃及 AI 数据中心拟出口至少 1408 颗昇腾 950，首个已公开确认的昇腾加速器出口案例",
+      "source": "linux.do 2815900 @2026-08-28",
+      "news_keywords": [
+        "昇腾 950 出口"
+      ],
+      "sources": [
+        "linux.do 2815900 @2026-08-28"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "analogy": "它像一张说明卡，帮助人们快速理解 昇腾 950 出口 在系统中的作用。",
+      "script_15s": "昇腾 950 出口，就是华为投标埃及 AI 数据中心拟出口至少 1408 颗昇腾 950，首个。它像一张说明卡，帮助人们快速理解 昇腾 950 出口。理解它，能帮助判断相关技术或产品新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "reasoning-强制回传",
+      "name": "reasoning 强制回传",
+      "aliases": [
+        "reasoning_content 回传",
+        "tool reasoning 回传"
+      ],
+      "category": "推理",
+      "tier": 3,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "DeepSeek 文档更新：带 tools 对话必须回传 reasoning_content，否则返回 400",
+      "source": "linux.do 2820722 @2026-08-28",
+      "news_keywords": [
+        "reasoning 强制回传"
+      ],
+      "sources": [
+        "linux.do 2820722 @2026-08-28"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "analogy": "它像一张说明卡，帮助人们快速理解 reasoning 强制回传 在系统中的作用。",
+      "script_15s": "reasoning 强制回传，是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "grok-bot-云电脑",
+      "name": "Grok Bot 云电脑",
+      "aliases": [
+        "SuperGrok 云电脑",
+        "Grok Bot cloud PC"
+      ],
+      "category": "模型应用",
+      "tier": 3,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "SuperGrok 订阅附送的 8 核 16g 云电脑，上 2G/下 6G，可作远程开发环境",
+      "source": "linux.do 2817209 @2026-08-28",
+      "news_keywords": [
+        "Grok Bot 云电脑"
+      ],
+      "sources": [
+        "linux.do 2817209 @2026-08-28"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "analogy": "它像一张说明卡，帮助人们快速理解 Grok Bot 云电脑 在系统中的作用。",
+      "script_15s": "Grok Bot 云电脑，是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "防御式编程模型倾向",
+      "name": "防御式编程（模型倾向）",
+      "aliases": [
+        "defensive coding 倾向",
+        "Sol 防御式编程"
+      ],
+      "category": "模型应用",
+      "tier": 3,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "GPT-5.6 Sol 过度防御式编程现象——边界判断层层设防却偏离核心业务逻辑",
+      "source": "linux.do 2816890 @2026-08-28",
+      "news_keywords": [
+        "防御式编程（模型倾向）"
+      ],
+      "sources": [
+        "linux.do 2816890 @2026-08-28"
+      ],
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "analogy": "它像一张说明卡，帮助人们快速理解 防御式编程（模型倾向） 在系统中的作用。",
+      "script_15s": "防御式编程（模型倾向），是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "gpt_reserve",
+      "name": "gpt-reserve",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "gpt-reserve 是与人工智能产品、模型或基础设施相关的概念。",
+      "analogy": "它像一张说明卡，帮助人们快速理解 gpt-reserve 在系统中的作用。",
+      "script_15s": "gpt-reserve，就是gpt-reserve 是与人工智能产品、模型或基础设施相关的概念。它像一张说明卡，帮助人们快速理解 gpt-reserv。理解它，能帮助判断相关技术或产品新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "gpt-reserve",
+        "gpt reserve",
+        "备用额度池"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-08-29.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "hyra",
+      "name": "Hyra",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "Hyra 是与人工智能产品、模型或基础设施相关的概念。",
+      "analogy": "它像一张说明卡，帮助人们快速理解 Hyra 在系统中的作用。",
+      "script_15s": "Hyra，就是Hyra 是与人工智能产品、模型或基础设施相关的概念。它像一张说明卡，帮助人们快速理解 Hyra 在系统中的。理解它，能帮助判断相关技术或产品新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "hyra",
+        "Hyra"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-08-29.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "mhs",
+      "name": "MHS（Model Hardware Standard）",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "MHS（Model Hardware Standard） 是与人工智能产品、模型或基础设施相关的概念。",
+      "analogy": "它像一张说明卡，帮助人们快速理解 MHS（Model Hardware Standard） 在系统中的作用。",
+      "script_15s": "MHS（Model Hardware Standard），是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "MHS",
+        "Model Hardware Standard",
+        "模型硬件标准"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-08-30.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "skills_supply_chain",
+      "name": "skills 供应链 / 远程提示词执行",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "skills 供应链 / 远程提示词执行 是与人工智能产品、模型或基础设施相关的概念。",
+      "analogy": "它像一张说明卡，帮助人们快速理解 skills 供应链 / 远程提示词执行 在系统中的作用。",
+      "script_15s": "skills 供应链 / 远程提示词执行，是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "skills供应链",
+        "远程提示词执行",
+        "Ponytail",
+        "PUA skills"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-08-30.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "reward_hacking",
+      "name": "奖励黑客（Reward Hacking）",
+      "aliases": [
+        "reward hacking",
+        "奖励寻求",
+        "钻奖励空子"
+      ],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "奖励黑客（Reward Hacking） 是与人工智能产品、模型或基础设施相关的概念。",
+      "analogy": "它像一张说明卡，帮助人们快速理解 奖励黑客（Reward Hacking） 在系统中的作用。",
+      "script_15s": "奖励黑客（Reward Hacking），是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "奖励黑客",
+        "reward hacking",
+        "reward hacker",
+        "奖励寻求者"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [
+        "Anthropic 官方博客：训练一个不对齐的奖励寻求者模型（2026-09-02 日报）"
+      ],
+      "sources": [
+        "data/reports/2026-09-02.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "ua_passthrough",
+      "name": "User-Agent 透传",
+      "aliases": [
+        "UA透传",
+        "UA 透传",
+        "User-Agent passthrough"
+      ],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "User-Agent 透传 是与人工智能产品、模型或基础设施相关的概念。",
+      "analogy": "它像一张说明卡，帮助人们快速理解 User-Agent 透传 在系统中的作用。",
+      "script_15s": "User-Agent 透传，是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "User-Agent 透传",
+        "UA透传",
+        "空 User-Agent",
+        "透传"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [
+        "OpenCode Go 大规模封号机制曝光（2026-09-02 日报）"
+      ],
+      "sources": [
+        "data/reports/2026-09-02.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "on_device_model",
+      "name": "端侧模型",
+      "aliases": [
+        "on-device model",
+        "端上模型"
+      ],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "端侧模型 是与人工智能产品、模型或基础设施相关的概念。",
+      "analogy": "它像一张说明卡，帮助人们快速理解 端侧模型 在系统中的作用。",
+      "script_15s": "端侧模型，就是端侧模型 是与人工智能产品、模型或基础设施相关的概念。它像一张说明卡，帮助人们快速理解 端侧模型 在系统中的。理解它，能帮助判断相关技术或产品新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "端侧模型",
+        "on-device",
+        "端侧"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [
+        "讯飞星火 X2.5-4B/1.7B 开源（2026-09-02 日报）"
+      ],
+      "sources": [
+        "data/reports/2026-09-02.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "ai_slop",
+      "name": "AI slop",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "AI slop 是与人工智能产品、模型或基础设施相关的概念。",
+      "analogy": "它像一张说明卡，帮助人们快速理解 AI slop 在系统中的作用。",
+      "script_15s": "AI slop，就是AI slop 是与人工智能产品、模型或基础设施相关的概念。它像一张说明卡，帮助人们快速理解 AI slop 在系。理解它，能帮助判断相关技术或产品新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "ai slop",
+        "slop"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-09-05.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "candy_test",
+      "name": "糖果题",
+      "aliases": [
+        "糖果测试",
+        "糖果问题"
+      ],
+      "category": "评测方法论",
+      "tier": 3,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "糖果题 是与人工智能产品、模型或基础设施相关的概念。",
+      "analogy": "它像一张说明卡，帮助人们快速理解 糖果题 在系统中的作用。",
+      "script_15s": "糖果题，就是糖果题 是与人工智能产品、模型或基础设施相关的概念。它像一张说明卡，帮助人们快速理解 糖果题 在系统中的作用。理解它，能帮助判断相关技术或产品新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "糖果题",
+        "糖果测试",
+        "糖果问题"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [
+        "全 Agent 糖果题对比测试（2026-09-13 日报）"
+      ],
+      "sources": [
+        "data/reports/2026-09-13.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "zcode_relief",
+      "name": "救济粮（Zcode）",
+      "aliases": [
+        "Zcode 救济粮",
+        "周末救济粮"
+      ],
+      "category": "产品/订阅",
+      "tier": 3,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "救济粮（Zcode） 是与人工智能产品、模型或基础设施相关的概念。",
+      "analogy": "它像一张说明卡，帮助人们快速理解 救济粮（Zcode） 在系统中的作用。",
+      "script_15s": "救济粮（Zcode），就是救济粮（Zcode） 是与人工智能产品、模型或基础设施相关的概念。它像一张说明卡，帮助人们快速理解 救济粮（Zcode）。理解它，能帮助判断相关技术或产品新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "救济粮",
+        "Zcode 救济粮",
+        "周末额度",
+        "Z-code 额度"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [
+        "Zcode 周末救济粮缩减「只给一亿了」（2026-09-13 日报）"
+      ],
+      "sources": [
+        "data/reports/2026-09-13.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "user_interaction_metadata",
+      "name": "User Interaction Metadata",
+      "aliases": [
+        "UIM",
+        "用户交互元数据"
+      ],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "User Interaction Metadata 是与人工智能产品、模型或基础设施相关的概念。",
+      "analogy": "它像一张说明卡，帮助人们快速理解 User Interaction Metadata 在系统中的作用。",
+      "script_15s": "User Interaction Metadata，是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "User Interaction Metadata",
+        "UIM",
+        "用户交互元数据"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-09-14.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "sol_pi_agent_harness",
+      "name": "SoL-Pi",
+      "aliases": [
+        "SoL Pi",
+        "Agent harness 递归自研究",
+        "NVIDIA Pi"
+      ],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "SoL-Pi 是与人工智能产品、模型或基础设施相关的概念。",
+      "analogy": "它像一张说明卡，帮助人们快速理解 SoL-Pi 在系统中的作用。",
+      "script_15s": "SoL-Pi，就是SoL-Pi 是与人工智能产品、模型或基础设施相关的概念。它像一张说明卡，帮助人们快速理解 SoL-Pi 在系统。理解它，能帮助判断相关技术或产品新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "SoL-Pi",
+        "SoL Pi",
+        "Agent harness 递归自研究",
+        "NVIDIA Pi"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-09-14.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "preemptible_subscription_compute",
+      "name": "抢占式订阅算力",
+      "aliases": [
+        "抢占式实例订阅",
+        "订阅削峰填谷"
+      ],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "基础",
+      "status": "ready",
+      "one_liner": "抢占式订阅算力 是与人工智能产品、模型或基础设施相关的概念。",
+      "analogy": "它像一张说明卡，帮助人们快速理解 抢占式订阅算力 在系统中的作用。",
+      "script_15s": "抢占式订阅算力，就是抢占式订阅算力 是与人工智能产品、模型或基础设施相关的概念。它像一张说明卡，帮助人们快速理解 抢占式订阅算力 在系。理解它，能帮助判断相关技术或产品新闻的实际影响。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-09-16",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "facts_to_verify": []
+      },
+      "news_keywords": [
+        "抢占式订阅算力",
+        "抢占式实例订阅",
+        "订阅削峰填谷"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-09-14.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "jev",
+      "name": "Jev",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "Jev"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-09-21.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "in_history_prompt_swap",
+      "name": "in-history 提示词替换",
+      "aliases": [
+        "in-history"
+      ],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "in-history",
+        "in history 提示词"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-09-25.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "full_duplex_agent_dialog",
+      "name": "全双工对话",
+      "aliases": [
+        "全双工"
+      ],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "全双工对话",
+        "全双工"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-09-25.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "agent_shutdown_migration",
+      "name": "agent 停服迁移",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "停服迁移",
+        "agent 停服"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-09-25.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "contrastive_language_model",
+      "name": "对比式语言模型（CLM）",
+      "aliases": [
+        "CLM",
+        "CLM-8B"
+      ],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "对比式语言模型",
+        "CLM-8B"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-09-26.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "chatgpt_pro_max_tier",
+      "name": "Pro Max 档（promax）",
+      "aliases": [
+        "promax"
+      ],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "Pro Max 档",
+        "promax"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-09-26.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "superintelligence_si",
+      "name": "超级智能（SI）",
+      "aliases": [
+        "Superintelligence",
+        "SI"
+      ],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "超级智能",
+        "Superintelligence",
+        "SI 对话"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-09-27.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "stealth_model",
+      "name": "隐匿模型（stealth model）",
+      "aliases": [
+        "stealth model",
+        "隐匿模型"
+      ],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "隐匿模型",
+        "stealth model",
+        "Pixel Canary"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-09-27.md#概念候选"
+      ],
       "last_used": null,
       "use_count": 0
     }
-  ]
+  ],
+  "updated": "2026-10-09"
 }
