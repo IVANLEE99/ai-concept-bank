@@ -755,7 +755,9 @@
       "aliases": [
         "Apache 2.0",
         "商用许可",
-        "开源协议"
+        "开源协议",
+        "MaaS 商业授权阈值",
+        "Kimi K3 License 收入阈值条款"
       ],
       "category": "开源商业",
       "tier": 1,
@@ -795,7 +797,9 @@
       },
       "related_events": [],
       "sources": [
-        "corpus:news-pipeline+data/reports"
+        "corpus:news-pipeline+data/reports",
+        "data/reports/2026-07-29.md#概念候选",
+        "data/reports/2026-07-28.md#概念候选"
       ],
       "last_used": "2026-07-29",
       "use_count": 1
@@ -2346,7 +2350,9 @@
     {
       "id": "model_routing",
       "name": "模型路由/调度",
-      "aliases": [],
+      "aliases": [
+        "模型路由"
+      ],
       "category": "推理部署",
       "tier": 2,
       "difficulty": "进阶",
@@ -2388,7 +2394,8 @@
       },
       "related_events": [],
       "sources": [
-        "corpus:news-pipeline+data/reports"
+        "corpus:news-pipeline+data/reports",
+        "data/reports/2026-07-18.md#概念候选"
       ],
       "last_used": "2026-10-08",
       "use_count": 3
@@ -2482,7 +2489,8 @@
       "name": "Agent Harness",
       "aliases": [
         "智能体运行时框架",
-        "Harness"
+        "Harness",
+        "Harness Engineer"
       ],
       "category": "Agent",
       "tier": 3,
@@ -2518,7 +2526,8 @@
       },
       "related_events": [],
       "sources": [
-        "data/reports/2026-07-17.md#概念候选"
+        "data/reports/2026-07-17.md#概念候选",
+        "data/reports/2026-07-31.md#概念候选"
       ],
       "last_used": "2026-07-19",
       "use_count": 1
@@ -2607,44 +2616,6 @@
       "use_count": 0
     },
     {
-      "id": "attention_residuals",
-      "name": "Attention Residuals",
-      "aliases": [
-        "注意力残差"
-      ],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "Attention Residuals",
-        "注意力残差"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-07-18.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
       "id": "experience_driven_intelligence",
       "name": "经验驱动智能",
       "aliases": [
@@ -2670,46 +2641,6 @@
         "experience-driven",
         "萨顿",
         "人类数据时代"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-07-18.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "model_router",
-      "name": "模型路由",
-      "aliases": [
-        "model router",
-        "模型路由器"
-      ],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "model router",
-        "模型路由",
-        "多模型路由"
       ],
       "corpus": null,
       "angles": {
@@ -2934,165 +2865,6 @@
       "use_count": 0
     },
     {
-      "id": "exploit_gym",
-      "name": "ExploitGym",
-      "aliases": [
-        "Exploit Gym"
-      ],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "ExploitGym",
-        "Exploit Gym",
-        "网络安全评测"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-07-23.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "aa_briefcase",
-      "name": "AA-Briefcase",
-      "aliases": [
-        "Artificial Analysis Briefcase",
-        "AA Briefcase"
-      ],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "AA-Briefcase",
-        "Briefcase",
-        "白领任务"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-07-23.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "jetbrains_context",
-      "name": "JetBrains Context",
-      "aliases": [
-        "jbcontext",
-        "Jetbrains Context"
-      ],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "JetBrains Context",
-        "jbcontext",
-        "代码索引"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-07-23.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "record_a_skill",
-      "name": "录制技能",
-      "aliases": [
-        "Record a skill",
-        "录屏教学"
-      ],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "录制技能",
-        "Record a skill",
-        "Cowork"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-07-23.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
       "id": "conversational_ads",
       "name": "对话式广告",
       "aliases": [
@@ -3176,46 +2948,6 @@
       "use_count": 0
     },
     {
-      "id": "evaluation_gaming",
-      "name": "模型作弊评测",
-      "aliases": [
-        "Evaluation Gaming",
-        "评测投机"
-      ],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "模型作弊",
-        "AISI作弊",
-        "evaluation gaming"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-07-24.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
       "id": "ai_kill_switch",
       "name": "AI Kill Switch",
       "aliases": [
@@ -3259,206 +2991,6 @@
       "related_events": [],
       "sources": [
         "data/reports/2026-07-25.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "voice_orchestrated_coding_agent",
-      "name": "语音指挥型编码Agent",
-      "aliases": [
-        "Voice-orchestrated coding",
-        "GPT Live Codex"
-      ],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "GPT Live",
-        "语音指挥",
-        "Codex Desktop"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-07-25.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "opus_5_fast",
-      "name": "Opus 5 Fast",
-      "aliases": [
-        "Opus5 Fast",
-        "opus5-fast"
-      ],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "Opus 5 Fast",
-        "Opus5 Fast",
-        "opus5-fast"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-07-26.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "frontier_bench",
-      "name": "Frontier-Bench",
-      "aliases": [
-        "CursorBench",
-        "frontier-bench"
-      ],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "Frontier-Bench",
-        "CursorBench",
-        "frontier-bench"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-07-26.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "job_simulator",
-      "name": "工作模拟器",
-      "aliases": [
-        "Job Simulator",
-        "职场模拟器"
-      ],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "工作模拟器",
-        "Job Simulator",
-        "职场模拟器"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-07-26.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "little_tech_association",
-      "name": "Little Tech Association",
-      "aliases": [
-        "小科技协会",
-        "LTA"
-      ],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "Little Tech Association",
-        "小科技协会",
-        "LTA"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-07-26.md#概念候选"
       ],
       "last_used": null,
       "use_count": 0
@@ -3597,44 +3129,6 @@
       "use_count": 0
     },
     {
-      "id": "kimi_k3_license_revenue_threshold",
-      "name": "Kimi K3 License 收入阈值条款",
-      "aliases": [
-        "Kimi K3 License"
-      ],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "Kimi K3 License",
-        "MaaS 2000万"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-07-28.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
       "id": "token_budget_task_drift",
       "name": "token_budget 任务漂移",
       "aliases": [
@@ -3668,84 +3162,6 @@
       "related_events": [],
       "sources": [
         "data/reports/2026-07-28.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "agentenv_rl_cluster",
-      "name": "AgentENV",
-      "aliases": [
-        "RL Agent 集群"
-      ],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "AgentENV",
-        "AENV"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-07-28.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "maas_license_threshold",
-      "name": "MaaS 商业授权阈值",
-      "aliases": [
-        "MaaS threshold",
-        "商业授权阈值"
-      ],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "MaaS",
-        "商业授权",
-        "K3 License"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-07-29.md#概念候选"
       ],
       "last_used": null,
       "use_count": 0
@@ -3825,84 +3241,6 @@
         "黑灯软件工厂",
         "lights-off software factory",
         "黑灯工厂"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-07-31.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "harness_engineer",
-      "name": "Harness Engineer",
-      "aliases": [
-        "Harness 工程",
-        "Harness工程师"
-      ],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "Harness Engineer",
-        "Harness 工程"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-07-31.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "vibe_slop",
-      "name": "Vibe Slop",
-      "aliases": [
-        "氛围编程垃圾",
-        "vibe slop"
-      ],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "Vibe Slop",
-        "vibe slop"
       ],
       "corpus": null,
       "angles": {
@@ -4782,43 +4120,6 @@
       "use_count": 0
     },
     {
-      "id": "juice_value",
-      "name": "Juice 值",
-      "aliases": [],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "Juice",
-        "果汁值",
-        "juice"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-08-10.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
       "id": "headless_coding",
       "name": "Headless Coding",
       "aliases": [
@@ -5343,7 +4644,9 @@
       "one_liner": "以自然语言意图驱动、依赖 AI agent 生成代码的编程范式。",
       "source": "日报 2026-08-21：从古法编程到 vibe coding 的范式反思",
       "id": "vibe_coding",
-      "aliases": [],
+      "aliases": [
+        "许愿式编程"
+      ],
       "category": "待定",
       "tier": 3,
       "difficulty": "基础",
@@ -5351,7 +4654,8 @@
         "Vibe Coding"
       ],
       "sources": [
-        "日报 2026-08-21：从古法编程到 vibe coding 的范式反思"
+        "日报 2026-08-21：从古法编程到 vibe coding 的范式反思",
+        "data/reports/2026-10-18.md#概念候选"
       ],
       "angles": {
         "available": [
@@ -6420,7 +5724,8 @@
       "aliases": [
         "reward hacking",
         "奖励寻求",
-        "钻奖励空子"
+        "钻奖励空子",
+        "模型作弊评测"
       ],
       "category": "待定",
       "tier": 3,
@@ -6456,7 +5761,8 @@
         "Anthropic 官方博客：训练一个不对齐的奖励寻求者模型（2026-09-02 日报）"
       ],
       "sources": [
-        "data/reports/2026-09-02.md#概念候选"
+        "data/reports/2026-09-02.md#概念候选",
+        "data/reports/2026-07-24.md#概念候选"
       ],
       "last_used": null,
       "use_count": 0
@@ -6556,7 +5862,9 @@
     {
       "id": "ai_slop",
       "name": "AI slop",
-      "aliases": [],
+      "aliases": [
+        "Vibe Slop"
+      ],
       "category": "待定",
       "tier": 3,
       "difficulty": "基础",
@@ -6587,7 +5895,8 @@
       },
       "related_events": [],
       "sources": [
-        "data/reports/2026-09-05.md#概念候选"
+        "data/reports/2026-09-05.md#概念候选",
+        "data/reports/2026-07-31.md#概念候选"
       ],
       "last_used": null,
       "use_count": 0
@@ -6815,79 +6124,6 @@
       "use_count": 0
     },
     {
-      "id": "jev",
-      "name": "Jev",
-      "aliases": [],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "Jev"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-09-21.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "in_history_prompt_swap",
-      "name": "in-history 提示词替换",
-      "aliases": [
-        "in-history"
-      ],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "in-history",
-        "in history 提示词"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-09-25.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
       "id": "full_duplex_agent_dialog",
       "name": "全双工对话",
       "aliases": [
@@ -6916,42 +6152,6 @@
       "news_keywords": [
         "全双工对话",
         "全双工"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-09-25.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "agent_shutdown_migration",
-      "name": "agent 停服迁移",
-      "aliases": [],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "停服迁移",
-        "agent 停服"
       ],
       "corpus": null,
       "angles": {
@@ -7002,84 +6202,6 @@
       "related_events": [],
       "sources": [
         "data/reports/2026-09-26.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "chatgpt_pro_max_tier",
-      "name": "Pro Max 档（promax）",
-      "aliases": [
-        "promax"
-      ],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "Pro Max 档",
-        "promax"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-09-26.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "superintelligence_si",
-      "name": "超级智能（SI）",
-      "aliases": [
-        "Superintelligence",
-        "SI"
-      ],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "超级智能",
-        "Superintelligence",
-        "SI 对话"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-09-27.md#概念候选"
       ],
       "last_used": null,
       "use_count": 0
@@ -7188,76 +6310,6 @@
       "use_count": 0
     },
     {
-      "id": "xu_yuan_shi_bian_cheng",
-      "name": "许愿式编程",
-      "aliases": [],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "许愿式编程"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-10-18.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "fan_zhong_li_e_du_tong_ji",
-      "name": "反重力额度统计",
-      "aliases": [],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "反重力额度统计"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-10-18.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
       "id": "you_ling_kou_fei",
       "name": "幽灵扣费",
       "aliases": [],
@@ -7333,76 +6385,6 @@
       "use_count": 0
     },
     {
-      "id": "da_ye_zhong_zhuan_zhan",
-      "name": "打野中转站",
-      "aliases": [],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "打野中转站"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-10-19.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "lei_ting_da_si_kao",
-      "name": "雷霆大思考",
-      "aliases": [],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "雷霆大思考"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-10-19.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
       "id": "yan_zheng_luo_xuan",
       "name": "验证螺旋",
       "aliases": [],
@@ -7425,111 +6407,6 @@
       },
       "news_keywords": [
         "验证螺旋"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-10-20.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "token_li_yong_lv",
-      "name": "Token 利用率",
-      "aliases": [],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "Token 利用率"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-10-20.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "da_fei_yu",
-      "name": "大肥鱼",
-      "aliases": [],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "大肥鱼"
-      ],
-      "corpus": null,
-      "angles": {
-        "available": [
-          "基础定义"
-        ],
-        "used": []
-      },
-      "related_events": [],
-      "sources": [
-        "data/reports/2026-10-20.md#概念候选"
-      ],
-      "last_used": null,
-      "use_count": 0
-    },
-    {
-      "id": "shou_cai",
-      "name": "收菜",
-      "aliases": [],
-      "category": "待定",
-      "tier": 3,
-      "difficulty": "待定",
-      "status": "candidate",
-      "one_liner": "",
-      "analogy": "",
-      "script_15s": "",
-      "script_60s": null,
-      "script_meta": {
-        "authored_by": "ai-concept-narrator",
-        "authored_at": null,
-        "reviewed": false,
-        "angle": null
-      },
-      "news_keywords": [
-        "收菜"
       ],
       "corpus": null,
       "angles": {
