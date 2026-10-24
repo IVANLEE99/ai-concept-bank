@@ -788,5 +788,104 @@
     "report_path": "data/reports/2026-10-10.md",
     "script_path": "news-pipeline/2026-10-10/scripts/script.md",
     "notes": "亮点4 直接命中 news_keywords 峰谷计费；tier3 首次使用"
+  },
+  {
+    "date": "2026-10-11",
+    "concept_id": "sub2api",
+    "angle": "基础定义",
+    "mode": "daily",
+    "duration_sec": 15,
+    "news_trigger": "Sub2API 被曝支付系统大漏洞，充值记录可被异常改动（3004261，2.5k）",
+    "report_path": "data/reports/2026-10-11.md",
+    "script_path": "news-pipeline/2026-10-11/scripts/script.md",
+    "notes": "script_15s 截断处（技术上可行，但。）由 ai-concept-narrator 修复后原样使用；首次使用该概念"
+  },
+  {
+    "date": "2026-10-12",
+    "concept_id": "token",
+    "angle": "基础定义",
+    "mode": "weekly",
+    "duration_sec": 15,
+    "news_trigger": "时间表先落地价格后跟上：Haiku 定价 / Step5 峰谷价 / 周限额全是 token 怎么花",
+    "report_path": "data/weekly/2026-W40.md",
+    "script_path": "news-pipeline/weekly/2026-10-05~2026-10-11/scripts/script.md",
+    "notes": "W40 周报锚点，script_60s 为 null 用 15s 兜底；桥句「花钱先看最小单位，待会儿讲清。」14字"
+  },
+  {
+    "date": "2026-10-12",
+    "concept_id": "agent",
+    "angle": "基础定义",
+    "mode": "daily",
+    "duration_sec": 15,
+    "news_trigger": "Codeg V0.35.1 多智能体协作工作台 + Anthropic 披露 Claude 自主执行越界行为（3009006 / 3006876）",
+    "report_path": "data/reports/2026-10-12.md",
+    "script_path": "news-pipeline/2026-10-12/scripts/script.md",
+    "notes": "auto-select no-confirm; agent 评分约149（命中+100/tier1+40/28天+9）为 top1；model_routing(4天)/alignment(12天)/rate_limit 等冷却跳过；script_15s 原样使用；anchor_pos TTS 实测 0.7618"
+  },
+  {
+    "date": "2026-10-13",
+    "concept_id": "防御式编程模型倾向",
+    "angle": "基础定义",
+    "mode": "daily",
+    "duration_sec": 15,
+    "news_trigger": "GPT6astra 过度防御：改配置触发三四百条回归与满屏 SHA256（3010893，10.4k）",
+    "report_path": "data/reports/2026-10-13.md",
+    "script_path": "news-pipeline/2026-10-13/scripts/script.md",
+    "notes": "auto-select no-confirm；backfill（1013 期漏写台账）；anchor_pos 实测 0.7099；script_15s 逐字采用"
+  },
+  {
+    "date": "2026-10-16",
+    "concept_id": "agent",
+    "angle": "Agent 的自主执行与权限边界（配合当日 Agent 工作流/harness 主线）",
+    "mode": "daily",
+    "duration_sec": 15,
+    "news_trigger": "多 harness 聚合与 Agent 工作流成为本日开源主线（pi 配置帖 5800 浏览居首；oops 一键撤销 Agent 改动）",
+    "report_path": "data/reports/2026-10-16.md",
+    "script_path": "news-pipeline/2026-10-16/scripts/script.md",
+    "notes": "锚点 scene5，播放第 7 位，预估占比 0.7065"
+  },
+  {
+    "date": "2026-10-17",
+    "concept_id": "api_key",
+    "angle": "基础定义",
+    "mode": "daily",
+    "duration_sec": 15,
+    "news_trigger": "DeepSeek 搜索接口正式公开定价",
+    "report_path": "data/reports/2026-10-17.md",
+    "script_path": "news-pipeline/2026-10-17/scripts/script-2026-10-17.md",
+    "notes": "搜索能力从免费转计费，API Key 作为计费凭证的锚点"
+  },
+  {
+    "date": "2026-10-18",
+    "concept_id": "pelican_test",
+    "angle": "基础定义",
+    "mode": "daily",
+    "duration_sec": 12,
+    "news_trigger": "DeepSeek 发布 V4.1-Flash-1017，社区连夜拿鹈鹕骑车验货",
+    "report_path": "data/reports/2026-10-18.md",
+    "script_path": "news-pipeline/2026-10-18/scripts/script-2026-10-18.md",
+    "notes": "1017 发布后鹈鹕测试成为事实标准横测，锚点 scene6 起始占比 0.7809"
+  },
+  {
+    "date": "2026-10-20",
+    "concept_id": "api_key",
+    "angle": "基础定义",
+    "mode": "daily",
+    "duration_sec": 15,
+    "news_trigger": "OpenCode Console 被入侵，约 1.4% 用户 key 可能泄露",
+    "report_path": "data/reports/2026-10-20.md",
+    "script_path": "news-pipeline/2026-10-20/scripts/script-2026-10-20.md",
+    "notes": "锚点位置 0.7333，落在 70-80% 区间"
+  },
+  {
+    "date": "2026-10-22",
+    "concept_id": "vllm",
+    "angle": "基础定义",
+    "mode": "daily",
+    "duration_sec": 15,
+    "news_trigger": "DeepInfer 推理框架开源（3050315）",
+    "report_path": "data/reports/2026-10-22.md",
+    "script_path": "news-pipeline/2026-10-22/scripts/script-2026-10-22.md",
+    "notes": "场景4 嵌入 DeepInfer 开源故事后讲解推理框架"
   }
 ]
