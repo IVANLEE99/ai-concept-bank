@@ -887,5 +887,38 @@
     "report_path": "data/reports/2026-10-22.md",
     "script_path": "news-pipeline/2026-10-22/scripts/script-2026-10-22.md",
     "notes": "场景4 嵌入 DeepInfer 开源故事后讲解推理框架"
+  },
+  {
+    "date": "2026-10-31",
+    "concept_id": "token_discount_factor",
+    "angle": "基础定义",
+    "mode": "monthly",
+    "duration_sec": 15,
+    "news_trigger": "2026年10月三条趋势共同指向「额度怎么折算」：OpenAI 档位缩水与重置、Gemini 额度一个月反转四次、国产套餐计费方程被社区反推",
+    "report_path": "data/monthly/2026-10.md",
+    "script_path": "news-pipeline/monthly/2026-10/scripts/script.md",
+    "notes": "月报场景7（专业锚点，实测起始 148.07s/195.52s=0.7573）；台词逐字取自 script_15s，未改写"
+  },
+  {
+    "date": "2026-11-01",
+    "concept_id": "trust_minimization",
+    "angle": "基础定义",
+    "mode": "daily",
+    "duration_sec": 15,
+    "news_trigger": "1101 期：同一窗口内「Claude Pro 几乎没有风控」与住宅 IP/家宽/KYC 后秒封的封号潮并存；密码只存过 Google 密码管理器却被登录",
+    "report_path": "data/reports/2026-11-01.md",
+    "script_path": "news-pipeline/2026-11-01/scripts/script-2026-11-01.md",
+    "notes": "补写：1101 直播时未回写 usage-log（漏记）。场景7 锚点，实测占比 0.7856（publish.json anchor.position 同值）；台词逐字取自 script_15s，未改写"
+  },
+  {
+    "date": "2026-11-02",
+    "concept_id": "trust_minimization",
+    "angle": "基础定义",
+    "mode": "daily",
+    "duration_sec": 15,
+    "news_trigger": "1102 期：OpenAI 额度合并（Chat 不再无限、12 月起与 Codex 共享池）+ 网页版 Pro 长任务把周额度用出二三十倍 + gemini 家庭组按号独立计量 + 百万用户小程序被社交类目资质下架——四条线共同结构是「把信任从某一层的承诺换成每一层的验证」",
+    "report_path": "data/reports/2026-11-02.md",
+    "script_path": "news-pipeline/2026-11-02/scripts/script-2026-11-02.md",
+    "notes": "场景7 锚点，实测占比 0.7353（publish.json anchor.position 同值）。锚点复用 1101 的信任最小化：1102 期四条新候选概念（池化合账/计量漏洞/长时任务溢价/资质瓶颈）均为 candidate 且无 script_15s，按 Step1.6 资格规则不可用；冷却期 reuse_gap_days=14 与「无其他合规候选」冲突时以「本期必须有锚点」优先，理由已记入 review-checklist §六"
   }
 ]

@@ -4567,7 +4567,7 @@
     {
       "name": "抵扣系数（套餐层 token 折算）",
       "status": "ready",
-      "one_liner": "套餐层把模型 token 折算成计费额度的比例系数，影响实际可用量。",
+      "one_liner": "套餐层把模型 token 折算成计费额度的比例系数，决定同样月费能跑多少。",
       "source": "日报 2026-08-21：火山 GLM5.3 抵扣远超预期、ollama pro 用量偏少",
       "id": "token_discount_factor",
       "aliases": [],
@@ -4575,7 +4575,10 @@
       "tier": 3,
       "difficulty": "基础",
       "news_keywords": [
-        "抵扣系数（套餐层 token 折算）"
+        "抵扣系数",
+        "计费额度",
+        "套餐折算",
+        "额度"
       ],
       "sources": [
         "日报 2026-08-21：火山 GLM5.3 抵扣远超预期、ollama pro 用量偏少"
@@ -4584,22 +4587,21 @@
         "available": [
           "基础定义"
         ],
-        "used": []
+        "used": [
+          "基础定义"
+        ]
       },
-      "analogy": "它像一张说明卡，帮助人们快速理解 抵扣系数（套餐层 token 折算） 在系统中的作用。",
-      "script_15s": "抵扣系数（套餐层 token 折算），是人工智能领域的一个概念。它像一张说明卡，帮助快速看懂相关系统或产品的作用。理解它，能帮助判断相关新闻的实际影响。",
+      "analogy": "食堂饭票——都是十块钱，有的窗口能打两荤一素，有的只够一碗面。",
+      "script_15s": "抵扣系数，就是套餐把你用的 token，按一个比例折成计费额度。同一个模型，在不同档位里的折算比例不一样。好比食堂饭票，都是十块钱，有的窗口能打两荤一素，有的只够一碗面。看懂它，你才能从掉了百分之几，倒推回到底花了多少美元。",
       "script_60s": null,
       "script_meta": {
         "authored_by": "ai-concept-narrator",
-        "authored_at": "2026-09-16",
+        "authored_at": "2026-10-27",
         "reviewed": true,
-        "angle": "基础定义",
-        "confidence": "medium",
-        "forbidden_check": "pass",
-        "facts_to_verify": []
+        "angle": "基础定义"
       },
-      "last_used": null,
-      "use_count": 0
+      "last_used": "2026-10-31",
+      "use_count": 1
     },
     {
       "name": "p2p 直连（远程 agent 通信）",
@@ -6561,7 +6563,1449 @@
       ],
       "last_used": null,
       "use_count": 0
+    },
+    {
+      "id": "proactive_agent",
+      "name": "主动型 Agent（Proactive Agent）",
+      "aliases": [
+        "Proactive Agent",
+        "主动型智能体"
+      ],
+      "category": "模型应用",
+      "tier": 3,
+      "difficulty": "入门",
+      "status": "ready",
+      "one_liner": "不用你开口，自己盯着邮箱、日历、账单，到点了就动手把事情办了的智能体。",
+      "analogy": "像个体贴的私人助理：不用你吩咐，它自己记得你的日程、代收件、盯账单，该办的事主动替你办了。",
+      "script_15s": "主动型 Agent：不用你开口，它自己盯着邮箱、日历和账单，时机一到就动手把事办妥。就好比请了个主动的私人助理，你的待办它提前记下、主动推进。和普通 Agent 的区别就在\"主动\"——不是等你提问，而是自己发现该干什么并去做。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-10-24",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "high",
+        "forbidden_check": "pass",
+        "reviewed_at": "2026-10-24"
+      },
+      "news_keywords": [
+        "主动型 Agent",
+        "Proactive Agent",
+        "Claude Duet",
+        "主动智能体",
+        "Agent 形态"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义",
+          "和普通 Agent 的区别"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-23.md#概念候选",
+        "data/reports/2026-10-23.md#主动Agent"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "model_capacity_full",
+      "name": "模型容量不足（Capacity / At-capacity）",
+      "aliases": [
+        "At-capacity",
+        "Selected model is at capacity",
+        "容量不足"
+      ],
+      "category": "推理部署",
+      "tier": 3,
+      "difficulty": "入门",
+      "status": "ready",
+      "one_liner": "服务端当前模型负载已满、接不动新请求时，提示你换模型的报错。",
+      "analogy": "像餐厅客满：今天生意太好，厨师忙不过来，只能请你换家店或等会儿再来。",
+      "script_15s": "模型容量不足：你正要调用，系统却说\"Selected model is at capacity\"——意思是这个模型当前负载满了，接不动了。就像餐厅客满、厨师忙不过来。它常和限速一起出现，遇到就换模型或错峰再用，不是你的错，是服务器忙。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-10-24",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "reviewed_at": "2026-10-25"
+      },
+      "news_keywords": [
+        "模型容量不足",
+        "At-capacity",
+        "Selected model is at capacity",
+        "容量不足",
+        "限速"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义",
+          "和限速/配额的区别"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-23.md#概念候选",
+        "data/reports/2026-10-23.md#容量不足",
+        "data/reports/2026-10-16.md#容量不足"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "distribution_approval",
+      "name": "分发审核（Distribution Approval）",
+      "aliases": [
+        "Distribution Approval",
+        "再分发审核"
+      ],
+      "category": "开源商业",
+      "tier": 3,
+      "difficulty": "进阶",
+      "status": "ready",
+      "one_liner": "再分发模型前要先过政策审核，不是拿到权重就能随便转发的约束。",
+      "analogy": "像转载规定：文章作者声明\"转发需授权\"，你拿到内容不代表能随意分发，得先获批。",
+      "script_15s": "分发审核：再分发模型前要先过政策批准。拿到模型权重，不代表你能随便转给别人用——就像公众号声明\"转发需授权\"，你得先获批。OpenAI 已把\"分发 GPT 模型须先审核\"写进使用政策，是商用与再分发的合规门槛。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-10-24",
+        "reviewed": true,
+        "angle": "基础定义",
+        "confidence": "medium",
+        "forbidden_check": "pass",
+        "reviewed_at": "2026-10-25"
+      },
+      "news_keywords": [
+        "分发审核",
+        "Distribution Approval",
+        "再分发",
+        "商用合规",
+        "模型分发"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义",
+          "和开源许可的区别"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-23.md#概念候选",
+        "data/reports/2026-10-23.md#分发审核"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "sparse_activation_ratio",
+      "name": "稀疏激活比",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "稀疏激活比"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-25.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "benchmark_vibe_gap",
+      "name": "榜单体感背离",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "榜单体感背离"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-25.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "container_fingerprint_ban",
+      "name": "容器指纹风控",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "容器指纹风控"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-25.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "promo_clawback",
+      "name": "促销渠道回撤",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "促销渠道回撤"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-25.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "billing_blackbox_inversion",
+      "name": "计费黑盒反推",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "计费黑盒反推"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-26.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "reset_discount",
+      "name": "重置折价",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "重置折价"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-26.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "automated_check_limbo",
+      "name": "自动化检查期限制",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "自动化检查期限制"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-26.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "capability_polarization",
+      "name": "能力分化",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "能力分化"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-26.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "quota_reversal",
+      "name": "额度反向修正",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "额度反向修正"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-27.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "split_pool_billing",
+      "name": "分池计费",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "分池计费"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-27.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "self_evaluation_optimism",
+      "name": "自评乐观偏差",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "自评乐观偏差"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-27.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "behavioral_layer_abuse",
+      "name": "行为层滥用",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "行为层滥用"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-27.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "silent_degradation",
+      "name": "静默降质",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "静默降质"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-28.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "revenue_line_banning",
+      "name": "收入化封禁",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "收入化封禁"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-28.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "billing_multiplier_drift",
+      "name": "计费倍率漂移",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "计费倍率漂移"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-28.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "training_trace_misreading",
+      "name": "训练痕迹误读",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "训练痕迹误读"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-28.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "agent_idle_spin",
+      "name": "代理空转",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "代理空转"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-29.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "ttft_tax",
+      "name": "首字延迟税",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "首字延迟税"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-29.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "speed_tier_division",
+      "name": "速度档分工",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "速度档分工"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-29.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "world_model_split",
+      "name": "世界模型分野",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "世界模型分野"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-29.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "account_kyc_gate",
+      "name": "账号 KYC 闸门",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "账号 KYC 闸门"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-30.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "channel_fingerprint",
+      "name": "渠道指纹",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "渠道指纹"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-30.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "key_liability_shifting",
+      "name": "密钥责任转嫁",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "密钥责任转嫁"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-30.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "destructive_blast_radius",
+      "name": "破坏半径",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "破坏半径"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-30.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "tool_tax",
+      "name": "工具税",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "工具税"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-31.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "degradation_routing",
+      "name": "降智路由",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "降智路由"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-31.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "capability_gating",
+      "name": "能力分层发牌",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "能力分层发牌"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-31.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "retry_storm",
+      "name": "无退避重试",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "无退避重试"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-10-31.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "prompt_residue",
+      "name": "提示词残留",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "提示词残留"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-01.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "offloaded_inference",
+      "name": "卸载式推理",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "卸载式推理"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-01.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "cosmetic_upsell",
+      "name": "改名式升级",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "改名式升级"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-01.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "proxy_arbitrage",
+      "name": "反代套利链",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "反代套利链"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-01.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "trust_minimization",
+      "name": "信任最小化",
+      "aliases": [
+        "零信任",
+        "Trust Minimization"
+      ],
+      "category": "安全",
+      "tier": 3,
+      "difficulty": "进阶",
+      "status": "ready",
+      "one_liner": "信任最小化＝不把安全性寄托在任何单一环节的善意上：每一层都假设它可能背叛你，用验证代替信任。",
+      "analogy": "像把家门钥匙从邻居手里收回自己保险柜——不是邻居不可信，而是你不再需要他可信",
+      "script_15s": "信任最小化，就是不把安全寄托在任何单一环节的善意上：每一层都假设它可能背叛你，用验证代替信任。就像把家门钥匙从邻居手里收回自己保险柜，不是邻居不可信，而是你不再需要他可信。判断标准就一条：任何一个环节出事，损失能不能被上一层兜住，兜不住就补一层验证。",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": "2026-11-01",
+        "reviewed": true,
+        "angle": "基础定义"
+      },
+      "news_keywords": [
+        "信任最小化",
+        "零信任"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-01.md"
+      ],
+      "last_used": "2026-11-02",
+      "use_count": 1
+    },
+    {
+      "id": "pooled_quota",
+      "name": "池化合账",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "池化合账"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-02.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "metering_loophole",
+      "name": "计量漏洞",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "计量漏洞"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-02.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "long_horizon_arbitrage",
+      "name": "长时任务溢价",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "长时任务溢价"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-02.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "qualification_bottleneck",
+      "name": "资质瓶颈",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "资质瓶颈"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-02.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
     }
   ],
-  "updated": "2026-10-24"
+  "updated": "2026-11-02"
 }
