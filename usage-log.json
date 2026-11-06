@@ -920,5 +920,16 @@
     "report_path": "data/reports/2026-11-02.md",
     "script_path": "news-pipeline/2026-11-02/scripts/script-2026-11-02.md",
     "notes": "场景7 锚点，实测占比 0.7353（publish.json anchor.position 同值）。锚点复用 1101 的信任最小化：1102 期四条新候选概念（池化合账/计量漏洞/长时任务溢价/资质瓶颈）均为 candidate 且无 script_15s，按 Step1.6 资格规则不可用；冷却期 reuse_gap_days=14 与「无其他合规候选」冲突时以「本期必须有锚点」优先，理由已记入 review-checklist §六"
+  },
+  {
+    "date": "2026-11-03",
+    "concept_id": "rate_limit",
+    "angle": "基础定义",
+    "mode": "daily",
+    "duration_sec": 15,
+    "news_trigger": "1103 期：三家平台同日收紧「无限」——Anthropic 把转售写进明文禁令、Grok Bot 周额度腰斩后又恢复、ChatGPT 200 USD 档反而被保住，三条线索共同指向「平台把无限改成了会叫号的阀门」",
+    "report_path": "data/reports/2026-11-03.md",
+    "script_path": "news-pipeline/2026-11-03/scripts/script-2026-11-03.md",
+    "notes": "场景7（专业锚点，wav 实测 220.88s/304.75s=0.7248）；台词逐字取自 script_15s（半角引号与 API 无空格形态原样保留），未改写"
   }
 ]

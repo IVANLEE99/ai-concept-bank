@@ -2344,8 +2344,8 @@
       "sources": [
         "corpus:news-pipeline+data/reports"
       ],
-      "last_used": "2026-10-03",
-      "use_count": 3
+      "last_used": "2026-11-03",
+      "use_count": 4
     },
     {
       "id": "model_routing",
@@ -8005,7 +8005,462 @@
       ],
       "last_used": null,
       "use_count": 0
+    },
+    {
+      "id": "infinity_depreciation",
+      "name": "无限承诺折旧",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "无限承诺折旧"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-03.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "resale_prohibition",
+      "name": "转售禁令化",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "转售禁令化"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-03.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "quota_visibility_arbitrage",
+      "name": "额度可视化套利",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "额度可视化套利"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-03.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "multi_pool_orchestration",
+      "name": "多池编排",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "多池编排"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-03.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "inch_stop",
+      "name": "寸止",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "寸止"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-04.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "crowded_exit_node",
+      "name": "万人骑节点",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "万人骑节点"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-04.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "model_retirement",
+      "name": "模型退市",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "模型退市"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-04.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "provable_inference",
+      "name": "可证明推理",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "可证明推理"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-05.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "weight_space_programming",
+      "name": "权重空间编程",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "权重空间编程"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-05.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "quota_halving",
+      "name": "额度对半砍",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "额度对半砍"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-05.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "gated_deepseek_sparse_attention",
+      "name": "Gated DeepSeek Sparse Attention",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "Gated DeepSeek Sparse Attention"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-06.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "residential_proxy_observatory",
+      "name": "住宅代理观测",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "住宅代理观测"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-06.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "base_checkpoint_release",
+      "name": "Base 检查点开源",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "Base 检查点开源"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-06.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
     }
   ],
-  "updated": "2026-11-02"
+  "updated": "2026-11-06"
 }
