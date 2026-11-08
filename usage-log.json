@@ -931,5 +931,16 @@
     "report_path": "data/reports/2026-11-03.md",
     "script_path": "news-pipeline/2026-11-03/scripts/script-2026-11-03.md",
     "notes": "场景7（专业锚点，wav 实测 220.88s/304.75s=0.7248）；台词逐字取自 script_15s（半角引号与 API 无空格形态原样保留），未改写"
+  },
+  {
+    "date": "2026-11-08",
+    "concept_id": "multimodal",
+    "angle": "底层能力：从残片识别到真实世界连接",
+    "mode": "daily",
+    "duration_sec": 15,
+    "news_trigger": "1108 期：OpenAI 未支持地区穿透封号与 Gemini 4 Argon 遮挡 2/3 汉字残片仍精准识别并推断《原神》，一冷一热两条线共同指向「看见即理解」这一底层能力",
+    "report_path": "data/reports/2026-11-08.md",
+    "script_path": "news-pipeline/2026-11-08/scripts/script-2026-11-08.md",
+    "notes": "场景7（专业锚点，wav 实测 147.55s/207.48s=0.7111）；台词逐字取自 script_15s，未改写"
   }
 ]
