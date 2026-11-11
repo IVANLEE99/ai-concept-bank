@@ -8670,7 +8670,77 @@
       ],
       "last_used": null,
       "use_count": 0
+    },
+    {
+      "id": "gestaltx",
+      "name": "gestaltx",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "国行 iPhone 免越狱启用满版 Apple 智能的框架/漏洞方案，配合外区 Apple ID 与改地区生效",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "gestaltx"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-10.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "model_fingerprinting",
+      "name": "指纹探测",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "通过对输出风格、知识库日期、生成图像细节等特征识别模型真实版本的监测方法",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "指纹探测"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-10.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
     }
   ],
-  "updated": "2026-11-08"
+  "updated": "2026-11-10"
 }
