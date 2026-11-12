@@ -8740,7 +8740,147 @@
       ],
       "last_used": null,
       "use_count": 0
+    },
+    {
+      "id": "实控人穿透封禁",
+      "name": "实控人穿透封禁",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "实控人穿透封禁"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-12.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "灰度回炉",
+      "name": "灰度回炉",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "灰度回炉"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-12.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "静默后门植入",
+      "name": "静默后门植入",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "静默后门植入"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-12.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
+    },
+    {
+      "id": "缓存命中率经济",
+      "name": "缓存命中率经济",
+      "aliases": [],
+      "category": "待定",
+      "tier": 3,
+      "difficulty": "待定",
+      "status": "candidate",
+      "one_liner": "",
+      "analogy": "",
+      "script_15s": "",
+      "script_60s": null,
+      "script_meta": {
+        "authored_by": "ai-concept-narrator",
+        "authored_at": null,
+        "reviewed": false,
+        "angle": null
+      },
+      "news_keywords": [
+        "缓存命中率经济"
+      ],
+      "corpus": null,
+      "angles": {
+        "available": [
+          "基础定义"
+        ],
+        "used": []
+      },
+      "related_events": [],
+      "sources": [
+        "data/reports/2026-11-12.md#概念候选"
+      ],
+      "last_used": null,
+      "use_count": 0
     }
   ],
-  "updated": "2026-11-10"
+  "updated": "2026-11-12"
 }
